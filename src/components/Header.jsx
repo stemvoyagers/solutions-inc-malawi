@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header>
       <div
-        className="w-full bg-white top-0" >
+        className="max-w-screen mx-auto bg-white top-0" >
 
         <div className="w-full flex items-center border-b border-[#EDEFF2] justify-between">
           <img src={identikoWeb} alt="webImg" className="w-[10%] ml-[6%]" />

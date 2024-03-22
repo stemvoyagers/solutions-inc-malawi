@@ -3,7 +3,7 @@ import { face } from "../assets";
 const CTAContact = () => {
     return (
         <div className="bg-black pt-[4%] pb-[4%]">
-            <div className="max-w-screen-xl mx-auto flex items-center justify-between h-fit gap-x-20">
+            <div className="flex items-center justify-between h-fit gap-x-20">
                 <div className="font-semibold text-3xl md:text-md mb-2 text-white" >
                     CONTACT US
                 </div>
