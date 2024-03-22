@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header>
       <div
-        className="max-w-screen-xl bg-white top-0 flex items-center border-b border-[#EDEFF2] justify-between" >
+        className="max-w-screen-xl bg-white top-0 flex items-center border-b border-[#EDEFF2] justify-center" >
 
        
 
