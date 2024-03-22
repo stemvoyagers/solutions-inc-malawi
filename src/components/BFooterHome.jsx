@@ -3,12 +3,12 @@ import { home } from "../assets";
 const BFooterHome = () => {
     return (
         <div>
-            <div className="w-full mx-auto grid  h-fit  md:grid-cols-2">
+            <div className="w-full mx-auto grid  h-fit  md:grid-cols-2 mt-8 mb-8">
                 <div className="group">
                     <img className="w-full h-52 md:h-96 object-cover" src={home} alt="img1" />
                 </div>
 
-                <div className="group bg-black text-white gap-10 pl-10 pt-10">
+                <div className="group bg-white text-black gap-10 pl-10 pt-10 items-center justify-end">
                     <h2 className="font-semibold text-sm md:text-md mb-2 ">
                         DEDICATED TO ECO-CONSCIOUS EXPERTISE:
                         <br />

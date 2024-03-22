@@ -12,16 +12,13 @@ const Header = () => {
   };
 
   return (
-    <header>
       <div
-        className="max-w-screen-xl bg-white top-0 flex items-center border-b border-[#EDEFF2] justify-center" >
+        className="bg-white top-0 flex items-center border-b border-[#EDEFF2] justify-center gap-[25%]" >       
 
-       
-
-         <div> <img src={identikoWeb} alt="webImg" className={`w-[30%] mx-auto cursor-pointer`} onClick={handleClick} /></div>
-          <div className="flex justify-center gap-10 items-center">            
+         <div> <img src={identikoWeb} alt="webImg" className={`w-[30%] translate-x-8 cursor-pointer`} onClick={handleClick} /></div>
+          <div className="grid grid-cols-3 gap-10">            
               <div
-                className="p-4 cursor-pointer duration-300"
+                className="cursor-pointer duration-300"
                 style={{ color: "#352214", fontSize: "8px" }} >
                   <p className="text-sm text-[blue]">
                     <Link to="/about">
@@ -31,7 +28,7 @@ const Header = () => {
               </div>
 
               <div
-                className="p-4 cursor-pointer duration-300"
+                className="cursor-pointer duration-300"
                 style={{ color: "#352214", fontSize: "8px" }}>               
                   <p className="text-sm text-[blue]">
                     <Link to="/service">
@@ -41,7 +38,7 @@ const Header = () => {
               </div>
 
               <div
-                className="p-4 cursor-pointer duration-300"
+                className="cursor-pointer duration-300"
                 style={{ color: "#352214", fontSize: "8px" }}>               
                   <p className="text-sm text-[blue]">
                     <Link to="/career">
@@ -63,10 +60,7 @@ const Header = () => {
           </div>
 
         </div>
-     
-
-
-    </header>
+        
   );
 };
 
