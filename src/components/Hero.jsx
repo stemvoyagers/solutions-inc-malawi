@@ -1,6 +1,13 @@
+import { useNavigate } from "react-router-dom/dist";
 import { home2 } from "../assets";
 
 const Hero = () => {
+    const navigate = useNavigate()
+    const handleClick = () => {
+      if (window.location.pathname !== "/service") {
+        navigate("/service");
+      }
+    };
 
     return (
         <div>
@@ -66,7 +73,7 @@ const Hero = () => {
             </div>
             
             <div className="text-center mt-[8%]">
-            <button className="bg-[#0F90CA] border rounded-full w-fit p-3 text-white">See all services {'⇾'}</button>
+            <button className="bg-[#0F90CA] border rounded-full w-fit p-3 text-white" onClick={handleClick}>See all services {'⇾'}</button>
             </div>
         </div>
     );
