@@ -7,9 +7,9 @@ const Header = () => {
   return (
     <header>
       <div
-        className="max-w-screen mx-auto bg-white top-0" >
+        className="max-w-screen-xl bg-white top-0" >
 
-        <div className="w-full flex items-center border-b border-[#EDEFF2] justify-between">
+        <div className="flex items-center border-b border-[#EDEFF2] justify-between">
           <img src={identikoWeb} alt="webImg" className="w-[10%] ml-[6%]" />
           <div className="flex justify-center gap-10 items-center">
             <div className="grid grid-cols-3">
