@@ -80,7 +80,7 @@ const ContactBody = () => {
 
     return (
         <div className="w-full pb-20 pt-20">
-           
+
             <div className="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28">
                 <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0">
                     <h2 className="text-sm font-bold mb-1">CONTACT US</h2>
@@ -110,11 +110,11 @@ const ContactBody = () => {
                                     Address:
                                 </p>
                                 <p className="w-full text-black text-[12px] md:text-sm font-subFont">
-                                    Cooperate office: Suite10 Canaan Plaza, Plot 2 Blk 105, 
+                                    Cooperate office: Suite10 Canaan Plaza, Plot 2 Blk 105,
                                     Lekki Phase 1, Lagos <br />
                                     <br />
-                                    Operation office: 2nd Floor, CITN (Chartered Institute of Taxation) 
-                                    House, Plot 16, Jobi Fele way, Central Business District, Ikeja, Lagos. 
+                                    Operation office: 2nd Floor, CITN (Chartered Institute of Taxation)
+                                    House, Plot 16, Jobi Fele way, Central Business District, Ikeja, Lagos.
                                 </p>
                             </div>
                         </div>
