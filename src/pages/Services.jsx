@@ -1,8 +1,12 @@
+import CTAServices from "../components/CTAServices"
+import ServicesBody from "../components/ServicesBody"
+
 const Services = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+    <CTAServices/> 
+    <ServicesBody/>     
+    </>
   )
 }
 

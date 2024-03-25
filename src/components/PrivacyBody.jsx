@@ -1,9 +1,7 @@
 
 const PrivacyBody = () => {
   return (
-    <div className="bg-[#C8E0EB] pt-[4%] pb-[4%]">
-
-
+    <div className="bg-[#C8E0EB] pt-[4%] pb-[4%] w-full">
       <p className="max-w-screen-xl mx-auto ">
         This Privacy policy between Identiko Integrated Solutions Limited and you, constitutes our commitment to your privacy on our applications, administrative records, websites,
         social media platforms and premises. <br /><br />

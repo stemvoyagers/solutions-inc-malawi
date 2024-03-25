@@ -1,87 +1,8 @@
 const ContactBody = () => {
-    //   const [formData, setFormData] = useState({
-    //     name: "",
-    //     email: "",
-    //     phoneNumber: "",
-    //     location: "",
-    //     message: "",
-    //     agree: false,
-    //   });
-    //   const [formError, setFormError] = useState("");
-
-    //   const validateForm = (formData) => {
-    //     const { name, email, phoneNumber, location, message, agree } = formData;
-
-    //     if (!name || !email || !phoneNumber || !location || !message || !agree) {
-    //       return false;
-    //     }
-
-    //     return true;
-    //   };
-
-
-    //   const handleInputChange = (event) => {
-    //     const { name, value, type, checked } = event.target;
-    //     setFormData((prevData) => ({
-    //       ...prevData,
-    //       [name]: type === "checkbox" ? checked : value,
-    //     }));
-    //   };
-
-    //   const handleSubmit = async (event) => {
-    //     event.preventDefault();
-
-    //     if (!validateForm(formData)) {
-    //       setFormError("Please fill out all fields.");
-    //       return;
-    //     }
-
-    //     const apiFormData = {
-    //       customer_name: formData.name,
-    //       customer_email: formData.email,
-    //       customer_phone: formData.phoneNumber,
-    //       customer_location: formData.location,
-    //       message: formData.message,
-    //     };
-
-    //     try {
-    //       const response = await fetch(
-    //         "https://whew-api.apps.rokswood.com/v1/contact_forms",
-    //         {
-    //           method: "POST",
-    //           headers: {
-    //             "Content-Type": "application/json",
-    //           },
-    //           body: JSON.stringify(apiFormData),
-    //         }
-    //       );
-
-    //       if (response.status >= 200 && response.status < 300) {
-    //         const responseData = await response.json();
-    //         console.log("Form submitted successfully", responseData.message);
-
-    //         setFormData({
-    //           name: "",
-    //           email: "",
-    //           phoneNumber: "",
-    //           location: "",
-    //           message: "",
-    //           agree: false,
-    //         });
-    //         setFormError("");
-    //       } else {
-
-    //         setFormError("Form submission failed.");
-    //       }
-    //     } catch (error) {
-    //       setFormError("An error occurred: " + error.message);
-    //     }
-    //   };
 
     return (
         <div className="w-full pb-20 pt-20">
-
-            <div className="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28">
+            <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28">
                 <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0">
                     <h2 className="text-sm font-bold mb-1">CONTACT US</h2>
                     <form>

@@ -15,7 +15,12 @@ import finger from "../assets/finger.png";
 import zeroreg from "../assets/zeroreg.png";
 import face from "../assets/face.png";
 import robot from "../assets/robot.png";
+import bg from "../assets/bg.png";
+import circular from "../assets/circular.png";
+
 export {
+    circular,
+    bg,
     robot,
     zeroreg,
     face,

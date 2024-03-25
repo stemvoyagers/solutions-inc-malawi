@@ -1,7 +1,7 @@
 
 const IsmsBody = () => {
   return (
-    <div className="bg-[#C8E0EB] pt-[4%] pb-[4%]">
+    <div className="bg-[#C8E0EB] pt-[4%] pb-[4%] w-full">
 
       <p className="max-w-screen-xl mx-auto ">
         Identiko Integrated Solutions Limited is a leading, a diversified business technology solutions provider committed to providing quality and innovative IT solutions such as; PII Processing, advanced infrastructure, workplace modernization, network modernization, cloud services, data analytics, cybersecurity, migration/integration, managed services, software development services, IT Security, Managed Services, Technology Consulting & Advisory to enable our clients to become high-performance business and governments.

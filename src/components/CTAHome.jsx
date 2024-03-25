@@ -5,7 +5,7 @@ import Hero from "./Hero";
 
 const CTAHome = () => {
     return (
-        <div className="bg-[#001049] pb-[4%] pt-[4%]">
+        <div className="w-full bg-[#001049] pb-[4%] pt-[4%]">
             <div className="max-w-screen-xl mx-auto grid  h-fit md:grid-cols-2 gap-y-10 gap-x-20">             
                 <div className="group text-white gap-20 ">
                     <h2 className="font-semibold text-[300%] md:text-md mb-2 text-[#D85012] ">
