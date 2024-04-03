@@ -3,20 +3,20 @@ import { cisco, hp, idemia, lenovo, microsoft, neuro, veritas, vmware } from "..
 const Partners = () => {
     return (
         <div className="mb-12 mt-12 text-center">
-            <div className="flex flex-col items-center align-middle gap-2">
+            <div className="flex flex-col items-center justify-center align-middle gap-2 ml-[6%] md:ml-[0%] mr-[4%] md:mr-[0%]">
                 <div className="font-bold text-xl md:text-3xl text-blue-950">Our Partners</div>
-                <span className="text-sm md:text-md">We bring together a team of 1st class world partners to <br />
-                    provide our clients with top grade services in all aspects  <br />
+                <span className="text-sm md:text-md">We bring together a team of 1st class world partners to
+                    provide our clients with top grade services in all aspects 
                     of our solutions</span>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">
-                    <img src={veritas} alt="msImg"/>
-                    <img src={microsoft} alt="msImg"/>
-                    <img src={cisco} alt="nigImg"/>
-                    <img src={vmware} alt="msImg"/>
-                    <img src={lenovo} alt="msImg"/>
-                    <img src={idemia} alt="nigImg"/>
-                    <img src={hp} alt="msImg"/>
-                    <img src={neuro} alt="msImg" />                   
+                <div className="grid grid-cols-3 md:grid-cols-4 ml-[8%] md:ml-[0%] mr-[4%] md:mr-[0%] gap-2 mt-4 text-center items-center justify-center">
+                    <img src={veritas} alt="msImg" className="w-[50%] md:w-[100%]"/>
+                    <img src={microsoft} alt="msImg" className="w-[50%] md:w-[100%]"/>
+                    <img src={cisco} alt="nigImg" className="w-[50%] md:w-[100%]"/>
+                    <img src={vmware} alt="msImg" className="w-[50%] md:w-[100%]"/>
+                    <img src={lenovo} alt="msImg" className="w-[50%] md:w-[100%]"/>
+                    <img src={idemia} alt="nigImg" className="w-[50%] md:w-[100%]"/>
+                    <img src={hp} alt="msImg" className="w-[50%] md:w-[60%] h-[50%] md:h-[80%]"/>
+                    <img src={neuro} alt="msImg" className="w-[50%] md:w-[100%]" />                   
                 </div>
             </div>
         </div>

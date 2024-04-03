@@ -51,8 +51,8 @@ const CareerBody = () => {
                     <h2 className="text-sm font-bold mb-2">OUR CAREER LIST</h2>
                     <form>
 
-                    <div className="mt-4 flex gap-5">
-                        <div className="border p-4">
+                    <div className="mt-4 flex gap-5 ">
+                        <div className="border p-4 hover:bg-[#014d9811]">
                             <p
                                className="w-full py-2 text-black text-sm font-semibold">
                                 APPLICATIONS DEPARTMENT
@@ -75,7 +75,7 @@ const CareerBody = () => {
 
                         <div className="mt-2 flex gap-5">
 
-                            <div className="border p-4">
+                            <div className="border p-4 hover:bg-[#014d9811]">
                                 <p className="w-full py-2 text-black text-sm font-semibold">
                                     INFRASTRUCTURE DEPARTMENT
                                 </p>
@@ -90,7 +90,7 @@ const CareerBody = () => {
 
                         <div className="mt-2 flex gap-5">
 
-                            <div className="border p-4">
+                            <div className="border p-4 hover:bg-[#014d9811]">
                                 <p className="w-full py-2 text-black text-sm font-semibold">
                                     IT
                                 </p>
@@ -186,7 +186,7 @@ const CareerBody = () => {
 
                             {/* {formError && <p>{formError}</p>} */}
                             <button
-                                className="w-full flex items-center justify-center mt-4 bg-white text-[#014C98] font-semibold py-2 px-4 mb-2 rounded-full focus:outline-none border border-black focus:shadow-outline cursor-pointer"
+                                className="w-full flex items-center justify-center mt-4 bg-white text-[#014C98] hover:text-black font-semibold py-2 px-4 mb-2 rounded-full focus:outline-none border border-black focus:shadow-outline cursor-pointer"
                             // type="submit"
                             >
                                 {loading ? 'Sending...' : 'Send'}

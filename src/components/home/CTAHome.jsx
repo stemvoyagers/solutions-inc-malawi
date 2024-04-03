@@ -26,7 +26,7 @@ const CTAHome = () => {
                 </div>
 
                 <div className="group">
-                    <img className="h-52 md:h-auto w-full left-0" src={finger} alt="img1"/>
+                    <img className="h-66 md:h-auto w-full left-0" src={finger} alt="img1"/>
                 </div>
                 
             </div>

@@ -82,8 +82,8 @@ const NavLink = ({ to, children }) => {
 
 const MobileNavLink = ({ to, children, onClick }) => {
   return (
-    <div className="p-4 cursor-pointer duration-300" onClick={onClick}>
-      <p className="text-sm text-blue hover:bg-[#001049] hover:text-white border rounded-full pl-8 pr-8 pt-2 pb-2 flex justify-end">
+    <div className="p-4 cursor-pointer duration-300 bg-[#001049]" onClick={onClick}>
+      <p className="text-xs text-white border rounded-full pl-4 pr-4 pt-2 pb-2 flex items-center justify-center">
         <Link to={to}>{children}</Link>
       </p>
     </div>

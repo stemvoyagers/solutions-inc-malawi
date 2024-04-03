@@ -15,7 +15,7 @@ const CTACareer = () => {
                     CAREER MANAGEMENT
                 </div>
 
-                <div className="z-10">
+                <div className="hidden md:block z-10">
                     <img className="h-52 md:h-64 rounded-lg" src={face} alt="img1" />
                 </div>
             </div>
