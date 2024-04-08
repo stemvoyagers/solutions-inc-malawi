@@ -30,7 +30,7 @@ const Header = () => {
         <NavLink to="/services">Services</NavLink>
         <NavLink to="/career">Career</NavLink>
 
-        <div className="text-sm text-[blue] hover:bg-[#001049] hover:text-white border rounded-full pl-8 pr-8 pt-2 pb-2 flex justify-end">
+        <div className="text-sm text-[blue] hover:text-white hover:bg-[#001049] border rounded-full pl-8 pr-8 pt-2 pb-2 flex justify-end">
         <NavLink to="/contactUs">Contact Us</NavLink>
         </div>
         

@@ -1,6 +1,36 @@
 import { MdCheckCircleOutline } from "react-icons/md"
+import { useState, useEffect } from "react";
 
 const Mission = () => {
+    const [isVisible1, setIsVisible1] = useState(false);
+    const [isVisible2, setIsVisible2] = useState(false);
+    const [isVisible3, setIsVisible3] = useState(false);
+    const [isVisible4, setIsVisible4] = useState(false);
+    const [isVisible5, setIsVisible5] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+          const top1 = document.getElementById('div1').getBoundingClientRect().top;
+          const top2 = document.getElementById('div2').getBoundingClientRect().top;
+          const top3 = document.getElementById('div3').getBoundingClientRect().top;
+          const top4 = document.getElementById('div4').getBoundingClientRect().top;
+          const top5 = document.getElementById('div5').getBoundingClientRect().top;
+
+          const windowHeight = window.innerHeight;
+    
+          setIsVisible1(top1 < windowHeight);
+          setIsVisible2(top2 < windowHeight);
+          setIsVisible3(top3 < windowHeight);
+          setIsVisible4(top4 < windowHeight);
+          setIsVisible5(top5 < windowHeight);
+         
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
     return (
         <div className="bg-[#131316] pb-[4%] pt-[4%]">
             <div className="max-w-screen-xl mx-auto mt-4 md:mt-0 px-4 md:px-8 lg:px-12 xl:px-16 grid grid-cols-1 gap-y-10 text-center text-white">
@@ -23,7 +53,8 @@ const Mission = () => {
                     for our clients.  </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-[6%] md:gap-[10%] md:mt-8">
-                    <div className="bg-white rounded-md overflow-hidden shadow-md p-16 md:p-8 text-black" >
+                    <div id="div1" className={`bg-white rounded-md overflow-hidden shadow-md p-16 md:p-8 text-black transition-opacity scroll-smooth delay-150 ${isVisible1 ? 'opacity-100' : 'opacity-0'
+                        }`} >
                         <p className="text-md md:text-xl -mt-2 md:mt-8 text-[#0F90CA] font-bold">Quality Solutions</p>
                         <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Reliability <span><MdCheckCircleOutline /></span></p>
                         <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Availability<span><MdCheckCircleOutline /></span></p>
@@ -31,7 +62,8 @@ const Mission = () => {
                         <p className="text-xs md:text-sm text-justify mb-16 md:mb-0 mt-2 md:mt-4 flex items-center justify-between">Durability<span><MdCheckCircleOutline /></span></p>
                     </div>
 
-                    <div className="bg-white rounded-md overflow-hidden shadow-md p-12 md:p-8 text-black" >
+                    <div id="div2" className={`bg-white rounded-md overflow-hidden shadow-md p-12 md:p-8 text-black transition-opacity scroll-smooth delay-300 ${isVisible2 ? 'opacity-100' : 'opacity-0'
+                        }`} >
                         <p className="text-md md:text-xl -mt-2 md:mt-8 text-[#0F90CA] font-bold">Quality Solutions</p>
                         <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Reliability <span><MdCheckCircleOutline /></span></p>
                         <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Availability<span><MdCheckCircleOutline /></span></p>
@@ -39,7 +71,8 @@ const Mission = () => {
                         <p className="text-xs md:text-sm text-justify  mb-16 md:mb-0 mt-2 md:mt-4 flex items-center justify-between">Durability<span><MdCheckCircleOutline /></span></p>
                     </div>
 
-                    <div className="bg-white rounded-md overflow-hidden shadow-md p-12 md:p-8 text-black" >
+                    <div id="div3" className={`bg-white rounded-md overflow-hidden shadow-md p-12 md:p-8 text-black transition-opacity scroll-smooth delay-500 ${isVisible3 ? 'opacity-100' : 'opacity-0'
+                        }`} >
                         <p className="text-md md:text-xl -mt-2 md:mt-8 text-[#0F90CA] font-bold">Quality Solutions</p>
                         <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Reliability <span><MdCheckCircleOutline /></span></p>
                         <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Availability<span><MdCheckCircleOutline /></span></p>
@@ -50,7 +83,8 @@ const Mission = () => {
 
                 <div className="mt-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 flex-col gap-8" >
-                        <div className="text-center">
+                        <div id="div4" className={`text-center transition-opacity scroll-smooth delay-700 ${isVisible4 ? 'opacity-100' : 'opacity-0'
+                        }`} >
                             <p className="text-xl md:text-2xl font-bold">Our Misson</p>
                             <p className="text-xs md:text-sm text-justify mt-2">Our enrolment solutions provide a wide
                                 selection of customizable functionality
@@ -77,7 +111,8 @@ const Mission = () => {
                             </p>
                         </div>
 
-                        <div className="text-center mb-16 md:mb-0">
+                        <div id="div5" className={`text-center mb-16 md:mb-0 transition-opacity scroll-smooth delay-1000 ${isVisible5 ? 'opacity-100' : 'opacity-0'
+                        }`} >
                             <p className="text-xl md:text-2xl font-bold">Our Vision</p>
                             <p className="text-xs md:text-sm text-justify mt-2">Our enrolment solutions provide a wide
                                 selection of customizable functionality

@@ -6,32 +6,32 @@ const Hero = () => {
     const navigate = useNavigate()
 
     const [isVisible1, setIsVisible1] = useState(false);
-  const [isVisible2, setIsVisible2] = useState(false);
-  const [isVisible3, setIsVisible3] = useState(false);
-  const [isVisible4, setIsVisible4] = useState(false);
+    const [isVisible2, setIsVisible2] = useState(false);
+    const [isVisible3, setIsVisible3] = useState(false);
+    const [isVisible4, setIsVisible4] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const top1 = document.getElementById('div1').getBoundingClientRect().top;
-      const top2 = document.getElementById('div2').getBoundingClientRect().top;
-      const top3 = document.getElementById('div3').getBoundingClientRect().top;
-      const top4 = document.getElementById('div4').getBoundingClientRect().top;
-      const windowHeight = window.innerHeight;
+    useEffect(() => {
+        const handleScroll = () => {
+            const top1 = document.getElementById('div1').getBoundingClientRect().top;
+            const top2 = document.getElementById('div2').getBoundingClientRect().top;
+            const top3 = document.getElementById('div3').getBoundingClientRect().top;
+            const top4 = document.getElementById('div4').getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
 
-      setIsVisible1(top1 < windowHeight);
-      setIsVisible2(top2 < windowHeight);
-      setIsVisible3(top3 < windowHeight);
-      setIsVisible4(top4 < windowHeight);
-    };
+            setIsVisible1(top1 < windowHeight);
+            setIsVisible2(top2 < windowHeight);
+            setIsVisible3(top3 < windowHeight);
+            setIsVisible4(top4 < windowHeight);
+        };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
 
-  
+
     const handleClick = () => {
         if (window.location.pathname !== "/services") {
             navigate("/services");
@@ -44,7 +44,7 @@ const Hero = () => {
         }
     };
 
-   
+
     return (
         <div className="w-full">
             <div className="max-w-screen-xl mx-auto text-center items-center justify-center">
@@ -54,9 +54,9 @@ const Hero = () => {
                 </div>
 
                 <div className="max-w-screen-xl mx-auto py-10 md:py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[7%] md:gap-[6%] pr-12">
-                    <div  id="div1" className={`group cursor-pointer rounded-md relative 
+                    <div id="div1" className={`group cursor-pointer rounded-md relative 
                     overflow-hidden  w-[120%] h-[130%] bg-white p-8 grid-cols-1 text-center transition-opacity scroll-smooth delay-150 ${isVisible1 ? 'opacity-100' : 'opacity-0'
-          }`} >
+                        }`} >
                         <img
                             className="w-fit h-[50%] object-cover group-hover:scale-110 duration-500 rounded-md"
                             src={home2}
@@ -69,9 +69,9 @@ const Hero = () => {
                             employee enrolment to the public sector </p>
                         <p className="text-[#D85012] mt-4" onClick={handleAClick}>Learn more <span className="font-bold"> {'>'} </span> </p>
                     </div>
-                    <div  id="div2" className={`group cursor-pointer rounded-md relative 
+                    <div id="div2" className={`group cursor-pointer rounded-md relative 
                     overflow-hidden w-[120%] h-[130%] bg-white p-8 grid-cols-1 text-center transition-opacity scroll-smooth delay-200 ${isVisible2 ? 'opacity-100' : 'opacity-0'
-          }`} >
+                        }`} >
                         <img
                             className="w-fit h-[50%] object-cover group-hover:scale-110 duration-500 rounded-md"
                             src={home2}
@@ -84,9 +84,9 @@ const Hero = () => {
                             employee enrolment to the public sector </p>
                         <p className="text-[#D85012] mt-4" onClick={handleAClick}>Learn more <span className="font-bold"> {'>'} </span> </p>
                     </div>
-                    <div  id="div3" className={`group cursor-pointer rounded-md relative 
+                    <div id="div3" className={`group cursor-pointer rounded-md relative 
                     overflow-hidden  w-[120%] h-[130%] bg-white p-8 grid-cols-1 text-center transition-opacity scroll-smooth delay-300 ${isVisible3 ? 'opacity-100' : 'opacity-0'
-          }`} >
+                        }`} >
                         <img
                             className="w-fit h-[50%] object-cover group-hover:scale-110 duration-500 rounded-md"
                             src={home2}
@@ -100,9 +100,9 @@ const Hero = () => {
                         <p className="text-[#D85012] mt-4" onClick={handleAClick}>Learn more <span className="font-bold">{'>'} </span> </p>
                     </div>
 
-                    <div  id="div4" className={`group cursor-pointer rounded-md relative overflow-hidden  w-[120%] h-[130%] bg-white p-8 grid-cols-1 
+                    <div id="div4" className={`group cursor-pointer rounded-md relative overflow-hidden  w-[120%] h-[130%] bg-white p-8 grid-cols-1 
                     text-center transition-opacity scroll-smooth delay-500 ${isVisible4 ? 'opacity-100' : 'opacity-0'
-          }`} >
+                        }`} >
                         <img
                             className="w-fit h-[50%] object-cover group-hover:scale-110 duration-00 rounded-md"
                             src={home2}
