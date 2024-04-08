@@ -44,8 +44,7 @@ const Hero = () => {
         }
     };
 
-    // py-10 grid grid-cols-2 md:grid-cols-4 gap-[6%] pr-12"
-
+   
     return (
         <div className="w-full">
             <div className="max-w-screen-xl mx-auto text-center items-center justify-center">

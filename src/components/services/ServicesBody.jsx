@@ -1,8 +1,29 @@
 import { useNavigate } from "react-router-dom/dist";
 import { home2 } from "../../assets";
+import { useState, useEffect } from "react";
 
 const ServicesBody = () => {
     const navigate = useNavigate()
+    const [isVisible, setIsVisible] = useState(Array(8).fill(false));
+    
+    useEffect(() => {
+        const handleScroll = () => {
+            const windowHeight = window.innerHeight;
+            const topOffset = Array.from({length: 8}, (_, i) =>
+                document.getElementById(`div${i + 1}`).getBoundingClientRect().top 
+            )
+          
+          setIsVisible(topOffset.map(top => top < windowHeight));
+         
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+    
+    
     const handleClick = () => {
         if (window.location.pathname !== "/service") {
             navigate("/service");
@@ -19,7 +40,9 @@ const ServicesBody = () => {
 
                 <div className="max-w-screen-xl mx-auto py-10 mb-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pr-4 md:pr-12">
                 {[...Array(8)].map((_, idx) => (
-                        <div key={idx} className="group cursor-pointer border rounded-md relative overflow-hidden bg-white p-8 text-center">
+                        <div key={idx} id={`div${idx + 1}`} className={`group cursor-pointer border rounded-md relative overflow-hidden bg-white p-8
+                        text-center transition-opacity scroll-smooth delay-${idx * 100} ${isVisible[idx] ? 'opacity-100' : 'opacity-0'
+          }`} >
                             <img
                                 className="w-fit h-32 object-cover group-hover:scale-110 duration-500 rounded-md mb-4 mx-auto"
                                 src={home2}
