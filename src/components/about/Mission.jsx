@@ -53,7 +53,7 @@ const Mission = () => {
                     for our clients.  </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-[6%] md:gap-[10%] md:mt-8">
-                    <div id="div1" className={`bg-white rounded-md overflow-hidden shadow-md p-16 md:p-8 text-black transition-opacity scroll-smooth delay-150 ${isVisible1 ? 'opacity-100' : 'opacity-0'
+                    <div id="div1" className={`bg-white hover:scale-110 duration-500 rounded-md overflow-hidden shadow-md p-16 md:p-8 text-black transition-opacity scroll-smooth delay-150 ${isVisible1 ? 'opacity-100' : 'opacity-0'
                         }`} >
                         <p className="text-md md:text-xl -mt-2 md:mt-8 text-[#0F90CA] font-bold">Quality Solutions</p>
                         <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Reliability <span><MdCheckCircleOutline /></span></p>
@@ -62,22 +62,22 @@ const Mission = () => {
                         <p className="text-xs md:text-sm text-justify mb-16 md:mb-0 mt-2 md:mt-4 flex items-center justify-between">Durability<span><MdCheckCircleOutline /></span></p>
                     </div>
 
-                    <div id="div2" className={`bg-white rounded-md overflow-hidden shadow-md p-12 md:p-8 text-black transition-opacity scroll-smooth delay-300 ${isVisible2 ? 'opacity-100' : 'opacity-0'
+                    <div id="div2" className={`bg-white hover:scale-110 duration-500 rounded-md overflow-hidden shadow-md p-12 md:p-8 text-black transition-opacity scroll-smooth delay-300 ${isVisible2 ? 'opacity-100' : 'opacity-0'
                         }`} >
-                        <p className="text-md md:text-xl -mt-2 md:mt-8 text-[#0F90CA] font-bold">Quality Solutions</p>
-                        <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Reliability <span><MdCheckCircleOutline /></span></p>
-                        <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Availability<span><MdCheckCircleOutline /></span></p>
-                        <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Serviceability<span><MdCheckCircleOutline /></span></p>
-                        <p className="text-xs md:text-sm text-justify  mb-16 md:mb-0 mt-2 md:mt-4 flex items-center justify-between">Durability<span><MdCheckCircleOutline /></span></p>
+                        <p className="text-md md:text-xl -mt-2 md:mt-8 text-[#0F90CA] font-bold">Quality Delivery</p>
+                        <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">On-time Delivery <span><MdCheckCircleOutline /></span></p>
+                        <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Seamless<span><MdCheckCircleOutline /></span></p>
+                        <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Secure<span><MdCheckCircleOutline /></span></p>
+                        <p className="text-xs md:text-sm text-justify  mb-16 md:mb-0 mt-2 md:mt-4 flex items-center justify-between">Extensive Support<span><MdCheckCircleOutline /></span></p>
                     </div>
 
-                    <div id="div3" className={`bg-white rounded-md overflow-hidden shadow-md p-12 md:p-8 text-black transition-opacity scroll-smooth delay-500 ${isVisible3 ? 'opacity-100' : 'opacity-0'
+                    <div id="div3" className={`bg-white hover:scale-110 duration-500 rounded-md overflow-hidden shadow-md p-12 md:p-8 text-black transition-opacity scroll-smooth delay-500 ${isVisible3 ? 'opacity-100' : 'opacity-0'
                         }`} >
-                        <p className="text-md md:text-xl -mt-2 md:mt-8 text-[#0F90CA] font-bold">Quality Solutions</p>
-                        <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Reliability <span><MdCheckCircleOutline /></span></p>
-                        <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Availability<span><MdCheckCircleOutline /></span></p>
-                        <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Serviceability<span><MdCheckCircleOutline /></span></p>
-                        <p className="text-xs md:text-sm text-justify  mb-16 md:mb-0 mt-2 md:mt-4 flex items-center justify-between">Durability<span><MdCheckCircleOutline /></span></p>
+                        <p className="text-md md:text-xl -mt-2 md:mt-8 text-[#0F90CA] font-bold">Quality Results</p>
+                        <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Measurable Results <span><MdCheckCircleOutline /></span></p>
+                        <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Optimization<span><MdCheckCircleOutline /></span></p>
+                        <p className="text-xs md:text-sm text-justify mt-2 md:mt-4 flex items-center justify-between">Satisfaction<span><MdCheckCircleOutline /></span></p>
+                        <p className="text-xs md:text-sm text-justify  mb-16 md:mb-0 mt-2 md:mt-4 flex items-center justify-between">Innovation<span><MdCheckCircleOutline /></span></p>
                     </div>
                 </div>
 

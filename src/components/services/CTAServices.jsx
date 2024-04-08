@@ -21,7 +21,7 @@ const CTAServices = () => {
                     <p className="text-sm md:text-xl">
                         Zone is a regulated Blockchain network that enables payments and acceptance of
                         digital currencies. We are building one global network to pay anyone, through
-                        any means, in any currency..
+                        any means, in any currency.
                     </p>
                     
                 </div>
