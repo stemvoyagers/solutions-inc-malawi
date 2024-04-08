@@ -22,9 +22,12 @@ import two from "../assets/carouselPictures/two.jpg"
 import three from "../assets/carouselPictures/three.jpg"
 import four from "../assets/carouselPictures/four.jpg"
 import five from "../assets/carouselPictures/five.jpg"
+import jideAgbaje from "../assets/jideAgbaje.jpg"
+
 
 
 export {
+    jideAgbaje,
     one,
     two,
     three,
