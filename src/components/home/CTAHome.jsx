@@ -10,7 +10,7 @@ const CTAHome = () => {
     const textToType = `Identiko is a one-stop shop for digital 
   identity, verification, and technology solutions`;
     const typingSpeed = 100;
-    const repeatDelay = 2000;
+    // const repeatDelay = 2000;
 
     useEffect(() => {
         let index = 0
@@ -19,22 +19,22 @@ const CTAHome = () => {
             setTypedText(textToType.substring(0, index + 1));
             index++
             if (index === textToType.length) {
-                clearInterval(typingInterval);
+                // clearInterval(typingInterval);
 
-                setTimeout(() => {
-                    setTypedText('')
+                // setTimeout(() => {
+                //     setTypedText('')
                     index = 0
 
-                    setInterval(() => {
-                        setTypedText(textToType.substring(0, index + 1));
-                        index++;
-                        if (index === textToType.length) {
-                            clearInterval(typingInterval);
+                    // setInterval(() => {
+                    //     setTypedText(textToType.substring(0, index + 1));
+                    //     index++;
+                    //     if (index === textToType.length) {
+                    //         clearInterval(typingInterval);
                         }
                     }, typingSpeed);
-                }, repeatDelay);
-            }
-        }, typingSpeed);
+        //         // }, repeatDelay);
+        //     }
+        // }, typingSpeed);
         return () => clearInterval(typingInterval);
     }, [textToType]);
     return (
