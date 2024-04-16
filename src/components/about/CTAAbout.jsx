@@ -10,7 +10,7 @@ const CTAAbout = () => {
                 </div>
 
                 <div>
-                    <img className="h-52 md:h-64 border rounded-lg border:bg-black" src={robot} alt="img1" />
+                    <img className="h-52 md:h-96 " src={robot} alt="img1" />
                 </div>
             </div>
         </div>

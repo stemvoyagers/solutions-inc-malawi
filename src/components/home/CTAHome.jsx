@@ -7,8 +7,8 @@ import Hero from "./Hero";
 const CTAHome = () => {
     const [typedText, setTypedText] = useState('')
 
-    const textToType = `Identiko is a one-stop shop for digital 
-  identity, verification, and technology solutions`;
+    const textToType = `Identiko Is A One-Stop Shop For Digital 
+  Identity, Verification, And Technology Solutions`;
     const typingSpeed = 100;
 
     useEffect(() => {
@@ -27,7 +27,7 @@ const CTAHome = () => {
         <div className="w-full bg-center relative bg-[#001049] px-4 md:px-0 pb-8 md:pb-[4%] pt-8 md:pt-[4%]">
             <div className="w-full grid grid-cols-1 md:grid-cols-2 h-fit gap-y-10 justify-between items-center">
                 <div className="group text-white gap-20 z-10">
-                    <h2 className="font-semibold text-[150%] md:text-[250%] mb-2 text-white animate-type">
+                    <h2 className="font-semibold text-[150%] md:text-[280%] mb-2 text-white animate-type">
                         {typedText} <span className="inline-block w-3 h-3 bg-white"></span>
                     </h2>
                     <br /> <br />

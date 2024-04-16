@@ -1,4 +1,4 @@
-import GallerySwipe from "../components/home/GallerySwipe"
+// import GallerySwipe from "../components/home/GallerySwipe"
 import BFooterHome from "../components/home/BFooterHome"
 import CTAHome from "../components/home/CTAHome"
 // import VdHome from "../components/home/VdHome"
@@ -8,7 +8,7 @@ const Home = () => {
     <div className="overflow-x-hidden overflow-y-hidden">
      <CTAHome />
       {/* <VdHome /> */}
-      <GallerySwipe/>
+      {/* <GallerySwipe/> */}
       <BFooterHome />
     </div>
   )

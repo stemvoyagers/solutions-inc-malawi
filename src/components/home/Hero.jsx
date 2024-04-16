@@ -49,7 +49,7 @@ const Hero = () => {
         <div className="w-full">
             <div className="max-w-screen-xl mx-auto text-center items-center justify-center">
                 <div className="text-center text-white">
-                    <p className="text-md md:text-2xl mt-8  font-bold">OUR SERVICES</p>
+                    <p className="text-md md:text-3xl mt-8  font-bold">OUR SERVICES</p>
                     <p className="text-xs md:text-xl">Our solutions are all about simplification and optimisation </p>
                 </div>
 
