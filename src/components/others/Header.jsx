@@ -27,8 +27,8 @@ const Header = () => {
         />
       </div>
 
-      <div className="hidden md:flex items-center">
-        <div className="flex justify-between items-center gap-28 -translate-x-[40%]">
+      <div className="hidden md:flex items-center justify-center">
+        <div className="flex justify-center items-center gap-24 -translate-x-[80%]">
           <NavLink to="/about">About Us</NavLink>
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/career">Career</NavLink>

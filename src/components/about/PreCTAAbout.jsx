@@ -26,10 +26,10 @@ const PreCTAAbout = () => {
                     </p>
 
                     <div className="flex gap-[10%] text-center text-xs md:text-xl w-full justify-center mb-4 md:mb-0 items-center">
-                        <button className="bg-[#0F90CA] border rounded-full px-4 py-2 md:p-3 text-white pl-2 pr-2">Learn more</button>
+                        <button className="bg-[#0F90CA] hover:bg-[#ffffff] text-[#ffffff] hover:text-[#0F90CA] border rounded-full px-4 py-2 md:p-3 pl-2 pr-2">Learn more</button>
                        
                        <Link to = '/contactUs'> 
-                       <button className="bg-[#0F90CA] border rounded-full px-4 py-2 md:p-3 text-white">Contact Us</button></Link>
+                       <button className="bg-[#0F90CA] hover:bg-[#ffffff] text-[#ffffff] hover:text-[#0F90CA] border rounded-full px-4 py-2 md:p-3">Contact Us</button></Link>
 
                     </div>
                 </div>
