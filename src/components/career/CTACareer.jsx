@@ -12,7 +12,7 @@ const CTACareer = () => {
 
             <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-8 md:gap-x-20 px-4 md:px-0">
                 <div className="font-semibold text-[150%] md:text-[200%] md:text-md mb-2 text-white z-10 text-center md:text-left" >
-                    CAREER MANAGEMENT
+                    CAREER
                 </div>
 
                 <div className="hidden md:block z-10">

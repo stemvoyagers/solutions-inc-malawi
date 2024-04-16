@@ -22,8 +22,7 @@ const Footer = () => {
 
                 <div className="flex flex-col items-center align-middle gap-2 md:gap-4">
                     <div className="font-bold text-md md:text-xl">Get In Touch</div>
-                    <span className="border w-fit bg-blue-900 text-white hover:bg-blue-600 font-bold rounded-3xl p-2 cursor-pointer">Request Demo</span>
-                    <span className="flex items-center gap-2 cursor-pointer">
+                     <span className="flex items-center gap-2 cursor-pointer">
                         <MdOutlineCall />
                         <span>+2348000000000</span>
                     </span>
@@ -35,7 +34,7 @@ const Footer = () => {
                         <MdOutlineLocationOn />
                         <span>Plot 16, Jobi Fele way, Alausa, Ikeja, Lagos</span>
                     </span>
-                    <div className="flex gap-8 cursor-pointer">
+                    <div className="flex gap-8 cursor-pointer animate-bounce">
                         <MdFacebook />
                         <FaInstagram />
                         <FaXTwitter />
@@ -48,7 +47,6 @@ const Footer = () => {
                 <div className="flex flex-col items-center align-middle gap-2 md:gap-4">
                     <div className="font-bold text-md md:text-xl">Resources</div>
                     <span className="cursor-pointer">Success Stories</span>
-                    <span className="underline cursor-pointer">Watch a Demo</span>
                     <Link to = '/about'><span className="cursor-pointer">Partners</span></Link>
                 </div>
             </div>

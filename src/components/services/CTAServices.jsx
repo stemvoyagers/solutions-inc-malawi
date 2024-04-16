@@ -14,9 +14,9 @@ const CTAServices = () => {
 
             <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-x-20 mt-10 mb-10 z-10 justify-between items-center">
                 <div className="group text-white gap-10 z-10">
-                    <h2 className="font-semibold text-[150%] md:text-[300%] md:mb-2 text-[#D85012] ">
-                        Next generation <br />
-                        payments infrastructure
+                    <h2 className="font-semibold text-[150%] md:text-[300%] md:mb-2 text-white ">
+                        Secure Your Future <br />
+                        With Advanced Biometrics Solution
                     </h2> <br /> <br />
                     <p className="text-sm md:text-xl">
                         Zone is a regulated Blockchain network that enables payments and acceptance of

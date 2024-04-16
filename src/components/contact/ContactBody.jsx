@@ -1,4 +1,52 @@
+import { useState } from "react";
 const ContactBody = () => {
+    const [formData, setFormData] = useState({
+        service:"",
+        name:"",
+        phone:"",
+        email:"",
+        message:"",
+
+    })
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+            if (response.ok) {
+                // Reset form after successful submission
+                setFormData({
+                    service: "",
+                    name: "",
+                    phone: "",
+                    email: "",
+                    message: "",
+                });
+                alert("Form submitted successfully!");
+            } else {
+                alert("Failed to submit form. Please try again later.");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            alert("An error occurred while submitting the form. Please try again later.");
+        }
+    };
+
+
 
     return (
         <div className="w-full pb-20 pt-20 px-4 md:px-0">
@@ -57,7 +105,7 @@ const ContactBody = () => {
                 <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0">
 
                     <form
-                    //   onSubmit={handleSubmit}
+                      onSubmit={handleSubmit}
                     >
                         <div className="mb-4 justify-between bg-[#001049] p-8 rounded-lg">
                             <h2 className="text-sm font-bold mb-2 text-center text-white">Request a Quote</h2>
@@ -65,8 +113,9 @@ const ContactBody = () => {
                             <div className="mt-4 mb-4">
                                 <select
                                     type="text"
-                                    name="country"
-                                    // onChange={(e) => handleValueChange("country", e.target.value)}
+                                    name="service"
+                                    required
+                                    onChange={(e) => handleInputChange("service", e.target.value)}
                                     className="w-full bg-[#F7F8FA] border border-[#7F9395] rounded-md focus:outline-none focus:border-[#1F6FE2] text-xs p-[3%]"
                                 >
                                     <option value="Select a Service">OUR SERVICES</option>
@@ -84,18 +133,18 @@ const ContactBody = () => {
                                 name="name"
                                 type="text"
                                 placeholder="Name"
-                                // value={formData.name}
-                                // onChange={handleInputChange}
+                                value={formData.name}
+                                onChange={handleInputChange}
                                 required
                             />
 
                             <input
                                 className="mb-4 shadow appearance-none border cursor-pointer  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                name="phoneNumber"
+                                name="phone"
                                 type="text"
                                 placeholder="Phone Number"
-                                // value={formData.phoneNumber}
-                                // onChange={handleInputChange}
+                                value={formData.phoneNumber}
+                                onChange={handleInputChange}
                                 required
                             />
 
@@ -104,8 +153,8 @@ const ContactBody = () => {
                                 name="email"
                                 type="email"
                                 placeholder="Email"
-                                // value={formData.email}
-                                // onChange={handleInputChange}
+                                value={formData.email}
+                                onChange={handleInputChange}
                                 required
                             />
 
@@ -114,12 +163,12 @@ const ContactBody = () => {
                                 name="message"
                                 type="text"
                                 placeholder="Message"
-                                // value={formData.message}
-                                // onChange={handleInputChange}
+                                value={formData.message}
+                                onChange={handleInputChange}
                                 required
                             />
 
-                            {/* {formError && <p>{formError}</p>} */}
+                           
                             <button
                                 className="w-full flex items-center justify-center mt-4 bg-white text-[#014C98] hover:text-black font-semibold py-2 px-4 mb-2 rounded-full focus:outline-none border border-black focus:shadow-outline cursor-pointer"
                                 type="submit"

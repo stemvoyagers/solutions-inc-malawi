@@ -14,7 +14,7 @@ const CTAService = () => {
 
             <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-x-20 mt-10 mb-10 z-10 justify-between items-center">
                 <div className="group text-white gap-10 z-10">
-                    <h2 className="font-semibold text-[200%] md:text-[300%] mb-2 text-[#D85012] ">
+                    <h2 className="font-semibold text-[200%] md:text-[300%] mb-2 text-white ">
                         Mobile Application <br />
                         Services
                     </h2> <br /> <br />

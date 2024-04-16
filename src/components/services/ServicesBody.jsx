@@ -53,7 +53,7 @@ const ServicesBody = () => {
                                 Our solutions provide a wide selection of customizable functionality for our clients.
                                 From the private sector for employee enrollment to the public sector.
                             </p>
-                        <p className="text-[#D85012] mt-4" onClick={handleClick}>Learn more <span className="font-bold">{'>'} </span> </p>
+                        <p className="text-[#001049] mt-4" onClick={handleClick}>Learn more <span className="font-bold">{'>'} </span> </p>
                     </div>
                     ))}
                 </div>

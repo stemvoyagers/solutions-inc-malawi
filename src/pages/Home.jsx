@@ -5,12 +5,12 @@ import CTAHome from "../components/home/CTAHome"
 
 const Home = () => {
   return (
-    <>
+    <div className="overflow-x-hidden overflow-y-hidden">
      <CTAHome />
       {/* <VdHome /> */}
       <GallerySwipe/>
       <BFooterHome />
-    </>
+    </div>
   )
 }
 
