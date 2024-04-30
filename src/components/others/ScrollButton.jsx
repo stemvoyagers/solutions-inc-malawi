@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { MdNorth } from "react-icons/md";
+import { MdArrowDropUp } from "react-icons/md";
 
 const ScrollButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,9 +31,9 @@ const ScrollButton = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-5 z-50 right-5 bg-black border hover:bg-[#001049d7] text-white hover:text-white p-3 rounded-full shadow-md transition-all duration-300"
+          className="fixed bottom-5 z-50 right-5 bg-black  hover:bg-[#001049d7] text-white hover:text-white rounded-full -translate-y-20 shadow-md transition-all duration-300"
         >
-          <MdNorth />
+          <MdArrowDropUp className="w-10 h-10"/>
         </button>
       )}
     </>

@@ -31,7 +31,7 @@ const ServicesBody = () => {
     };
 
     return (
-        <div className="w-full shadow-2xl px-4 md:px-8 lg:px-12 xl:px-16">
+        <div className="w-full px-4 md:px-8 lg:px-12 xl:px-16">
             <div className="max-w-screen-xl mx-auto text-center mt-12 items-center justify-center">
                 <div className="text-center text-black">
                     <p className="text-md md:text-2xl mt-8  font-bold">OUR SERVICES</p>
@@ -40,9 +40,9 @@ const ServicesBody = () => {
 
                 <div className="max-w-screen-xl mx-auto py-10 mb-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pr-4 md:pr-12">
                 {[...Array(8)].map((_, idx) => (
-                        <div key={idx} id={`div${idx + 1}`} className={`group cursor-pointer border duration-500 rounded-md relative overflow-hidden bg-white p-8
+                        <div key={idx} id={`div${idx + 1}`} onClick={handleClick} className={`group cursor-pointer border duration-500 rounded-md relative overflow-hidden bg-white p-8
                         text-center transition-all scroll-smooth ${isVisible[idx] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
-          }`} >
+          }`}  >
                             <img
                                 className="w-fit h-32 object-cover group-hover:scale-110 duration-500 rounded-md mb-4 mx-auto"
                                 src={home2}
@@ -53,7 +53,7 @@ const ServicesBody = () => {
                                 Our solutions provide a wide selection of customizable functionality for our clients.
                                 From the private sector for employee enrollment to the public sector.
                             </p>
-                        <p className="text-[#001049] mt-4" onClick={handleClick}>Learn more <span className="font-bold">{'>'} </span> </p>
+                       
                     </div>
                     ))}
                 </div>

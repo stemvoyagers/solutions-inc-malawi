@@ -15,6 +15,7 @@ import Privacy from "./pages/Privacy";
 import Isms from "./pages/Isms";
 import ContactPage from "./pages/ContactPage";
 import AService from "./pages/AService";
+import PolicyImages from "./components/others/PolicyImages";
 
 const Layout = () => {
 
@@ -23,7 +24,7 @@ const Layout = () => {
       {<Header />}
       <ScrollRestoration />
       <Outlet />
-      {<Footer />}
+      {<Footer />} 
     </div>
   );
 };
@@ -75,6 +76,7 @@ const App = () => {
     <div className="font-bodyFont">
       <RouterProvider router={router} />
       <ScrollButton />
+      <PolicyImages />
     </div>
   );
 }

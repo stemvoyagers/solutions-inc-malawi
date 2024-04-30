@@ -23,10 +23,29 @@ import three from "../assets/carouselPictures/three.jpg"
 import four from "../assets/carouselPictures/four.jpg"
 import five from "../assets/carouselPictures/five.jpg"
 import jideAgbaje from "../assets/jideAgbaje.jpg"
+import Sunset from "../assets/Sunset.mp4"
+import off1 from "../assets/off1.jpg"
+import off2 from "../assets/off2.jpg"
+import off3 from "../assets/off3.jpg"
+import off4 from "../assets/off4.jpg"
+import off5 from "../assets/off5.jpg"
+import off6 from "../assets/off6.jpg"
+import off7 from "../assets/off7.jpg"
+import off8 from "../assets/off8.jpg"
+
 
 
 
 export {
+    off1,
+    off2,
+    off3,
+    off4,
+    off5,
+    off6,
+    off7,
+    off8,
+    Sunset,
     jideAgbaje,
     one,
     two,

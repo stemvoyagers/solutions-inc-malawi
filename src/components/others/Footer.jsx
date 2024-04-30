@@ -1,6 +1,6 @@
 import { MdFacebook, MdOutlineCall, MdOutlineEmail, MdOutlineLocationOn } from "react-icons/md";
 import { FaInstagram, FaLinkedin, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
-import { msPix, nigPix } from "../../assets";
+// import { msPix, nigPix } from "../../assets";
 import { Link } from "react-router-dom";
 
 
@@ -13,11 +13,11 @@ const Footer = () => {
                     <div className="font-bold text-md md:text-xl">Compliance</div>
                     <Link to = '/isms'><span className="cursor-pointer">ISO Policy</span></Link>
                     <Link to = '/privacy'><span className="cursor-pointer">Privacy Policy</span></Link>
-                    <div className="flex justify-center gap-2">
+                    {/* <div className="flex justify-center gap-2">
                         <img src={msPix} alt="msImg" className="w-8 h-10" />
                         <img src={msPix} alt="msImg" className="w-8 h-10" />
                         <img src={nigPix} alt="nigImg" className="w-8 h-10" />
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="flex flex-col items-center align-middle gap-2 md:gap-4">

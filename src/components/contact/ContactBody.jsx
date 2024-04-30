@@ -173,7 +173,7 @@ const ContactBody = () => {
                                 className="w-full flex items-center justify-center mt-4 bg-white text-[#014C98] hover:text-black font-semibold py-2 px-4 mb-2 rounded-full focus:outline-none border border-black focus:shadow-outline cursor-pointer"
                                 type="submit"
                             >
-                                Request Free Quote
+                                Submit
                             </button>
                         </div>
                     </form>

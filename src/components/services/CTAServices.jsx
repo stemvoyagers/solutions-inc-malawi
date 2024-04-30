@@ -1,33 +1,26 @@
 
-import { circular, bg } from "../../assets";
+import { off2 } from "../../assets";
 
 const CTAServices = () => {
     return (
         <div className="bg-repeat bg-center relative py-4 md:py-0 w-full z-1 px-4 md:px-0"
             style={{
-                backgroundImage: `url(${bg})`,
+                backgroundImage: `url(${off2})`,
                 position: 'relative',
             }}
-        >
-
-            <div className="absolute inset-0 bg-[#001049] opacity-95"></div>
-
-            <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-x-20 mt-10 mb-10 z-10 justify-between items-center">
-                <div className="group text-white gap-10 z-10">
-                    <h2 className="font-semibold text-[150%] md:text-[300%] md:mb-2 text-white ">
+        >          
+            <div className="text-white max-w-screen-xl mx-auto mt-20 mb-20 z-10 ">
+                <div className="group gap-10 z-10 flex flex-col justify-center items-center text-center">
+                    <div className="font-semibold text-[150%] md:text-[300%] md:mb-2 ">
                         Secure Your Future <br />
                         With Advanced Biometrics Solution
-                    </h2> <br /> <br />
-                    <p className="text-sm md:text-xl">
-                        Zone is a regulated Blockchain network that enables payments and acceptance of
-                        digital currencies. We are building one global network to pay anyone, through
-                        any means, in any currency.
-                    </p>
-                    
-                </div>
-
-                <div className="group z-10">
-                    <img className="h-52 md:h-96 w-full" src={circular} alt="img1" />
+                    </div> 
+                    <div className="text-sm md:text-xl w-fit text-center">
+                        Zone is a regulated Blockchain network that enables<br/> 
+                        payments and acceptance of digital currencies. We are <br/>
+                        building one global network to pay anyone, through any  <br/>
+                        means, in any currency.
+                    </div>                   
                 </div>
             </div>
         </div>
@@ -35,3 +28,6 @@ const CTAServices = () => {
 };
 
 export default CTAServices;
+
+
+  {/* <div className="absolute inset-0 bg-[#ffffff] opacity-0"></div> */}
