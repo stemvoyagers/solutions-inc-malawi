@@ -32,11 +32,15 @@ import off5 from "../assets/off5.jpg"
 import off6 from "../assets/off6.jpg"
 import off7 from "../assets/off7.jpg"
 import off8 from "../assets/off8.jpg"
+import aboutUsPic from "../assets/aboutUsPic.jpg"
+import careerPic from "../assets/careerPic.jpg"
 
 
 
 
 export {
+    careerPic,
+    aboutUsPic,
     off1,
     off2,
     off3,

@@ -4,7 +4,7 @@ const Partners = () => {
     return (
         <div className="mb-12 mt-12 text-center">
          <div className="relative">
-                    <div className="absolute w-full border-b-2 border-[#001049] rounded-full mb-4" style={{ top: "51%" }}></div>
+                    <div className="absolute w-full border-b-2 bg-[#001049]  rounded-full mb-4" style={{ top: "51%" }}></div>
                 </div>
             <div className="flex flex-col items-center justify-center align-middle gap-2 ml-[6%] md:ml-[0%] mr-[4%] md:mr-[0%]">
                 <div className="font-bold text-xl md:text-3xl text-blue-950 mt-12">Our Partners</div>

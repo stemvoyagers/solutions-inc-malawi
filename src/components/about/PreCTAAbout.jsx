@@ -1,19 +1,20 @@
 import { Link } from "react-router-dom";
-import { off6 } from "../../assets";
+import { aboutUsPic } from "../../assets";
+        
 
 const PreCTAAbout = () => {
     return (
-        <div className="bg-repeat bg-center h-fit relative pb-[4%] pt-[4%] w-full z-1"
+        <div className="bg-no-repeat bg-center bg-cover relative md:py-[12%] w-full z-1"
         style={{
-            backgroundImage: `url(${off6})`,
-            position: 'relative',
+            backgroundImage: `url(${aboutUsPic})`,
+            position: 'relative',            
         }}
     >
         <div className="absolute inset-0 bg-black opacity-0"></div>
 
 
             <div className="max-w-screen-xl mx-auto grid md:grid-cols-1 gap-y-10 text-center px-4 md:px-8 lg:px-12 xl:px-16">
-                <div className="flex flex-col items-center justify-center text-[#001049] z-10">
+                <div className="flex flex-col items-center justify-center text-[#ffffff] z-10">
                     <h2 className="font-bold text-[150%] md:text-[300%] mt-4 md:mt-0 mb-2  ">
                         Pioneering Biometric <br />
                         Excellence For  <br />
