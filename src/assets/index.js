@@ -36,11 +36,13 @@ import aboutUsPic from "../assets/aboutUsPic.jpg"
 import careerPic from "../assets/careerPic.jpg"
 import aboutUs from "../assets/aboutUs.jpg"
 import logoPicu from "../assets/logoPicu.png"
+import contactIde from "../assets/contactIde.jpg"
 
 
 
 
 export {
+    contactIde,
     logoPicu,
     aboutUs,
     careerPic,

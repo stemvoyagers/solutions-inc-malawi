@@ -1,15 +1,15 @@
-import { careerPic } from "../../assets";
+import { contactIde } from "../../assets";
 
 const CTAContact = () => {
     return (
         <div className="bg-repeat bg-center bg-cover relative md:py-[12%] w-full z-1"
             style={{
-                backgroundImage: `url(${careerPic})`,
+                backgroundImage: `url(${contactIde})`,
                 position: 'relative',
             }}
         >
 
-            <div className="text-white max-w-screen-xl mx-auto mt-28 mb-28 z-10 ">
+            <div className="text-[#003997] max-w-screen-xl mx-auto mt-28 mb-28 z-10 ">
                 <div className="group gap-10 z-10 flex flex-col justify-center items-center text-center">
                     <div className="text-[150%] md:text-[300%] md:mb-2 font-bold ">
                         Contact Us  
