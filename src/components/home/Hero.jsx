@@ -47,48 +47,48 @@ const Hero = () => {
         <div className="w-full">
             <div className="max-w-screen-xl mx-auto text-center items-center justify-center">
                 <div className="text-center text-black">
-                    <p className="text-md md:text-3xl mt-8 md:mt-24  font-bold">OUR SERVICES</p>
+                    <p className="text-xl md:text-3xl mt-12 md:mt-24  font-bold">OUR SERVICES</p>
                     <p className="text-xs md:text-xl">Our solutions are all about simplification and optimisation </p>
                 </div>
 
                 <div className="max-w-screen-xl mx-auto py-10 md:py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[7%] md:gap-[6%]  pl-12 md:pl-0 pr-12 md:pr-12">
                     <div id="div1" className={`group cursor-pointer relative duration-500 border rounded-md
-                        overflow-hidden bg-white p-8 grid-cols-1 text-center transition-all scroll-smooth ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'
+                        overflow-hidden bg-white hover:text-[#003997] shadow-md hover:shadow-xl p-8 grid-cols-1 text-center transition-all scroll-smooth ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'
                         }`} onClick={handleAClick}>
                         <AiFillEyeInvisible className="w-full  h-16" />
                         <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 font-bold">TECH SOLUTIONS </p>
-                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 ">Our solutions are all about
+                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 hover:text-[#000000]">Our solutions are all about
                             simpl Our solutions are all about simplificationification
                         </p>
                     </div>
                     <div id="div2" className={`group cursor-pointer border rounded-md relative 
-                    overflow-hidden bg-white p-8 grid-cols-1 text-center duration-500 transition-all scroll-smooth ${isVisible2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'
+                        overflow-hidden bg-[#ffffff] hover:text-[#003997] shadow-md hover:shadow-xl p-8 grid-cols-1 text-center duration-500 transition-all scroll-smooth ${isVisible2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'
                         }`} onClick={handleAClick}>
 
                         <AiFillEyeInvisible className="w-full h-16" />
                         <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 font-bold">ENROLMENT SERVICES</p>
-                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0">Our solutions are all about
+                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 hover:text-[#000000]">Our solutions are all about
                             simpl Our solutions are all about simplificationification
                         </p>
                     </div>
                     <div id="div3" className={`group cursor-pointer border rounded-md relative 
-                    overflow-hidden bg-white p-8 grid-cols-1 text-center duration-500 transition-all scroll-smooth ${isVisible3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'
+                    overflow-hidden bg-[#ffffff] hover:text-[#003997] shadow-md hover:shadow-xl p-8 grid-cols-1 text-center duration-500 transition-all scroll-smooth ${isVisible3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'
                         }`} onClick={handleAClick} >
 
                         <AiFillEyeInvisible className="w-full  h-16" />
                         <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 font-bold">IDENTITY SOLUTIONS</p>
-                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0">Our solutions are all about
+                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 hover:text-[#000000]">Our solutions are all about
                             simpl Our solutions are all about simplificationification
                         </p>
                     </div>
 
-                    <div id="div4" className={`group cursor-pointer border rounded-md relative overflow-hidden bg-white p-8 grid-cols-1 
+                    <div id="div4" className={`group cursor-pointer border rounded-md relative overflow-hidden bg-[#ffffff] hover:text-[#003997] shadow-md hover:shadow-xl p-8 grid-cols-1 
                     text-center transition-all scroll-smooth duration-500 ${isVisible4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'
                         }`} onClick={handleAClick}>
 
                         <AiFillEyeInvisible className="w-full h-16" />
                         <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 font-bold">SOFTWARE APPLICATION</p>
-                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0">Our solutions are all about
+                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 hover:text-[#000000]">Our solutions are all about
                             simpl Our solutions are all about simplificationification
                         </p>
                     </div>
