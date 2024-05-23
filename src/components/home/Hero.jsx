@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom/dist";
-import { home2 } from "../../assets";
 import { useState, useEffect } from "react";
+import { AiFillEyeInvisible } from "react-icons/ai";
 
 const Hero = () => {
     const navigate = useNavigate()
@@ -30,8 +30,6 @@ const Hero = () => {
         };
     }, []);
 
-
-
     const handleClick = () => {
         if (window.location.pathname !== "/services") {
             navigate("/services");
@@ -54,46 +52,45 @@ const Hero = () => {
                 </div>
 
                 <div className="max-w-screen-xl mx-auto py-10 md:py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[7%] md:gap-[6%]  pl-12 md:pl-0 pr-12 md:pr-12">
-                    <div id="div1" className={`group cursor-pointer relative duration-500 border rounded-3xl
-                    overflow-hidden bg-white p-8 grid-cols-1 text-center transition-all scroll-smooth ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'
+                    <div id="div1" className={`group cursor-pointer relative duration-500 border rounded-md
+                        overflow-hidden bg-white p-8 grid-cols-1 text-center transition-all scroll-smooth ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'
                         }`} onClick={handleAClick}>
-                        <img
-                            className="w-fit object-cover group-hover:scale-110 duration-500 rounded-md"
-                            src={home2}
-                            alt='heroImg'
-                        />
-                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 text-[#003997] font-bold">TECH SOLUTIONS </p>
+                        <AiFillEyeInvisible className="w-full  h-16" />
+                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 font-bold">TECH SOLUTIONS </p>
+                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 ">Our solutions are all about
+                            simpl Our solutions are all about simplificationification
+                        </p>
                     </div>
-                    <div id="div2" className={`group cursor-pointer border rounded-3xl relative 
+                    <div id="div2" className={`group cursor-pointer border rounded-md relative 
                     overflow-hidden bg-white p-8 grid-cols-1 text-center duration-500 transition-all scroll-smooth ${isVisible2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'
                         }`} onClick={handleAClick}>
-                        <img
-                            className="w-fit object-cover group-hover:scale-110 duration-500 rounded-md"
-                            src={home2}
-                            alt='heroImg'
-                        />
-                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 text-[#003997] font-bold">ENROLMENT SERVICES</p>
+
+                        <AiFillEyeInvisible className="w-full h-16" />
+                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 font-bold">ENROLMENT SERVICES</p>
+                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0">Our solutions are all about
+                            simpl Our solutions are all about simplificationification
+                        </p>
                     </div>
-                    <div id="div3" className={`group cursor-pointer border rounded-3xl relative 
+                    <div id="div3" className={`group cursor-pointer border rounded-md relative 
                     overflow-hidden bg-white p-8 grid-cols-1 text-center duration-500 transition-all scroll-smooth ${isVisible3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'
                         }`} onClick={handleAClick} >
-                        <img
-                            className="w-fit object-cover group-hover:scale-110 duration-500 rounded-md"
-                            src={home2}
-                            alt='heroImg'
-                        />
-                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 text-[#003997] font-bold">IDENTITY SOLUTIONS</p>
+
+                        <AiFillEyeInvisible className="w-full  h-16" />
+                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 font-bold">IDENTITY SOLUTIONS</p>
+                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0">Our solutions are all about
+                            simpl Our solutions are all about simplificationification
+                        </p>
                     </div>
 
-                    <div id="div4" className={`group cursor-pointer border rounded-3xl relative overflow-hidden bg-white p-8 grid-cols-1 
+                    <div id="div4" className={`group cursor-pointer border rounded-md relative overflow-hidden bg-white p-8 grid-cols-1 
                     text-center transition-all scroll-smooth duration-500 ${isVisible4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'
                         }`} onClick={handleAClick}>
-                        <img
-                            className="w-fit object-cover group-hover:scale-110 duration-500 rounded-md"
-                            src={home2}
-                            alt='heroImg'
-                        />
-                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 text-[#003997] font-bold">SOFTWARE APPLICATION</p>
+
+                        <AiFillEyeInvisible className="w-full h-16" />
+                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 font-bold">SOFTWARE APPLICATION</p>
+                        <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0">Our solutions are all about
+                            simpl Our solutions are all about simplificationification
+                        </p>
                     </div>
                 </div>
 

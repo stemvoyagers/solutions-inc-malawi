@@ -105,7 +105,7 @@ const NavLink = ({ to, children }) => {
       <p
         className={`text-sm text-blue ${
           isActive ? "text-white bg-[#003997]" : "hover:bg-[#003997] hover:bottom-1 hover:text-white"
-        } pl-4 pr-4 pt-2 pb-2 rounded-full underline`}
+        } pl-4 pr-4 pt-2 pb-2 rounded-full`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         onClick={handleClick}
