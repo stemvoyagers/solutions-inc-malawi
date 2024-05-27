@@ -15,7 +15,7 @@ const Header = () => {
   };
 
   return (
-    <div className="overflow-x-hidden top-0 flex items-center text-[#003997] justify-between px-8 py-4">
+    <div className="overflow-x-hidden top-0 flex items-center  text-[#003997]  justify-between px-8 py-4 border-b">
 
 
       <div>
@@ -28,14 +28,14 @@ const Header = () => {
       </div>
 
       <div className="hidden md:flex items-center justify-center">
-        <div className="flex justify-center items-center gap-24 -translate-x-[60%]">
+        <div className="flex justify-center items-center gap-2 ">
           <NavLink to="/about">About Us</NavLink>
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/career">Career</NavLink>
         </div>
 
-        <div className="text-sm hover:bg-[#003997] hover:text-[#003997] bg-[#ffffff] border border-[#003997] rounded-full pl-4 pr-4 pt-2 pb-2 flex justify-end">
-          <NavLink to="/contactUs" className="text-sm rounded-full pl-8 pr-8 pt-2 pb-2 flex justify-end">Contact Us</NavLink>
+        <div className="text-sm border rounded-md hover:bg-[#003997] text-[#003997] flex justify-end">
+          <NavLink to="/contactUs">Contact Us</NavLink>
         </div>
 
       </div>
@@ -55,7 +55,10 @@ const Header = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden absolute top-[72px] left-0 right-0 z-50 border-b bg-[#003997]">
+        <div className="md:hidden absolute top-[14%] left-20 right-0 z-50 border-b bg-[#003997] transition delay-150 duration-300 ease-in-out"
+          style={{
+            maxHeight: isMenuOpen ? '300px' : '0',
+          }}>
           <MobileNavLink to="/about" onClick={() => setIsMenuOpen(false)}>
             About Us
           </MobileNavLink>
@@ -103,9 +106,14 @@ const NavLink = ({ to, children }) => {
   return (
     <div className="cursor-pointer duration-300">
       <p
-        className={`text-sm text-blue ${
-          isActive ? "text-white bg-[#003997]" : "hover:bg-[#003997] hover:bottom-1 hover:text-white"
+        className={`text-xl text-blue ${
+          isActive ? (to === "/contactUs" ? "text-[#003997] hover:text-white " : "text-[#003997] underline-thick") : "text-[#003997] hover:bg-[#003997] hover:text-[#ffffff] "
         } pl-4 pr-4 pt-2 pb-2 rounded-full`}
+        style={{
+          textDecoration: isActive && to !== "/contactUs" ? "underline" : "none",
+          textDecorationThickness: "5px",
+          paddingBottom: "33px",
+        }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         onClick={handleClick}
@@ -118,12 +126,13 @@ const NavLink = ({ to, children }) => {
 
 const MobileNavLink = ({ to, children, onClick }) => {
   return (
-    <div className="p-4 cursor-pointer z-20 duration-300 bg-[#003997]" onClick={onClick}>
-      <p className="text-xs text-[#ffffff] border z-20 rounded-full pl-4 pr-4 pt-2 pb-2 flex items-center justify-center">
+    <div className="p-4 cursor-pointer hover:bg-white text-[#ffffff] hover:text-[#003997] z-20 duration-300 bg-[#003997]" onClick={onClick}>
+      <p className="text-xs z-20 rounded-full flex items-center justify-center">
         <Link to={to}>{children}</Link>
       </p>
     </div>
   );
 };
+
 
 export default Header;

@@ -31,7 +31,7 @@ const PolicyImages = () => {
             {isVisible && (
                 <button
                     onClick={scrollToTop}
-                    className="fixed flex bottom-5 z-50 right-5 transition-all duration-300"
+                    className="fixed flex items-center justify-end bottom-5 z-50 right-5 transition-all duration-300"
                 >
                     <img src={msPix} alt="msPolicyImg" />
                     <img src={msPix} alt="msPolicyImg" />

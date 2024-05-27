@@ -10,7 +10,7 @@ const PreCTAAbout = () => {
             position: 'relative',            
         }}
     >
-        <div className="absolute inset-0 bg-black opacity-0"></div>
+       
 
 
             <div className="max-w-screen-xl mx-auto grid md:grid-cols-1 gap-y-10 md:gap-y-12 lg:gap-y-14 xl:gap-y-16 text-center px-4 md:px-8 lg:px-12 xl:px-16 shadow">

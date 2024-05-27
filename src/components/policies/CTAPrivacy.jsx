@@ -1,6 +1,6 @@
 
 
-import { face, bg } from "../../assets";
+import { bg } from "../../assets";
 
 const CTAPrivacy = () => {
     return (
@@ -10,7 +10,7 @@ const CTAPrivacy = () => {
                 position: 'relative',
             }}
         >
-            <div className="absolute inset-0 bg-black opacity-80"></div>
+            <div className="absolute inset-0 bg-black opacity-70"></div>
 
 
             <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-8 md:gap-x-20 px-4 md:px-0">
@@ -18,9 +18,9 @@ const CTAPrivacy = () => {
                     PRIVACY POLICY
                 </div>
 
-                <div className="hidden md:block z-10">
+                {/* <div className="hidden md:block z-10">
                     <img className="h-52 md:h-64 rounded-lg" src={face} alt="img1" />
-                </div>
+                </div> */}
             </div>
         </div>
 

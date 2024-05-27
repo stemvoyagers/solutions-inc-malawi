@@ -1,4 +1,4 @@
-import { face, bg } from "../../assets";
+import { bg } from "../../assets";
 
 const CTAIsms = () => {
     return (
@@ -16,9 +16,9 @@ const CTAIsms = () => {
                     INTEGRATED MANAGEMENT <br /> <span>SYSTEM POLICY- (ISMS/PIMS)</span>
                 </div>
 
-                <div className="hidden md:block z-10">
+                {/* <div className="hidden md:block z-10">
                     <img className="h-52 md:h-64 rounded-lg" src={face} alt="img1" />
-                </div>
+                </div> */}
             </div>
         </div>
     );

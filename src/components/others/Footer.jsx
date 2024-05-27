@@ -34,7 +34,7 @@ const Footer = () => {
                         <MdOutlineLocationOn />
                         <span>Plot 16, Jobi Fele way, Alausa, Ikeja, Lagos</span>
                     </span>
-                    <div className="flex gap-8 cursor-pointer animate-bounce">
+                    <div className="flex gap-8 cursor-pointer">
                         <MdFacebook />
                         <FaInstagram />
                         <FaXTwitter />

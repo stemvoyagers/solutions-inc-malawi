@@ -2,7 +2,7 @@ import { off3 } from "../../assets";
 
 const CTACareer = () => {
     return (
-        <div className="bg-repeat bg-center relative py-4 md:py-0 w-full z-1 px-4 md:px-0"
+        <div className="bg-repeat bg-center relative py-[12%] md:py-[12%] w-full z-1 px-4 md:px-0"
             style={{
                 backgroundImage: `url(${off3})`,
                 position: 'relative',
@@ -14,7 +14,7 @@ const CTACareer = () => {
                     <div className="text-[150%] md:text-[300%] md:mb-2 font-bold ">
                         Career 
                     </div>
-                    <div className="text-sm md:text-xl w-fit text-center">
+                    <div className="hidden md:block text-sm md:text-xl w-fit text-center">
                         Zone is a regulated Blockchain network that enables<br />
                         payments and acceptance of digital currencies. We are <br />
                         building one global network to pay anyone, through any  <br />

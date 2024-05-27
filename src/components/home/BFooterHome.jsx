@@ -1,4 +1,4 @@
-import { Sunset } from "../../assets";
+import { off2 } from "../../assets";
 import { useState, useEffect } from "react";
 
 const BFooterHome = () => {
@@ -25,8 +25,8 @@ const BFooterHome = () => {
 
     return (
 
-        <div className="w-full mx-auto grid h-fit md:grid-cols-2">
-            <div id="div2" className={` group bg-white text-black gap-10 pl-10 pt-4 md:pt-10 items-center ml-[6%] mr-[6%] justify-end duration-500 transition-all scroll-smooth delay-300 ${isVisible2 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'}`}>
+        <div className="w-full mx-auto h-fit flex flex-col md:flex-row justify-center items-center mb-20">
+            <div id="div2" className={`bg-white text-black gap-10 pt-4 md:pt-10 items-center  md:w-[40%] text-center ml-[6%] mr-[6%] justify-start duration-500 transition-all scroll-smooth delay-300 ${isVisible2 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'}`}>
                 <h2 className="font-semibold text-sm md:text-md md:mb-2 ">
                     LATEST NEWS IN IDENTIKO:
                     <br />
@@ -45,18 +45,19 @@ const BFooterHome = () => {
                         information on web form, survey responses account update information, email,
                         phone number, organization you represent, official position, correspondence
                         with Identiko Integrated Solutions Limited support services and telecommunication
-                        with Identiko Integrated Solutions Limited.</p> <br /><br /><br />
+                        with Identiko Integrated Solutions Limited.</p> 
 
-                    <p>We may also collect information about your transactions, enquiries and your
-                        activities on our platform or premises. We may also use information provided
-                        by third parties like social media sites. </p>
+                        <p>We may also collect information you provide us including but not limited to
+                        information on web form, survey responses account update information, email,
+                        phone number, organization you represent, official position, correspondence
+                        with Identiko Integrated Solutions Limited support services and telecommunication
+                        with Identiko Integrated Solutions Limited.</p> 
+                   
                 </p>
             </div>
-            <div id="div1" className={` group duration-500 transition-all scroll-smooth delay-300 ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'}`}>
-                <video className="md:h-auto w-screen min-w-full min-h-full object-cover relative m-0 p-0 cover" src={Sunset} autoPlay loop muted alt="img1" />
+            <div id="div1" className={` md:w-[50%] ml-[6%] mr-[6%] duration-500 transition-all scroll-smooth delay-300 ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'}`}>
+                <img src={off2} className="bg-no-repeat bg-center z-1 shadow-xl rounded-md" />
             </div>
-
-
         </div>
     );
 };

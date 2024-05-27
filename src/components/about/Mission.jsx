@@ -87,7 +87,7 @@ const Mission = () => {
 
 
                 <div className="mt-8 overflow-x-hidden">
-                    <div className="grid grid-cols-1 md:grid-cols-2 flex-col gap-8" >
+                    <div className="grid grid-cols-1 md:grid-cols-2 flex-col-reverse md:flex-col gap-12" >
                         <div id="div1" className={` group duration-500 transition-all scroll-smooth delay-300 ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'}`}>
                             <img className="md:h-fit w-screen min-w-full min-h-full object-cover relative m-0 p-0 cover rounded-xl" src={aboutUs} alt="img1" />
                         </div>
