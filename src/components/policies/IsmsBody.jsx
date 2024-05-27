@@ -25,7 +25,7 @@ const IsmsBody = () => {
     };
   }, []);
   return (
-    <div className="w-full bg-[#C8E0EB] pt-[4%] pb-[4%]">
+    <div className="w-full bg-white pt-[4%] pb-[4%]">
 
       <p className="max-w-screen-xl mx-auto text-sm md:text-md mt-4 md:mt-0 mb-4 md:mb-0 text-justify px-4 md:px-8 lg:px-12 xl:px-16">
         Identiko Integrated Solutions Limited is a leading, a diversified business technology solutions provider committed to providing quality and innovative IT solutions such as;
