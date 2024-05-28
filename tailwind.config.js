@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "Merriweather": ["Merriweather", "serif"],
+        "Lato": ["Lato", "sans-serif"]        
+      }
+    },
   },
   plugins: [],
 }

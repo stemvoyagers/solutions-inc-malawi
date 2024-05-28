@@ -107,7 +107,7 @@ const NavLink = ({ to, children }) => {
     <div className="cursor-pointer duration-300">
       <p
         className={`text-[20px] text-blue ${
-          isActive ? (to === "/contactUs" ? "text-[#003997] hover:text-white " : "text-[#003997] underline-thick") : "text-[#003997] hover:bg-[#003997] hover:text-[#ffffff] "
+          isActive ? (to === "/contactUs" ? "text-[#003997] hover:text-white " : "text-[#003997]") : "text-[#003997] hover:bg-[#003997] hover:text-[#ffffff] "
         } pl-4 pr-4 pt-2 pb-2 rounded-full`}
         style={{
           textDecoration: isActive && to !== "/contactUs" ? "underline" : "none",
