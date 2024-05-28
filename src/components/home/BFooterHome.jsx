@@ -1,4 +1,4 @@
-import { off2 } from "../../assets";
+import { officeSpace } from "../../assets";
 import { useState, useEffect } from "react";
 
 const BFooterHome = () => {
@@ -56,7 +56,7 @@ const BFooterHome = () => {
                 </p>
             </div>
             <div id="div1" className={` md:w-[50%] ml-[6%] mr-[6%] duration-500 transition-all scroll-smooth delay-300 ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'}`}>
-                <img src={off2} className="bg-no-repeat bg-center z-1 shadow-xl rounded-md" />
+                <img src={officeSpace} className="bg-no-repeat bg-center z-1 shadow-xl rounded-md" />
             </div>
         </div>
     );

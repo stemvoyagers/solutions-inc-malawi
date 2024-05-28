@@ -6,6 +6,7 @@ import Hero from "../components/home/Hero";
 import { useState, useEffect } from "react"
 import { AiOutlineLoading } from "react-icons/ai"
 import { Spinner } from "react-bootstrap"
+import ContactSubscribe from "../components/contact/ContactSubscribe";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,6 +30,7 @@ const Home = () => {
       {/* <VdHome /> */}
       {/* <GallerySwipe/> */}
       <BFooterHome />
+      <ContactSubscribe/>
     </div>
   )
 }

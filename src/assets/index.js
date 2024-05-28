@@ -37,11 +37,14 @@ import careerPic from "../assets/careerPic.jpg"
 import aboutUs from "../assets/aboutUs.jpg"
 import logoPicu from "../assets/logoPicu.png"
 import contactIde from "../assets/contactIde.jpg"
+import officeSpace from "../assets/officeSpace.jpg"
+
 
 
 
 
 export {
+    officeSpace,
     contactIde,
     logoPicu,
     aboutUs,
