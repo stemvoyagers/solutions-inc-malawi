@@ -40,8 +40,10 @@ import contactIde from "../assets/contactIde.jpg"
 import officeSpace from "../assets/officeSpace.jpg"
 import aCareer from "../assets/aCareer.jpg"
 import LandingVid from "../assets/LandingVid.mp4"
+import editedContact from "../assets/editedContact.jpg"
 
 export {  
+    editedContact,
     LandingVid,
     aCareer,
     officeSpace,

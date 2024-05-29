@@ -1,10 +1,10 @@
-import { careerPic } from "../../assets";
+import { editedContact } from "../../assets";
 
 const CTAContact = () => {
     return (
         <div className="bg-no-repeat bg-center bg-cover relative py-[12%] md:py-[12%] w-full z-1"
             style={{
-                backgroundImage: `url(${careerPic})`,
+                backgroundImage: `url(${editedContact})`,
                 position: 'relative',
             }}
         >
@@ -16,12 +16,12 @@ const CTAContact = () => {
                     <div className="text-[150%] md:text-[300%] md:mb-2 font-bold ">
                         Contact Us  
                     </div>
-                    <div className="hidden md:block text-sm md:text-xl w-fit text-center">
+                    {/* <div className="hidden md:block text-sm md:text-xl w-fit text-center">
                         At Identiko, we value your passion and we have you covered<br />
                         payments and acceptance of digital currencies. We are <br />
                         building one global network to pay anyone, through any  <br />
                         means, in any currency.
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
