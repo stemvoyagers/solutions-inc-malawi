@@ -1,4 +1,3 @@
-// import GallerySwipe from "../components/home/GallerySwipe"
 import BFooterHome from "../components/home/BFooterHome"
 import CTAHome from "../components/home/CTAHome"
 // import VdHome from "../components/home/VdHome"
@@ -7,6 +6,8 @@ import { useState, useEffect } from "react"
 import { AiOutlineLoading } from "react-icons/ai"
 import { Spinner } from "react-bootstrap"
 import ContactSubscribe from "../components/contact/ContactSubscribe";
+import Partners from "../components/about/Partners";
+import AboutHome from "../components/home/AboutHome";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,7 +30,10 @@ const Home = () => {
       <Hero />
       {/* <VdHome /> */}
       {/* <GallerySwipe/> */}
+      <AboutHome/>
+     
       <BFooterHome />
+      <Partners/>
       <ContactSubscribe/>
     </div>
   )

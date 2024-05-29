@@ -1,10 +1,10 @@
-import { off3 } from "../../assets";
+import { aCareer } from "../../assets";
 
 const CTACareer = () => {
     return (
-        <div className="bg-repeat bg-center relative py-[12%] md:py-[12%] w-full z-1 px-4 md:px-0"
+        <div className="bg-no-repeat bg-left  relative py-[12%] md:py-[12%] w-full z-1 px-4 md:px-0"
             style={{
-                backgroundImage: `url(${off3})`,
+                backgroundImage: `url(${aCareer})`,
                 position: 'relative',
             }}
         >

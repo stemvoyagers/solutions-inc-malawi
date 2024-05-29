@@ -38,12 +38,12 @@ import aboutUs from "../assets/aboutUs.jpg"
 import logoPicu from "../assets/logoPicu.png"
 import contactIde from "../assets/contactIde.jpg"
 import officeSpace from "../assets/officeSpace.jpg"
+import aCareer from "../assets/aCareer.jpg"
+import LandingVid from "../assets/landingpage.mp4"
 
-
-
-
-
-export {
+export {  
+    LandingVid,
+    aCareer,
     officeSpace,
     contactIde,
     logoPicu,

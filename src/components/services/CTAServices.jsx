@@ -1,11 +1,11 @@
 
-import { off2 } from "../../assets";
+import { officeSpace } from "../../assets";
 
 const CTAServices = () => {
     return (
-        <div className="bg-no-repeat bg-center relative py-[12%] md:py-[12%] w-full z-1 px-4 md:px-0"
+        <div className="bg-no-repeat bg-cover relative py-[12%] md:py-[12%] w-full z-1 px-4 md:px-0"
             style={{
-                backgroundImage: `url(${off2})`,
+                backgroundImage: `url(${officeSpace})`,
                 position: 'relative',
             }}
         >          

@@ -26,11 +26,9 @@ const BFooterHome = () => {
     return (
 
         <div className="w-full mx-auto h-fit flex flex-col md:flex-row justify-center items-center mb-20">
-            <div id="div2" className={`bg-white text-black gap-10 pt-4 md:pt-10 items-center  md:w-[40%] text-center ml-[6%] mr-[6%] justify-start duration-500 transition-all scroll-smooth delay-300 ${isVisible2 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'}`}>
+            <div id="div2" className={`bg-white text-black gap-10 pt-4 md:pt-10 items-center md:w-[40%] text-left ml-[6%] mr-[6%] justify-start duration-500 transition-all scroll-smooth delay-300 ${isVisible2 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'}`}>
                 <h2 className="font-semibold text-sm md:text-md md:mb-2 ">
-                    LATEST NEWS IN IDENTIKO:
-                    <br />
-                    IDENTIKO BLOG
+                    LATEST NEWS IN IDENTIKO: IDENTIKO BLOG
                 </h2>
                 <p className="text-xs md:text-xs pr-4 md:pr-0 py-4 md:py-0">
                     <p>
@@ -42,12 +40,6 @@ const BFooterHome = () => {
                         moving images.</p>  <br /><br /> <br />
 
                     <p>We may also collect information you provide us including but not limited to
-                        information on web form, survey responses account update information, email,
-                        phone number, organization you represent, official position, correspondence
-                        with Identiko Integrated Solutions Limited support services and telecommunication
-                        with Identiko Integrated Solutions Limited.</p> 
-
-                        <p>We may also collect information you provide us including but not limited to
                         information on web form, survey responses account update information, email,
                         phone number, organization you represent, official position, correspondence
                         with Identiko Integrated Solutions Limited support services and telecommunication

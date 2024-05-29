@@ -16,7 +16,7 @@ const PreCTAAbout = () => {
                         Pioneering Biometric Excellence For  <br />
                         Unparalleled Data Protection
                     </h2>
-                    <p className="text-xs md:text-xl mb-[4%] font-bold shadow">
+                    <p className="text-xs md:text-xl mb-[4%] font-bold bg:shadow">
                         Identiko specializes in identity management technology, verification,
                         and digital identity solutions.
                     </p>
