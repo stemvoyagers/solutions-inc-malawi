@@ -7,7 +7,7 @@ const Partners = () => {
                     <div className="absolute w-full border-b-2 bg-[#003997]  rounded-full mb-4" style={{ top: "51%" }}></div>
                 </div>
             <div className="flex flex-col items-center justify-center align-middle gap-2 ml-[6%] md:ml-[0%] mr-[4%] md:mr-[0%]">
-                <div className="font-bold text-xl md:text-3xl text-blue-950 mt-12">Our Partners</div>
+                <div className="font-bold text-xl md:text-3xl mt-12">Our Partners</div>
                 <span className="text-sm md:text-md">We bring together a team of 1st class world partners to
                     provide our clients with top grade services in all aspects 
                     of our solutions</span>

@@ -42,7 +42,7 @@ const AboutHome = () => {
                         information on web form
                     </p><br/><br/>
                     <Link to = '/aboutUs'> 
-                       <button className="hover:bg-[#003997] bg-[#ffffff] hover:text-[#ffffff] text-[#003997] border border-[#003997] rounded-full px-4 py-2 md:p-3">Read  Us</button></Link>
+                       <button className="hover:bg-[#003997] bg-[#ffffff] hover:text-[#ffffff] text-[#003997] border border-[#003997] rounded-full px-4 py-2 md:p-3">Read More</button></Link>
 
 
                 </p>
