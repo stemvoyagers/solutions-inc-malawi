@@ -53,7 +53,8 @@ const Hero = () => {
 
                 <div className="max-w-screen-xl mx-auto py-10 md:py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[2%] md:gap-[2%]  pl-12 md:pl-12 pr-12 md:pr-12">
                     <div id="div1" className={`group cursor-pointer relative duration-500 border rounded-md
-                        overflow-hidden bg-white hover:text-[#003997] shadow-md hover:shadow-xl p-8 grid-cols-1 text-center transition-all scroll-smooth ${isVisible1 ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-[100%]'
+                        overflow-hidden bg-white hover:text-[#003997] shadow-md hover:shadow-xl p-8 grid-cols-1 text-center transition-all scroll-smooth 
+                        ${isVisible1 ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-[0%]'
                         }`} onClick={handleAClick}>
                         <AiFillEyeInvisible className="w-full  h-16" />
                         <p className="text-sm md:text-md md:mt-8 mb-12 md:mb-0 font-bold">TECH SOLUTIONS </p>
@@ -62,7 +63,7 @@ const Hero = () => {
                         </p>
                     </div>
                     <div id="div2" className={`group cursor-pointer border rounded-md relative 
-                        overflow-hidden bg-[#ffffff] hover:text-[#003997] shadow-md hover:shadow-xl p-8 grid-cols-1 text-center duration-500 transition-all scroll-smooth ${isVisible2 ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-[100%]'
+                        overflow-hidden bg-[#ffffff] hover:text-[#003997] shadow-md hover:shadow-xl p-8 grid-cols-1 text-center duration-500 transition-all scroll-smooth ${isVisible2 ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-[0%]'
                         }`} onClick={handleAClick}>
 
                         <AiFillEyeInvisible className="w-full h-16" />
@@ -72,7 +73,7 @@ const Hero = () => {
                         </p>
                     </div>
                     <div id="div3" className={`group cursor-pointer border rounded-md relative 
-                    overflow-hidden bg-[#ffffff] hover:text-[#003997] shadow-md hover:shadow-xl p-8 grid-cols-1 text-center duration-500 transition-all scroll-smooth ${isVisible3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
+                    overflow-hidden bg-[#ffffff] hover:text-[#003997] shadow-md hover:shadow-xl p-8 grid-cols-1 text-center duration-500 transition-all scroll-smooth ${isVisible3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[0%]'
                         }`} onClick={handleAClick} >
 
                         <AiFillEyeInvisible className="w-full  h-16" />
@@ -83,7 +84,7 @@ const Hero = () => {
                     </div>
 
                     <div id="div4" className={`group cursor-pointer border rounded-md relative overflow-hidden bg-[#ffffff] hover:text-[#003997] shadow-md hover:shadow-xl p-8 grid-cols-1 
-                    text-center transition-all scroll-smooth duration-500 ${isVisible4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
+                    text-center transition-all scroll-smooth duration-500 ${isVisible4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[0%]'
                         }`} onClick={handleAClick}>
 
                         <AiFillEyeInvisible className="w-full h-16" />
