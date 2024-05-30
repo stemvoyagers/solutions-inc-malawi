@@ -1,40 +1,31 @@
 import { Link } from "react-router-dom";
-import { aboutUsPic } from "../../assets";
-import { AiOutlineArrowDown } from "react-icons/ai";
+import { AboutVid } from "../../assets";
 
 
 const PreCTAAbout = () => {
     return (
-        <div className="bg-no-repeat bg-center bg-cover relative py-[12%] md:py-[12%] lg:py-[14%] xl:py-[19%] w-full z-1"
-            style={{
-                backgroundImage: `url(${aboutUsPic})`,
-                position: 'relative',
-            }}
-        >
-            <div className="max-w-screen-xl mx-auto grid md:grid-cols-1 gap-y-10 md:gap-y-12 lg:gap-y-14 xl:gap-y-16 text-center px-4 md:px-8 lg:px-12 xl:px-16 mt-24">
-                <div className="flex flex-col items-center justify-center text-[#ffffff] z-10">
-                    <h2 className="text-[100%] md:text-[100%] mt-4 md:mt-0 mb-2 text-shadow-lg">
-                        Pioneering Biometric Excellence For  <br />
-                        Unparalleled Data Protection
-                    </h2>                  
+        <div className="h-full md:h-screen overflow-hidden relative">
+            <video className="h-40 md:h-auto bg:cover bg:center min-w-full min-h-full relative m-0 p-0" src={AboutVid} autoPlay loop muted alt="img1" />
 
-                    <div className="flex gap-[10%] text-center text-xs md:text-[120%] w-full justify-center mb-4 md:mb-0 items-center">
-                        <button className="text-[#003997] hover:text-white border rounded-full w-fit p-3 bg-[#ffffff] hover:bg-[#003997]" >Learn More {'⇾'}</button>
-                        <Link to='/contactUs'>
-                            <button className="bg-[#003997] hover:bg-white border border-[#003997] rounded-full w-fit p-3 text-[#ffffff] hover:text-[#003997]" >Contact Us {'⇾'}</button>
-                        </Link>
-                    </div>
-
-                    <Link to="#section-1">
-                        <div className="absolute bottom-0 left-0 right-0 mx-auto hidden md:flex justify-center
-                 items-center mb-20 text-white font-bold  rounded-full">
-                            <p className="bg-[#003997] rounded-full p-4 animate-bounce"><AiOutlineArrowDown /> </p>
-                        </div>
-                    </Link>
-                </div>
+            <div className=" absolute md:z-50 text-[50%] md:text-[150%]  text-center mt-32 text-white w-full h-full md:top-0 flex items-center justify-center">
+                <div className="text-center text-shadow-lg">
+                    <p> Pioneering Biometric Excellence For </p>
+                    <p> Unparalleled Data Protection</p> </div>
             </div>
+            <Link to="#section-1">
+                <div className="absolute bottom-16 left-0 right-0 mx-auto hidden md:flex justify-center
+                 items-center text-white rounded-full">
+                    <p className="bg-[#ffffff] border text-[#003997] rounded-full p-3 w-fit animate-bounce">Learn More ↓ </p>
+                </div>
+
+               
+            </Link>
         </div>
+
     );
 };
 
 export default PreCTAAbout;
+
+
+{/* <AiOutlineArrowDown /> */}

@@ -40,9 +40,11 @@ import contactIde from "../assets/contactIde.jpg"
 import officeSpace from "../assets/officeSpace.jpg"
 import aCareer from "../assets/aCareer.jpg"
 import LandingVid from "../assets/lanlan.mp4"
+import AboutVid from "../assets/AboutVid.mp4"
 import editedContact from "../assets/editedContact.jpg"
 
 export {  
+    AboutVid,
     editedContact,
     LandingVid,
     aCareer,
