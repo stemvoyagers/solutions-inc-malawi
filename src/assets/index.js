@@ -39,7 +39,7 @@ import logoPicu from "../assets/logoPicu.png"
 import contactIde from "../assets/contactIde.jpg"
 import officeSpace from "../assets/officeSpace.jpg"
 import aCareer from "../assets/aCareer.jpg"
-import LandingVid from "../assets/landvid.mp4"
+import LandingVid from "../assets/land.mp4"
 import editedContact from "../assets/editedContact.jpg"
 
 export {  
