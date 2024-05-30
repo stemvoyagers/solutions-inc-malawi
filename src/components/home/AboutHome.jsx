@@ -26,7 +26,7 @@ const AboutHome = () => {
 
     return (
 
-        <div className="w-full mx-auto h-fit flex flex-col md:flex-row justify-center items-center mb-20">
+        <div className="w-full mx-auto h-fit flex flex-col md:flex-row justify-center items-center mt-20 mb-20">
             <div id="div1" className={` md:w-[50%] ml-[6%] mr-[6%] duration-500 transition-all scroll-smooth delay-300 ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'}`}>
                 <img src={contactIde} className="bg-no-repeat bg-center z-1 shadow-xl rounded-md" />
             </div>
@@ -42,7 +42,9 @@ const AboutHome = () => {
                         information on web form
                     </p><br/><br/>
                     <Link to = '/aboutUs'> 
-                       <button className="hover:bg-[#003997] bg-[#ffffff] hover:text-[#ffffff] text-[#003997] border border-[#003997] rounded-full px-4 py-2 md:p-3">Read More</button></Link>
+                   
+                    <button className="bg-[#003997] hover:bg-white border rounded-full w-fit p-3 text-[#ffffff] hover:text-[#003997]">Read More all services {'⇾'}</button>
+                  </Link>
 
 
                 </p>

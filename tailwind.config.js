@@ -3,9 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors:{white: "#ffffff"},
       fontFamily: {
-        "Merriweather": ["Merriweather", "serif"],
-        "Lato": ["Lato", "sans-serif"]        
+        sans: ["Helvetica Neue", "sans-serif"],      
       }
     },
   },

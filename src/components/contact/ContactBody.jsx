@@ -49,10 +49,10 @@ const ContactBody = () => {
 
 
     return (
-        <div className="w-full pb-20 pt-20 px-4 md:px-0">
+        <div id= "section-1" className="w-full pb-20 pt-20 px-4 md:px-0">
             <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28">
                 <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0 text-justify">
-                    <h2 className="text-sm font-bold mb-1">CONTACT US</h2>
+                    <h2 className="text-xl md:text-3xl font-bold mb-1">CONTACT US</h2>
                     <form>
                         <div className="mb-4">
                             <p className="w-2/3 cursor-pointer text-[12px] md:text-sm py-2 text-black" >
@@ -108,7 +108,7 @@ const ContactBody = () => {
                       onSubmit={handleSubmit}
                     >
                         <div className="mb-4 justify-between bg-[#003997] p-8 rounded-lg">
-                            <h2 className="text-sm font-bold mb-2 text-center text-white">Request a Quote</h2>
+                            <h2 className="text-xl md:text-3xl font-bold mb-2 text-center text-white">Request a Quote</h2>
 
                             <div className="mt-4 mb-4">
                                 <select

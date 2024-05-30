@@ -44,7 +44,7 @@ const Hero = () => {
 
 
     return (
-        <div className="w-full">
+        <div id="section-1" className="w-full">
             <div className="max-w-screen-xl mx-auto text-center items-center justify-center">
                 <div className="text-center text-black">
                     <p className="text-xl md:text-3xl mt-12 md:mt-24  font-bold">OUR SERVICES</p>

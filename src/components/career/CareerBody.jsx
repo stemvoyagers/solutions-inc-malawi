@@ -45,66 +45,48 @@ const CareerBody = () => {
     };
 
     return (
-        <div className="w-full pb-20 pt-20 px-4 md:px-0">
+        <div id="section-1" className="w-full pb-20 pt-20 px-4 md:px-0">
             <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28">
                 <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0">
-                    <h2 className="text-sm font-bold mb-2">OUR CAREER LIST</h2>
+                    <h2 className="text-xl md:text-3xl font-bold mb-2">OUR CAREER LIST</h2>
                     <form>
 
-                    <div className="mt-4 flex gap-5 ">
-                        <div className="border p-4 hover:bg-[#014d9811]">
-                            <p
-                               className="w-full py-2 text-black text-sm font-semibold">
-                                APPLICATIONS DEPARTMENT
-                               
-                            </p>
-                       
-                            <p className="w-full text-black text-sm py-2 ">
-                            BackEnd Services
-                            </p>  
-
-                             <p className="w-full text-black text-sm py-2 ">
-                            FrontEnd Services
-                            </p>                            
-                       
-                            <p className="w-full text-black text-sm py-2">
-                            Testing
-                            </p>                            
-                        </div>
+                        <div className="mt-4 flex gap-5 ">
+                            <div className="border p-4 hover:bg-[#014d9811] text-sm py-2">
+                                <div
+                                    className="w-full py-2 font-semibold mb-2 ">
+                                    APPLICATIONS DEPARTMENT
+                                </div>
+                                <div className="w-full grid gap-3">
+                                    <p>BackEnd Services</p>
+                                    <p>FrontEnd Services</p>
+                                    <p>Testing</p>
+                                </div>
+                            </div>
                         </div>
 
                         <div className="mt-2 flex gap-5">
-
-                            <div className="border p-4 hover:bg-[#014d9811]">
-                                <p className="w-full py-2 text-black text-sm font-semibold">
+                            <div className="border p-4 hover:bg-[#014d9811] text-sm py-2">
+                                <div className="w-full py-2 font-semibold mb-2">
                                     INFRASTRUCTURE DEPARTMENT
-                                </p>
-                                <p className="w-full text-black text-[12px] md:text-sm font-subFont py-2">
-                                   Networking <br />
-                                    <br />
-                                   Hardware <br /> <br />
-                                   Server Services
-                                </p>
+                                </div>
+                                <div className="w-full grid gap-3">
+                                    <p>Networking </p>
+                                    <p> Hardware </p>
+                                    <p> Server Services</p>
+                                </div>
                             </div>
                         </div>
 
                         <div className="mt-2 flex gap-5">
 
-                            <div className="border p-4 hover:bg-[#014d9811]">
-                                <p className="w-full py-2 text-black text-sm font-semibold">
-                                    IT
-                                </p>
-                                <p className="w-full text-black text-[12px] md:text-sm font-subFont">
-                                   Overall Services <br />
-                                   
-                                </p>
-                           
-                                <p className="w-full py-2 text-black  text-sm">
-                                    Internship
-                                </p>
-                                <p className="w-full text-black text-sm py-2">
-                                   NYSC and Siwes
-                                </p>
+                            <div className="border p-4 hover:bg-[#014d9811] text-sm py-2">
+                                <div className="w-full grid gap-3">
+                                <p className="font-semibold"> Overall Services </p>
+                                    <p> IT </p>
+                                    <p> Internship </p>
+                                    <p> NYSC and Siwes </p>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -117,7 +99,7 @@ const CareerBody = () => {
                     >
                         <ToastContainer />
                         <div className="mb-4 justify-between bg-[#003997] p-8 rounded-lg">
-                            <h2 className="text-sm font-bold mb-2 text-center text-white">Join Us</h2>
+                            <h2 className="text-xl md:text-3xl font-bold mb-2 text-center text-white">Join Us</h2>
 
                             <div className="mt-4 mb-4">
                                 <select
@@ -167,7 +149,7 @@ const CareerBody = () => {
                             />
 
 
-                            <input
+                            <textarea
                                 className=" mb-4 shadow appearance-none border h-20 cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 name="message"
                                 type="text"

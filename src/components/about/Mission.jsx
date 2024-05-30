@@ -37,9 +37,9 @@ const Mission = () => {
             <div className="relative">
                 <div className="absolute w-full border-b-2 border-[#003997] rounded-full mb-4" style={{ top: "51%" }}></div>
             </div>
-            <div className="max-w-screen-xl mx-auto mt-4 md:mt-0 px-4 md:px-8 lg:px-12 xl:px-16 grid grid-cols-1 gap-y-10 text-center text-[#003997]">
+            <div className="max-w-screen-xl mx-auto mt-4 md:mt-0 px-4 md:px-8 lg:px-12 xl:px-16 grid grid-cols-1 gap-y-10 text-center">
 
-                <h2 className="font-semibold text-xl md:text-3xl md:mb-2 mt-12">
+                <h2 className="font-semibold text-xl md:text-3xl md:mb-2 mt-20">
                     Our Primary Pillars
                 </h2>
 

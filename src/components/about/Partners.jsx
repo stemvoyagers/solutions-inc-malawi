@@ -2,7 +2,7 @@ import { cisco, hp, idemia, lenovo, microsoft, neuro, veritas, vmware } from "..
 
 const Partners = () => {
     return (
-        <div className="mb-12 mt-12 text-center">
+        <div className="mb-12 mt-20 text-center">
          <div className="relative">
                     <div className="absolute w-full border-b-2 bg-[#003997]  rounded-full mb-4" style={{ top: "51%" }}></div>
                 </div>

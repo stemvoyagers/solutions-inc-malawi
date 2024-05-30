@@ -16,6 +16,7 @@ import Isms from "./pages/Isms";
 import ContactPage from "./pages/ContactPage";
 import AService from "./pages/AService";
 import PolicyImages from "./components/others/PolicyImages";
+import Hero from "./components/home/Hero";
 
 const Layout = () => {
 
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
       {
         path: "/career",
         element: <Career />,
+      },
+      {
+        path: "/hero",
+        element: <Hero />,
       },
     ],
   },
