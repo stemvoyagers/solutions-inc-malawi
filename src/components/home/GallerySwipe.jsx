@@ -46,7 +46,7 @@ const GallerySwipe = () => {
         <Slider {...settings}>
           {MyPhoto.map((PhotoLink, index) => (
             <div key={index}>
-              <img src={PhotoLink} alt={`Slide ${index + 1}`} className="mx-auto p-3 flex flex-col md:flex-row md:grid md:w-[100%] h:[70%] mt-2 mb-12 rounded-3xl" />
+              <img src={PhotoLink} alt={`Slide ${index + 1}`} className="mx-auto p-12 shadow-xl flex flex-col md:flex-row md:grid md:w-[100%] h:[70%] mt-2 mb-12 rounded-3xl" />
             </div>
           ))}
         </Slider>
