@@ -14,7 +14,8 @@ const Header = () => {
   };
 
   return (
-    <div className="overflow-x-hidden top-0 flex items-center  text-[#003997]  justify-between px-8 py-4 border-b">
+    <div className="overflow-x-hidden top-0 flex items-center  text-[#000000]  justify-between px-8 py-4 border-b">
+     <Link to = '/'>
       <div>
         <img
           src={logoPicu}
@@ -23,6 +24,7 @@ const Header = () => {
           onClick={handleClick || setIsMenuOpen(false)}
         />
       </div>
+      </Link>
 
       <div className="hidden md:flex items-center justify-center">
         <div className="flex justify-center items-center gap-20 ">
@@ -30,7 +32,7 @@ const Header = () => {
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/career">Career</NavLink>
 
-          <div className="border p-2 cursor-pointer rounded-md bg-[#ffffff] hover:bg-[#003997] text-[#003997] hover:text-[#ffffff]  flex justify-end">
+          <div className="border p-2 cursor-pointer rounded-md text-[#ffffff] bg-[#000000]  hover:bg-[#000000d7]  flex justify-end duration-300 delay-100 transition-transform">
             <NavLink to="/contactUs">Contact Us</NavLink>
           </div>
         </div>
@@ -40,18 +42,18 @@ const Header = () => {
         {isMenuOpen ? (
           <MdClose
             onClick={() => setIsMenuOpen(false)}
-            className="text-[#003997] text-xl"
+            className="text-[#000000] text-xl"
           />
         ) : (
           <MdMenu
             onClick={() => setIsMenuOpen(true)}
-            className="text-[#003997] text-xl"
+            className="text-[#000000] text-xl"
           />
         )}
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden absolute top-[14%] left-20 right-0 z-50 border-b bg-[#003997] transition delay-150 duration-300 ease-in-out"
+        <div className="md:hidden absolute top-[14%] left-20 right-0 z-50 border-b bg-[#000000] transition delay-150 duration-300 ease-in-out"
           style={{ maxHeight: isMenuOpen ? '300px' : '0', }}>
           <MobileNavLink to="/about" onClick={() => setIsMenuOpen(false)}> About Us </MobileNavLink>
           <MobileNavLink to="/services" onClick={() => setIsMenuOpen(false)}> Services </MobileNavLink>
@@ -93,7 +95,7 @@ const NavLink = ({ to, children }) => {
               transform: open ? "scaleX(1)" : "scaleX(0)"
             }}
             className="absolute -bottom-8 -left-2 -right-2 h-1 origin-left 
-                          rounded-full bg-[#003997] transition-transform duration-300 ease-out"
+                          rounded-full bg-[#000000] transition-transform duration-300 ease-out"
           />
         )}
       </Link>
@@ -103,7 +105,7 @@ const NavLink = ({ to, children }) => {
 
 const MobileNavLink = ({ to, children, onClick }) => {
   return (
-    <div className="p-4 cursor-pointer hover:bg-white text-[#ffffff] hover:text-[#003997] z-20 duration-300 bg-[#003997]" onClick={onClick}>
+    <div className="p-4 cursor-pointer hover:bg-white text-[#ffffff] hover:text-[#000000] z-20 duration-300 bg-[#000000]" onClick={onClick}>
       <p className="text-xs z-20 rounded-full flex items-center justify-center">
         <Link to={to}>{children}</Link>
       </p>
