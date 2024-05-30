@@ -10,7 +10,8 @@ const CTAHome = () => {
             <video className="h-40 md:h-auto w-screen min-w-full min-h-full relative m-0 p-0" src={LandingVid} autoPlay loop muted alt="img1" />
 
             <div className=" absolute md:z-50 font-bold text-[50%] md:text-[300%] mb-2 text-white w-full h-full md:top-0 flex items-center justify-center">
-                <p className="text-center text-shadow-lg"> Identiko Is Your One-Stop Shop For Digital <br />
+                <p className="text-center text-shadow-lg"> Identiko Is Your One-Stop Shop <br />
+                                                            For Digital 
                     Identity, Verification, And Technology Solutions</p>
 
 
