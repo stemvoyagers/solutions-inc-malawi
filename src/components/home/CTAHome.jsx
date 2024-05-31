@@ -1,9 +1,9 @@
 import { AiOutlineArrowDown } from "react-icons/ai";
 import { LandingVid } from "../../assets";
 import { Link } from "react-router-dom";
+import arrow_down from "../../assets/arrow_down.svg";
 
 const CTAHome = () => {
-
   return (
     <div className="h-full md:h-screen overflow-hidden relative">
       <video
@@ -27,9 +27,10 @@ const CTAHome = () => {
           className="absolute bottom-24 left-0 right-0 mx-auto hidden md:flex justify-center
                  items-center text-white font-bold rounded-full"
         >
-          <p className="bg-[#003997] rounded-full p-4 animate-bounce">
-            <AiOutlineArrowDown />{" "}
-          </p>
+          <div className="border-4 rounded-full p-3 animate-bounce">
+            {/* <AiOutlineArrowDown />{" "} */}
+            <img src={arrow_down} className="w-6 h-auto" />
+          </div>
         </div>
       </Link>
     </div>
