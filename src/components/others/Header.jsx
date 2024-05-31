@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <div className="overflow-x-hidden top-0 flex items-center  text-[#000000]  justify-around px-8 py-3.5 border-b">
+    <div className="overflow-x-hidden top-0 flex items-center  text-[#000000]  justify-between px-8 py-3.5 border-b">
       <Link to="/">
         <div>
           <img
