@@ -15,8 +15,8 @@ const CTAHome = () => {
         alt="img1"
       />
 
-      <div className=" absolute md:z-50 text-[50%] md:text-[150%] text-left text-white w-full h-full md:top-0 flex items-center justify-start">
-        <div className="ml-9 text-left text-shadow-lg">
+      <div className=" absolute md:z-50 text-[50%] md:text-[150%] text-left text-white w-full h-full md:top-0 flex items-end justify-start">
+        <div className="ml-9 text-left text-shadow-lg mb-[15%]">
           <p className="text-7xl mb-4">Identiko Integrated Solutions</p>
           <p> We Are Your One-Stop Shop For Digital </p>
           <p> Identity, Verification, And Technology Solutions</p>{" "}
