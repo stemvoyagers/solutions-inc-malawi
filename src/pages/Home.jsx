@@ -18,7 +18,7 @@ const Home = () => {
 
   return isLoading ? (
     <div className="loading-state flex justify-center items-center min-h-screen" >
-      <img src={identiko_logo} alt="identikoImg" className="w-8 animate-ping" />
+      <img src={identiko_logo} alt="identikoImg" className="w-14 animate-bounce" />
     </div>
   ) : (
     <div className="overflow-x-hidden overflow-y-hidden">
