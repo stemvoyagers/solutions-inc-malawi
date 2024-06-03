@@ -143,7 +143,7 @@ const ContactBody = () => {
                                 className="mb-4 shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 name="name"
                                 type="text"
-                                placeholder="Name"
+                                placeholder="Name*"
                                 value={formData.name}
                                 onChange={handleInputChange}
                                 required
@@ -153,7 +153,7 @@ const ContactBody = () => {
                                 className="mb-4 shadow appearance-none border cursor-pointer  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 name="phone"
                                 type="text"
-                                placeholder="Phone Number"
+                                placeholder="Phone Number*"
                                 value={formData.phoneNumber}
                                 onChange={handleInputChange}
                                 required
@@ -163,17 +163,17 @@ const ContactBody = () => {
                                 className=" mb-4 shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 name="email"
                                 type="email"
-                                placeholder="Email"
+                                placeholder="Email*"
                                 value={formData.email}
                                 onChange={handleInputChange}
                                 required
                             />
 
-                            <input
-                                className="shadow appearance-none border h-20 cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            <textArea
+                                className="shadow appearance-none border h-28 cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 name="message"
                                 type="text"
-                                placeholder="Message"
+                                placeholder="Message*"
                                 value={formData.message}
                                 onChange={handleInputChange}
                                 required

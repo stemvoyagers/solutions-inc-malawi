@@ -1,4 +1,3 @@
-// import { AiOutlineArrowDown } from "react-icons/ai";
 import { LandingVid } from "../../assets";
 import { Link } from "react-router-dom";
 import arrow_down from "../../assets/arrow_down.svg";
@@ -28,7 +27,6 @@ const CTAHome = () => {
                  items-center text-white font-bold rounded-full"
         >
           <div className="rounded-full p-3 animate-bounce">
-            {/* <AiOutlineArrowDown />{" "} */}
             <img src={arrow_down} className="w-6 h-auto" />
           </div>
         </div>

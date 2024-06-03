@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { AboutVid } from "../../assets";
-
+import arrow_down from "../../assets/arrow_down.svg";
 
 const PreCTAAbout = () => {
     return (
@@ -12,8 +12,8 @@ const PreCTAAbout = () => {
                     <p> Pioneering the Future of Biometric Excellence </p>
                 </div>
 
-                <Link to="#section-1" className="absolute bottom-48 left-1/2 -translate-x-1/2 -translate-y-1/2  hidden md:flex justify-center">
-                    <p className="bg-[#ffffff] border text-sm text-[#003997] rounded-full p-3 mr-40 animate-bounce text-center"> Read More ↓ </p>
+               <Link to="#section-1" className="absolute bottom-60 left-1/2 -translate-x-1/2 -translate-y-1/2  hidden md:flex justify-center">
+                    <p className="mr-40 animate-bounce text-center">  <img src={arrow_down} className="w-6 h-auto" /> </p>
 
                 </Link>
             </div>
@@ -24,6 +24,3 @@ const PreCTAAbout = () => {
 };
 
 export default PreCTAAbout;
-
-
-{/* <AiOutlineArrowDown /> */ }

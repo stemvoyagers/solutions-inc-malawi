@@ -21,7 +21,7 @@ const CTAServices = () => {
         </div>
         <Link to="#section-1">
           <div
-            className="absolute bottom-20 left-0 right-0 mx-auto flex justify-center
+            className="absolute bottom-28 left-0 right-0 mx-auto flex justify-center
                  items-center mt-4 text-white font-bold  rounded-full animate-bounce"
           >
             <img src={arrow_down} className="w-6 h-auto" />
