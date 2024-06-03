@@ -1,4 +1,4 @@
-import { AiOutlineArrowDown } from "react-icons/ai";
+// import { AiOutlineArrowDown } from "react-icons/ai";
 import { LandingVid } from "../../assets";
 import { Link } from "react-router-dom";
 import arrow_down from "../../assets/arrow_down.svg";
@@ -21,9 +21,8 @@ const CTAHome = () => {
           <p> We Are Your One-Stop Shop For Digital </p>
           <p> Identity, Verification, And Technology Solutions</p>{" "}
         </div>
-      </div>
 
-      <Link to="#section-1">
+        <Link to="#section-1">
         <div
           className="absolute bottom-24 left-0 right-0 mx-auto hidden md:flex justify-center
                  items-center text-white font-bold rounded-full"
@@ -34,6 +33,9 @@ const CTAHome = () => {
           </div>
         </div>
       </Link>
+      </div>
+
+     
     </div>
   );
 };

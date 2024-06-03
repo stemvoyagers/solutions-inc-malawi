@@ -42,8 +42,17 @@ import aCareer from "../assets/aCareer.jpg"
 import LandingVid from "../assets/lanlan.mp4"
 import AboutVid from "../assets/AboutVid.mp4"
 import editedContact from "../assets/editedContact.jpg"
+import enrollment_services from "../assets/services_icon/enrollment_services.svg"
+import identity_solution from "../assets/services_icon/identity_solution.svg"
+import software_application from "../assets/services_icon/software_application.svg"
+import tech_solution from "../assets/services_icon/tech_solution.svg"
 
-export {  
+
+export {
+    software_application,
+    enrollment_services,
+    identity_solution,
+    tech_solution,  
     AboutVid,
     editedContact,
     LandingVid,
