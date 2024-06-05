@@ -19,7 +19,7 @@ const Footer = () => {
                     <div className="font-bold text-md md:text-xl">Get In Touch</div>
                      <span className="flex items-center gap-2 cursor-pointer">
                         <MdOutlineCall />
-                        <span>+2348000000000</span>
+                        <span>+234-(0)8094710197</span>
                     </span>
                     <span className="flex items-center gap-2 cursor-pointer">
                         <MdOutlineEmail />

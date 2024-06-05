@@ -64,13 +64,13 @@ const Hero = () => {
           <div
             id="div1"
             className={`group cursor-pointer relative duration-500 border rounded-md flex flex-col items-center
-                        overflow-hidden bg-white hover:text-[#003997] shadow-md hover:shadow-xl p-8 grid-cols-1 text-center transition-all scroll-smooth
+                        overflow-hidden bg-white hover:bg-[#003997] hover:text-black shadow-md hover:shadow-xl p-8 grid-cols-1 text-center transition-all scroll-smooth
                         ${isVisible1
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 -translate-y-[0%]"
               }`}
             onClick={handleAClick}
-          >
+            >
             {/* <AiFillEyeInvisible className="w-full  h-16" /> */}
             <img src={tech_solution} className="w-20" />
 

@@ -6,7 +6,7 @@ import arrow_down from "../../assets/arrow_down.svg";
 const CTAServices = () => {
   return (
     <div
-      className="bg-no-repeat bg-left relative py-[12%] md:py-[12%] w-full z-1 px-4 md:px-0"
+      className="bg-no-repeat bg-left relative py-[12%] md:py-[12%] lg:py-[12%] xl:py-[12%] w-full z-1 px-4 md:px-0"
       style={{
         backgroundImage: `url(${officeSpace})`,
         position: "relative",
