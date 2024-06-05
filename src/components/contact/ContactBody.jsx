@@ -1,55 +1,53 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { circular } from "../../assets"
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input';
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import emailjs from '@emailjs/browser';
 
 const ContactBody = () => {
-
-
     const [formData, setFormData] = useState({
         service: "",
         name: "",
         phone: "",
         email: "",
         message: "",
-
     })
+
+    const form = useRef();
 
     const handleInputChange = (name, value) => {
         setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
     };
 
-    const handleSubmit = async (e) => {
+    const sendEmail = async (e) => {
         e.preventDefault();
-        try {
-            const response = await fetch("/api/contact", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formData),
-            });
-            if (response.ok) {
-                // Reset form after successful submission
-                setFormData({
-                    service: "",
-                    name: "",
-                    phone: "",
-                    email: "",
-                    message: "",
-                });
-                alert("Form submitted successfully!");
-            } else {
-                alert("Failed to submit form. Please try again later.");
-            }
-        } catch (error) {
-            console.error("Error submitting form:", error);
-            alert("An error occurred while submitting the form. Please try again later.");
-        }
-    };
-
-
+        const formDataObject = {
+            service: formData.service,
+            name: formData.name,
+            phone: formData.phone,
+            email: formData.email,
+            message: formData.message,
+          };
+          
+           emailjs
+            .sendForm('service_k4eu1go', 'template_irvji6c', form.current, {            
+              publicKey: 'wHjGOUGZOCsxtBGQh', 
+            }, formDataObject)
+            .then(
+              () => {
+                console.log('Submission Successful!');
+                toast.success('Submission Successful!');
+              },
+              (error) => {
+                console.log('FAILED...', error.text);
+                toast.error('Submission failed, please try again!');
+              },
+            );
+        };         
+                
 
     return (
         <div id="section-1" className="relative w-full pb-20 pt-20 px-4 md:px-0 bg-cover bg-center"
@@ -59,6 +57,7 @@ const ContactBody = () => {
                 backgroundPosition: 'center',
             }}>
             <div className="absolute top-0 left-0 w-full h-full bg-white opacity-85"></div>
+            <ToastContainer />
 
             <div className="relative max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28 z-50">
                 <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0 text-justify">
@@ -114,8 +113,7 @@ const ContactBody = () => {
 
                 <div className="w-full">
 
-                    <form
-                        onSubmit={handleSubmit}
+                    <form ref={form} onSubmit={sendEmail}
                     >
                         <div className="mb-4 justify-between bg-[#003997] p-8 rounded-lg">
                             <h2 className="text-xl md:text-3xl font-bold mb-2 text-center text-white">Request a Quote</h2>
@@ -166,7 +164,7 @@ const ContactBody = () => {
                                 type="text"
                                 placeholder="Name*"
                                 value={formData.name}
-                                onChange={handleInputChange}
+                                onChange={(e) => handleInputChange("name", e.target.value)}
                                 required
                             />
 
@@ -186,7 +184,7 @@ const ContactBody = () => {
                                 type="email"
                                 placeholder="Email*"
                                 value={formData.email}
-                                onChange={handleInputChange}
+                                onChange={(e) => handleInputChange("email", e.target.value)}
                                 required
                             />
 
@@ -196,7 +194,7 @@ const ContactBody = () => {
                                 type="text"
                                 placeholder="Message*"
                                 value={formData.message}
-                                onChange={handleInputChange}
+                                onChange={(e) => handleInputChange ("message", e.target.value)}
                                 required
                             />
 
