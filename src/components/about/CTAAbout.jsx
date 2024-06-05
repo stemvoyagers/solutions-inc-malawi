@@ -1,4 +1,4 @@
-import { contactIde, circular } from "../../assets";
+import { recognition, circular } from "../../assets";
 
 const CTAAbout = () => {
     return (
@@ -16,7 +16,7 @@ const CTAAbout = () => {
                 </div>
 
                 <div>
-                    <img className="h-52 md:h-96 rounded-xl " src={contactIde} alt="img1" />
+                    <img className="h-52 md:h-96 rounded-xl " src={recognition} alt="img1" />
                 </div>
             </div>
         </div>

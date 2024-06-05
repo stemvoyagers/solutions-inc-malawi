@@ -49,6 +49,7 @@ import tech_solution from "../assets/services_icon/tech_solution.svg"
 import identiko_logo from "../../public/identiko_logo.svg"
 import vision from "../assets/vision.png"
 import anocar from "../assets/anocar.jpg"
+import recognition from "../assets/recognition.jpg"
 
 
 export {
@@ -58,5 +59,5 @@ export {
     off1, off2, off3, off4, off5, off6, off7, off8, Sunset, jideAgbaje, one,
     two, three, four, five, circular, bg, robot, zeroreg, face, finger, home, 
     home2, identikoWeb, vmware, veritas, neuro, microsoft, lenovo, idemia, hp,
-    cisco, msPix, nigPix,
+    cisco, msPix, nigPix, recognition
 };
