@@ -1,66 +1,65 @@
-import { useState } from "react";
-import {circular} from "../../assets"
+import { useState, useRef } from "react";
+import { circular } from "../../assets"
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input';
+import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import emailjs from '@emailjs/browser';
 
 const ContactBody = () => {
+    const [loading, setLoading] = useState(false);
 
-
-       const [formData, setFormData] = useState({
-        service:"",
-        name:"",
-        phone:"",
-        email:"",
-        message:"",
-
+    const [formData, setFormData] = useState({
+        service: "", name: "", phone: "",
+        email: "", message: "",
     })
 
-    const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
+    const form = useRef();
+
+    const handleInputChange = (name, value) => {
+        setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
     };
 
-    const handleSubmit = async (e) => {
+    const sendEmail = async (e) => {        
         e.preventDefault();
-        try {
-            const response = await fetch("/api/contact", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formData),
-            });
-            if (response.ok) {
-                // Reset form after successful submission
-                setFormData({
-                    service: "",
-                    name: "",
-                    phone: "",
-                    email: "",
-                    message: "",
-                });
-                alert("Form submitted successfully!");
-            } else {
-                alert("Failed to submit form. Please try again later.");
-            }
-        } catch (error) {
-            console.error("Error submitting form:", error);
-            alert("An error occurred while submitting the form. Please try again later.");
-        }
-    };
+        setLoading(true)
+        const formDataObject = {
+            service: formData.service,
+            name: formData.name,
+            phone: formData.phone,
+            email: formData.email,
+            message: formData.message,
+        };
 
+        emailjs
+            .sendForm('service_k4eu1go', 'template_irvji6c', form.current, {
+                publicKey: 'wHjGOUGZOCsxtBGQh',
+            }, formDataObject)
+            .then(
+                () => {
+                    console.log('Submission Successful!');
+                    toast.success('Submission Successful!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                    toast.error('Submission failed, please try again!');
+                },
+            );
+            setLoading(false);
+    };
 
 
     return (
-        <div id= "section-1" className="relative w-full pb-20 pt-20 px-4 md:px-0 bg-cover bg-center" 
-        style={{
-            backgroundImage: `url(${circular})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}>
-           <div className="absolute top-0 left-0 w-full h-full bg-white opacity-85"></div>
-  
+        <div id="section-1" className="relative w-full pb-20 pt-20 px-4 md:px-0 bg-cover bg-center"
+            style={{
+                backgroundImage: `url(${circular})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+            }}>
+            <div className="absolute top-0 left-0 w-full h-full bg-white opacity-85"></div>
+            <ToastContainer />
+
             <div className="relative max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28 z-50">
                 <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0 text-justify">
                     <h2 className="text-xl md:text-3xl font-bold mb-1">CONTACT US</h2>
@@ -113,15 +112,14 @@ const ContactBody = () => {
                     </form>
                 </div>
 
-                <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0">
+                <div className="w-full">
 
-                    <form
-                      onSubmit={handleSubmit}
+                    <form ref={form} onSubmit={sendEmail}
                     >
                         <div className="mb-4 justify-between bg-[#003997] p-8 rounded-lg">
                             <h2 className="text-xl md:text-3xl font-bold mb-2 text-center text-white">Request a Quote</h2>
 
-                            <div className="mt-4 mb-4">
+                            <div className="mt-4 mb-2">
                                 <select
                                     type="text"
                                     name="service"
@@ -130,61 +128,91 @@ const ContactBody = () => {
                                     className="w-full bg-[#F7F8FA] border border-[#7F9395] rounded-md focus:outline-none focus:border-[#1F6FE2] text-xs p-[3%]"
                                 >
                                     <option value="Select a Service">OUR SERVICES</option>
-                                    <option value="Service 1">Service 1</option>
-                                    <option value="Service 2">Service 2</option>
-                                    <option value="Service 3">Service 3</option>
-                                    <option value="Service 4">Service 4</option>
-                                    <option value="Service 5">Service 5</option>
-                                    <option value="Service 6">Service 6</option>
+                                    <option value="Enrollment Options">Enrollment Options</option>
+                                    <option value="Identity Management Solution">Identity Management Solution</option>
+                                    <option value="Software Application services"> Software Application services</option>
+                                    <option value="Demographic Data Harmonized">Demographic Data Harmonized</option>
+                                    <option value="ABI’s (Civil & Criminal)">ABI’s (Civil & Criminal)</option>
+                                    <option value="Foundational Civil Registration">Foundational Civil Registration</option>
+                                    <option value="Card Production & Personalization">Card Production & Personalization</option>
+                                    <option value="Identity Verification">Identity Verification</option>
+                                    <option value="Mobile verification">Mobile verification</option>
+                                    <option value="Electronic Voting">Electronic Voting</option>
+                                    <option value="Traffic Management Systems">Traffic Management Systems</option>
+                                    <option value="Electronic Surveilance">Electronic Surveilance</option>
+                                    <option value="IOT x electronic sensor">IOT x electronic sensor</option>
+                                    <option value="Monitoring & Management">Monitoring & Management</option>
+                                    <option value="Software Development">Software Development</option>
+                                    <option value="Software Integration">Software Integration</option>
+                                    <option value="Software Application Services"> Software Application Services</option>
+                                    <option value="State, National ID & Civil Registration">State, National ID & Civil Registration</option>
+                                    <option value="E-government Services Platform">E-government Services Platform</option>
+                                    <option value="Health Programs">Health Programs</option>
+                                    <option value="Time & Attendance">Time & Attendance</option>
+                                    <option value="Security & Access Control">Security & Access Control</option>
+                                    <option value="E-passport">E-passport</option>
+                                    <option value="Drivers License">Drivers License</option>
+                                    <option value="Border Control">Border Control</option>
+                                    <option value="Criminal Database">Criminal Database</option>
+                                    <option value="Prisons/ Correctional Facility Management">Prisons/ Correctional Facility Management</option>
+                                    <option value="Smart City/Campus">Smart City/Campus</option>
                                 </select>
                             </div>
 
                             <input
-                                className="mb-4 shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className="mb-2 shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 name="name"
                                 type="text"
-                                placeholder="Name"
+                                placeholder="Name*"
                                 value={formData.name}
-                                onChange={handleInputChange}
+                                onChange={(e) => handleInputChange("name", e.target.value)}
                                 required
                             />
 
-                            <input
-                                className="mb-4 shadow appearance-none border cursor-pointer  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            <PhoneInput
+                                defaultCountry="NG"
+                                className="mb-2 shadow bg-white appearance-none cursor-pointer  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 name="phone"
-                                type="text"
-                                placeholder="Phone Number"
+                                placeholder="8012345678"
                                 value={formData.phoneNumber}
-                                onChange={handleInputChange}
+                                onChange={(value) => handleInputChange("phoneNumber", value)}
                                 required
                             />
 
                             <input
-                                className=" mb-4 shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className=" mb-2 shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 name="email"
                                 type="email"
-                                placeholder="Email"
+                                placeholder="Email*"
                                 value={formData.email}
-                                onChange={handleInputChange}
+                                onChange={(e) => handleInputChange("email", e.target.value)}
                                 required
                             />
 
-                            <input
-                                className="shadow appearance-none border h-20 cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            <textArea
+                                className="shadow appearance-none border h-24 cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 name="message"
                                 type="text"
-                                placeholder="Message"
+                                placeholder="Message*"
                                 value={formData.message}
-                                onChange={handleInputChange}
+                                onChange={(e) => handleInputChange("message", e.target.value)}
                                 required
                             />
 
-                           
+                            <div className="mb-4">
+                                <input
+                                    type="checkbox"
+                                    name="terms"
+                                    required
+                                    onChange={(e) => handleInputChange("terms", e.target.checked)}
+                                />
+                                <label className="text-xs md:text-sm text-white mt-2">I agree to the <Link to="/privacy">Privacy Policy & Terms and Conditions</Link></label>
+                            </div>
                             <button
-                                className="w-full flex items-center justify-center mt-4 bg-white text-[#014C98] hover:text-black font-semibold py-2 px-4 mb-2 rounded-full focus:outline-none border border-black focus:shadow-outline cursor-pointer"
+                                className="w-full flex items-center justify-center mt-4 bg-white text-[#014C98] hover:text-black font-semibold py-2 px-4 mb-2 rounded-full focus:outline-none border focus:shadow-outline cursor-pointer"
                                 type="submit"
                             >
-                                Submit
+                                {loading ? "Submitting..." : "Submit"}
                             </button>
                         </div>
                     </form>

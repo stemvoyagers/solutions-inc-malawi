@@ -3,8 +3,7 @@ import Mission from "../components/about/Mission"
 import PreCTAAbout from "../components/about/PreCTAAbout"
 import Partners from "../components/about/Partners"
 import { useState, useEffect } from "react"
-import { AiOutlineLoading } from "react-icons/ai"
-import { Spinner } from "react-bootstrap"
+import { identiko_logo } from "../assets";
 
 const About = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -12,15 +11,13 @@ const About = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000)
+    }, 3000)
   }, [])
 
   return isLoading ? (
     <div className="loading-state flex justify-center items-center min-h-screen" >
-      <Spinner animation="border" role="status">
-        <AiOutlineLoading className="animate-spin" />
-      </Spinner>
-    </div>
+    <img src={identiko_logo} alt="identikoImg" className="w-14 animate-bounce" />
+  </div>
   ) : (
     <div>
       <PreCTAAbout />

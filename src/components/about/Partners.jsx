@@ -17,10 +17,10 @@ const partners1 = [
   
   const Partners = () => {
     return (
-      <div className="mb-12 mt-20 text-center overflow-hidden">
+      <div className="mb-12 md:mt-20 text-center overflow-hidden">
         <div className="flex flex-col items-center justify-center align-middle gap-2 ml-[6%] md:ml-[0%] mr-[4%] md:mr-[0%]">
           <div className="font-bold text-xl md:text-3xl mt-12">Our Partners</div>
-          <span className="text-sm md:text-xl text-center w-[40%]">We bring together a team of 1st class world partners to provide our clients with top grade services in all aspects of our solutions</span>
+          <span className="text-sm md:text-xl text-center md:w-[40%]">We bring together a team of 1st class world partners to provide our clients with top grade services in all aspects of our solutions</span>
           <div className="grid ml-[8%] md:ml-[0%] mr-[4%] md:mr-[0%] gap-2 mt-4 text-center items-center justify-center">
             <div id="me1" className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-center text-center scroll-snap-x animate-scroll-x-180 infinite duration-10000 px-none" style={{ willChange: 'transform' }}>
               {partners1.map((partner, index) => (

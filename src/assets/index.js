@@ -42,50 +42,22 @@ import aCareer from "../assets/aCareer.jpg"
 import LandingVid from "../assets/lanlan.mp4"
 import AboutVid from "../assets/AboutVid.mp4"
 import editedContact from "../assets/editedContact.jpg"
+import enrollment_services from "../assets/services_icon/enrollment_services.svg"
+import identity_solution from "../assets/services_icon/identity_solution.svg"
+import software_application from "../assets/services_icon/software_application.svg"
+import tech_solution from "../assets/services_icon/tech_solution.svg"
+import identiko_logo from "../../public/identiko_logo.svg"
+import vision from "../assets/vision.png"
+import anocar from "../assets/anocar.jpg"
+import recognition from "../assets/recognition.jpg"
 
-export {  
-    AboutVid,
-    editedContact,
-    LandingVid,
-    aCareer,
-    officeSpace,
-    contactIde,
-    logoPicu,
-    aboutUs,
-    careerPic,
-    aboutUsPic,
-    off1,
-    off2,
-    off3,
-    off4,
-    off5,
-    off6,
-    off7,
-    off8,
-    Sunset,
-    jideAgbaje,
-    one,
-    two,
-    three,
-    four,
-    five,
-    circular,
-    bg,
-    robot,
-    zeroreg,
-    face,
-    finger,
-    home,
-    home2,
-    identikoWeb,
-    vmware,
-    veritas,
-    neuro,
-    microsoft,
-    lenovo,
-    idemia,
-    hp,
-    cisco,
-    msPix,
-    nigPix,
+
+export {
+    vision, anocar, identiko_logo, software_application, enrollment_services,
+    identity_solution, tech_solution, AboutVid, editedContact, LandingVid,
+    aCareer, officeSpace, contactIde, logoPicu, aboutUs, careerPic, aboutUsPic,
+    off1, off2, off3, off4, off5, off6, off7, off8, Sunset, jideAgbaje, one,
+    two, three, four, five, circular, bg, robot, zeroreg, face, finger, home, 
+    home2, identikoWeb, vmware, veritas, neuro, microsoft, lenovo, idemia, hp,
+    cisco, msPix, nigPix, recognition
 };

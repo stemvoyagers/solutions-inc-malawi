@@ -6,7 +6,7 @@ import arrow_down from "../../assets/arrow_down.svg";
 const CTAServices = () => {
   return (
     <div
-      className="bg-no-repeat bg-left relative py-[12%] md:py-[12%] w-full z-1 px-4 md:px-0"
+      className="bg-no-repeat bg-left relative py-[12%] md:py-[12%] lg:py-[12%] xl:py-[12%] w-full z-1 px-4 md:px-0"
       style={{
         backgroundImage: `url(${officeSpace})`,
         position: "relative",
@@ -21,7 +21,7 @@ const CTAServices = () => {
         </div>
         <Link to="#section-1">
           <div
-            className="absolute bottom-20 left-0 right-0 mx-auto flex justify-center
+            className="absolute bottom-28 left-0 right-0 mx-auto flex justify-center
                  items-center mt-4 text-white font-bold  rounded-full animate-bounce"
           >
             <img src={arrow_down} className="w-6 h-auto" />

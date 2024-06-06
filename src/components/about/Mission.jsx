@@ -92,11 +92,11 @@ const Mission = () => {
 
                 <div className="mt-8 overflow-x-hidden">
                     <div className="flex flex-col md:flex-row  gap-12" >
-                        <div id="div1" className={` group  w-[80%] duration-500 transition-all scroll-smooth delay-300 ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'}`}>
+                        <div id="div1" className={` group  md:w-[80%] duration-500 transition-all scroll-smooth delay-300 ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'}`}>
                             <img className="md:h-fit object-cover relative m-0 p-0 cover rounded-xl" src={aboutUs} alt="img1" />
                         </div>
 
-                        <div id="div4" className={`w-[70%] text-center bg-black duration-500 text-white p-20 transition-all delay-500 scroll-smooth ${isVisible4 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'
+                        <div id="div4" className={`md:w-[70%] text-center bg-black duration-500 text-white p-6 md:p-20 transition-all delay-500 scroll-smooth ${isVisible4 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'
                             }`} >
                             <p className="text-xl md:text-2xl font-bold">Our Misson</p>
                             <p className="text-xs md:text-sm text-justify mt-2">From the private sector for
@@ -114,7 +114,7 @@ const Mission = () => {
                     <div className="flex flex-col-reverse md:flex-row  gap-12" >
                         
 
-                        <div id="div5" className={`overflow-x-hidden w-[70%] bg-black  text-white p-20 text-center mb-16 md:mb-0 duration-700 transition-all delay-200 scroll-smooth ${isVisible5 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'
+                        <div id="div5" className={`overflow-x-hidden md:w-[70%] bg-black  text-white p-6 md:p-20 text-center mb-16 md:mb-0 duration-700 transition-all delay-200 scroll-smooth ${isVisible5 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[100%]'
                             }`} >
                             <p className="text-xl md:text-2xl font-bold">Our Vision</p>
                             <p className="text-xs md:text-sm text-justify mt-2">Our enrolment solutions provide a wide
@@ -123,7 +123,7 @@ const Mission = () => {
                                 employee enrolment to the public sector
                             </p>
                         </div>
-                        <div id="div1" className={` group  w-[80%] duration-500 transition-all scroll-smooth delay-300 ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'}`}>
+                        <div id="div1" className={` group  md:w-[80%] duration-500 transition-all scroll-smooth delay-300 ${isVisible1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[100%]'}`}>
                             <img className="md:h-auto  object-cover relative m-0 p-0 cover rounded-xl" src={aboutUs} alt="img1" />
                         </div>
                     </div>

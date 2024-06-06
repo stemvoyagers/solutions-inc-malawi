@@ -1,8 +1,7 @@
 import CTAContact from "../components/contact/CTAContact"
 import ContactBody from "../components/contact/ContactBody"
 import { useState, useEffect } from "react"
-import { AiOutlineLoading } from "react-icons/ai"
-import { Spinner } from "react-bootstrap"
+import { identiko_logo } from "../assets";
 import Map from "../components/others/Map"
 
 const ContactPage = () => {
@@ -11,20 +10,18 @@ const ContactPage = () => {
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false);
-        }, 2000)
+        }, 3000)
     }, [])
 
     return isLoading ? (
         <div className="loading-state flex justify-center items-center min-h-screen" >
-            <Spinner animation="border" role="status">
-                <AiOutlineLoading className="animate-spin" />
-            </Spinner>
+            <img src={identiko_logo} alt="identikoImg" className="w-14 animate-bounce" />
         </div>
     ) : (
         <div>
             <CTAContact />
             <ContactBody />
-            <Map/>
+            <Map />
         </div>
     )
 }

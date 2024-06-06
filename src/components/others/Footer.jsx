@@ -1,5 +1,5 @@
-import { MdFacebook, MdOutlineCall, MdOutlineEmail, MdOutlineLocationOn } from "react-icons/md";
-import { FaInstagram, FaLinkedin, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
+import { MdFacebook, MdOutlineCall, MdOutlineEmail } from "react-icons/md";
+import { FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 // import { msPix, nigPix } from "../../assets";
 import { Link } from "react-router-dom";
 
@@ -12,34 +12,27 @@ const Footer = () => {
                 <div className="flex flex-col items-center align-middle gap-2 md:gap-4">
                     <div className="font-bold text-md md:text-xl">Compliance</div>
                     <Link to = '/isms'><span className="cursor-pointer">ISO Policy</span></Link>
-                    <Link to = '/privacy'><span className="cursor-pointer">Privacy Policy</span></Link>
-                    {/* <div className="flex justify-center gap-2">
-                        <img src={msPix} alt="msImg" className="w-8 h-10" />
-                        <img src={msPix} alt="msImg" className="w-8 h-10" />
-                        <img src={nigPix} alt="nigImg" className="w-8 h-10" />
-                    </div> */}
+                    <Link to = '/privacy'><span className="cursor-pointer">Privacy Policy</span></Link>                    
                 </div>
 
                 <div className="flex flex-col items-center align-middle gap-2 md:gap-4">
                     <div className="font-bold text-md md:text-xl">Get In Touch</div>
                      <span className="flex items-center gap-2 cursor-pointer">
                         <MdOutlineCall />
-                        <span>+2348000000000</span>
+                        <span>+234-(0)8094710197</span>
                     </span>
                     <span className="flex items-center gap-2 cursor-pointer">
                         <MdOutlineEmail />
-                        <span>info@identikosolutions.com</span>
+                        <a href={`mailto:info@identikosolutions.com`}><span>info@identikosolutions.com</span></a>
                     </span>
-                    <span className="flex items-center gap-2 cursor-pointer">
-                        <MdOutlineLocationOn />
+                    <span className="flex items-center gap-2 cursor-pointer">                       
                         <span>Plot 16, Jobi Fele way, Alausa, Ikeja, Lagos</span>
                     </span>
                     <div className="flex gap-8 cursor-pointer">
-                        <MdFacebook />
-                        <FaInstagram />
-                        <FaXTwitter />
-                        <FaLinkedin />
-                        <FaWhatsapp/>
+                        <a href="https://www.instagram.com/identiko_solutions?igsh=MTF2eTdsdzlqd2t6dg=="><div className="rounded-full border border-white p-2"><FaInstagram /> </div></a>
+                        <div className="rounded-full border border-white p-2"><MdFacebook /></div>
+                        <div className="rounded-full border border-white p-2"><FaXTwitter /></div>
+                        <a href="https://www.linkedin.com/company/identikosolutions/"><div className="rounded-full border border-white p-2"><FaLinkedin /> </div> </a>                      
                     </div>
                 </div>
 

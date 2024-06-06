@@ -1,8 +1,7 @@
 import CTAServices from "../components/services/CTAServices"
 import ServicesBody from "../components/services/ServicesBody"
 import { useState, useEffect } from "react"
-import { AiOutlineLoading } from "react-icons/ai"
-import { Spinner } from "react-bootstrap"
+import { identiko_logo } from "../assets";
 
 const Services = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -10,14 +9,12 @@ const Services = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000)
+    }, 3000)
   }, [])
 
   return isLoading ? (
     <div className="loading-state flex justify-center items-center min-h-screen" >
-      <Spinner animation="border" role="status">
-        <AiOutlineLoading className="animate-spin" />
-      </Spinner>
+      <img src={identiko_logo} alt="identikoImg" className="w-14 animate-bounce" />
     </div>
   ) : (
     <div>

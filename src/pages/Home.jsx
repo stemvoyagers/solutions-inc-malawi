@@ -1,14 +1,11 @@
-// import BFooterHome from "../components/home/BFooterHome"
 import CTAHome from "../components/home/CTAHome"
-// import VdHome from "../components/home/VdHome"
 import Hero from "../components/home/Hero";
 import { useState, useEffect } from "react"
-import { AiOutlineLoading } from "react-icons/ai"
-import { Spinner } from "react-bootstrap"
 import ContactSubscribe from "../components/contact/ContactSubscribe";
 import Partners from "../components/about/Partners";
 import AboutHome from "../components/home/AboutHome";
 import GallerySwipe from "../components/home/GallerySwipe"
+import { identiko_logo } from "../assets";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -16,27 +13,23 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000)
+    }, 3000)
   }, [])
 
   return isLoading ? (
     <div className="loading-state flex justify-center items-center min-h-screen" >
-      <Spinner animation="border" role="status">
-        <AiOutlineLoading className="animate-spin" />
-      </Spinner>
+      <img src={identiko_logo} alt="identikoImg" className="w-14 animate-bounce" />
     </div>
   ) : (
     <div className="overflow-x-hidden overflow-y-hidden">
       <CTAHome />
       <Hero />
       {/* <VdHome /> */}
-     
-      <AboutHome/>
-     
+      <AboutHome />
       {/* <BFooterHome /> */}
-      <Partners/>
-      <GallerySwipe/>
-      <ContactSubscribe/>
+      <Partners />
+      <GallerySwipe />
+      <ContactSubscribe />
     </div>
   )
 }
