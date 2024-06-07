@@ -35,8 +35,8 @@ const Partners = () => {
           <div className="marquee">
             <div className="marquee-content reverse">
               {partners1.concat(partners1).map((partner, index) => (
-                <div key={index} className="flex md:p-3 gap-4 justify-center items-center">
-                  <img src={partner.logo} alt={partner.alt} className="md:w-[100%]" />
+                <div key={index} className="flex md:p-3 md:gap-4 justify-center items-center">
+                  <img src={partner.logo} alt={partner.alt} className="w-24 md:w-[100%]" />
                 </div>
               ))}
             </div>
@@ -45,9 +45,9 @@ const Partners = () => {
         <div className="w-full mt-4 text-center overflow-hidden relative">
           <div className="marquee">
             <div className="marquee-content">
-              {partners2.concat(partners2).map((partner, index) => (
-                <div key={index} className="flex md:p-3 gap-4 justify-center items-center">
-                  <img src={partner.logo} alt={partner.alt} className="md:w-[100%]" />
+              {partners2.concat(partners2).map((partner, idx) => (
+                <div key={idx} className="flex md:p-3 gap-4 justify-center items-center">
+                  <img src={partner.logo} alt={partner.alt} className="w-24 md:w-[100%]" />
                 </div>
               ))}
             </div>
