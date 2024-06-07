@@ -87,7 +87,7 @@ const CareerBody = () => {
           </h2>
           <div>
             <div className="mt-4 flex gap-5">
-              <div className="border w-[40%]  p-4 hover:bg-[#98010196] text-sm py-2 shadow">
+              <div className="border w-[40%]  p-4 hover:bg-[#9801011c] text-sm py-2 shadow">
                 <div className="w-full py-2 font-semibold mb-2 ">
                  RECENT VACANCY
                 </div>
