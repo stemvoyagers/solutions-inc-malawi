@@ -16,7 +16,7 @@ import zeroreg from "../assets/zeroreg.png";
 import face from "../assets/face.png";
 import robot from "../assets/robot.png";
 import bg from "../assets/bg.png";
-import circular from "../assets/circular.png";
+import circular from "../assets/mainBG.jpg";
 import jideAgbaje from "../assets/jideAgbaje.jpg"
 import Sunset from "../assets/Sunset.mp4"
 import off1 from "../assets/off1.jpg"
@@ -65,8 +65,6 @@ import vmL from "../assets/partners/vmL.svg"
 import lagg from "../assets/carouselPictures/lagg.png"
 import las from "../assets/carouselPictures/las.png"
 import nimc from "../assets/carouselPictures/nimc.png"
-
-
 
 
 export {

@@ -1,10 +1,32 @@
 import { LandingVid } from "../../assets";
 import { Link } from "react-router-dom";
 import arrow_down from "../../assets/arrow_down.svg";
+import { useState, useEffect } from "react";
 
 const CTAHome = () => {
+  const [videoLoaded, setVideoLoaded] = useState(false);
+  const [videoLoading, setVideoLoading] = useState(true);
+
+  useEffect(() => {
+    const video = document.querySelector("video");
+    video.addEventListener("loadeddata", () => {
+      setVideoLoaded(true);
+      setVideoLoading(false);
+    });
+    setTimeout(() => {
+      if (!videoLoaded) {
+        setVideoLoading(false);
+      }
+    }, 5000);
+  }, [videoLoaded]);
+
   return (
-    <div className="h-full md:h-screen overflow-hidden relative">
+    <div
+      className="h-full md:h-screen overflow-hidden relative"
+      style={{
+        backgroundColor: videoLoading ? "blue" : "transparent",
+      }}
+    >
       <video
         className="h-full md:h-auto bg:cover bg:center min-w-full min-h-full relative m-0 p-0"
         src={LandingVid}
@@ -24,7 +46,8 @@ const CTAHome = () => {
         <Link to="#section-1">
           <div
             className="absolute bottom-24 left-0 right-0 mx-auto hidden md:flex justify-center
-            items-center text-white font-bold rounded-full">
+            items-center text-white font-bold rounded-full"
+          >
             <div className="rounded-full p-3 animate-bounce">
               <img src={arrow_down} className="w-6 h-auto" />
             </div>
