@@ -9,7 +9,7 @@ const PreCTAAbout = () => {
 
             <div className=" absolute md:z-50 text-[50%] md:text-[150%]  ml-[6%] text-left mt-32 text-white w-full h-full md:top-0 flex items-center justify-start">
                 <div className="text-left text-shadow-lg">
-                    <p> Advancing Technology with Innovation, Since 2020 </p>
+                    <p> Advancing Technology With Innovation, Best In Nigeria. </p>
                 </div>
 
                <Link to="#section-1" className="absolute bottom-60 left-1/2 -translate-x-1/2 -translate-y-1/2  hidden md:flex justify-center">

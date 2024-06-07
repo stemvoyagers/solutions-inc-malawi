@@ -40,14 +40,15 @@ const ContactBody = () => {
                 () => {
                     console.log('Submission Successful!');
                     toast.success('Submission Successful!');
+                    setLoading(false); 
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
                     toast.error('Submission failed, please try again!');
+                    setLoading(false); 
                 },
             );
-            setLoading(false);
-    };
+        };
 
 
     return (
@@ -199,7 +200,7 @@ const ContactBody = () => {
                                 required
                             />
 
-                            <div className="mb-4">
+                            <div className="mb-4 cursor-pointer">
                                 <input
                                     type="checkbox"
                                     name="terms"

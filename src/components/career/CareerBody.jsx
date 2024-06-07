@@ -40,12 +40,12 @@ const CareerBody = () => {
     }, formDataObject)
     .then(
       () => {
-        console.log('Submission Successful!');
         toast.success('Submission Successful!');
+        setLoading(false); 
       },
       (error) => {
-        console.log('FAILED...', error.text);
-        toast.error('Submission failed, please try again!');
+        toast.error('Submission failed, please try again!', error.text );
+        setLoading(false); 
       },
     );
 
@@ -85,7 +85,7 @@ const CareerBody = () => {
           <h2 className="text-xl md:text-3xl font-bold mb-2">
             OUR CAREER LIST
           </h2>
-          <form>
+          <div>
             <div className="mt-4 flex gap-5">
               <div className="border w-[40%]  p-4 hover:bg-[#98010196] text-sm py-2 shadow">
                 <div className="w-full py-2 font-semibold mb-2 ">
@@ -121,9 +121,7 @@ const CareerBody = () => {
                   <p> Server Services</p>
                 </div>
               </div>
-            </div>
 
-            <div className="mt-2 flex gap-5">
               <div className="border w-[40%]  p-4 hover:bg-[#98011811] text-sm py-2 shadow">
                 <div className="w-full grid gap-3">
                   <p className="font-semibold"> OVERALL SERVICES </p>
@@ -132,8 +130,8 @@ const CareerBody = () => {
                   <p> NYSC and Siwes </p>
                 </div>
               </div>
-            </div>
-          </form>
+            </div>           
+          </div>
         </div>
 
         <div className="w-full">
@@ -244,7 +242,7 @@ const CareerBody = () => {
                   required
                   onChange={(e) => handleInputChange("terms", e.target.checked)}
                 />
-                <label className="text-sm text-white mt-2">I agree to the <Link to="/privacy">Privacy Policy & Terms and Conditions</Link></label>
+                <label className="text-sm text-white mt-2 cursor-pointer">I agree to the <Link to="/privacy">Privacy Policy & Terms and Conditions</Link></label>
               </div>
 
               <button

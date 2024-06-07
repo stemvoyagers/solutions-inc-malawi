@@ -216,7 +216,7 @@ const ServicesBody = () => {
                             {numServices === 12 ? (
                                 <button onClick={handleShowMore} className="text-[#003997]  border hover:text-white rounded-full w-fit p-3 bg-[#ffffff] hover:bg-[#003997]">Show More</button>
                             ) : (
-                                <button onClick={handleShowLess} className="bg-[#970000] border hover:bg-white rounded-full w-fit p-3 text-[#ffffff] hover:text-[#970000]">Show Less</button>
+                                <button onClick={handleShowLess} className="bg-[#ffffff] text-[#003997] border hover:bg-[#003997] rounded-full w-fit p-3 hover:text-white">Show Less</button>
                             )}
                         </div>
                     </div>

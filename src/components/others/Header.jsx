@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { logoPicu } from "../../assets";
+import { identiko } from "../../assets";
 import { useNavigate } from "react-router-dom/dist";
 import { MdMenu, MdClose } from "react-icons/md";
 
@@ -14,11 +14,11 @@ const Header = () => {
   };
 
   return (
-    <div className="overflow-x-hidden top-0 flex items-center  text-[#000000]  justify-between px-8 py-3.5 border-b">
+    <div className="overflow-x-hidden top-0 flex items-center  text-[#000000] shadow-sm  justify-between px-8">
       <Link to="/">
         <div>
           <img
-            src={logoPicu}
+            src={identiko}
             alt="webImg"
             className="w-[70%] max-w-[200px] cursor-pointer rounded-lg"
             onClick={handleClick || setIsMenuOpen(false)}
@@ -27,7 +27,8 @@ const Header = () => {
       </Link>
 
       <div className="hidden md:flex items-center justify-center">
-        <div className="flex justify-center items-center gap-20 ">
+        <div className="flex justify-center items-center gap-12 ">
+        <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About Us</NavLink>
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/career">Career</NavLink>
@@ -106,7 +107,7 @@ const NavLink = ({ to, children }) => {
             style={{
               transform: open ? "scaleX(1)" : "scaleX(0)",
             }}
-            className="absolute -bottom-8 -left-2 -right-2 h-1 origin-left 
+            className="absolute -bottom-5 -left-2 -right-2 h-1 origin-left 
                           rounded-full bg-[#000000] transition-transform duration-300 ease-out"
           />
         )}
@@ -129,41 +130,3 @@ const MobileNavLink = ({ to, children, onClick }) => {
 };
 
 export default Header;
-
-// const NavLink = ({ to, children }) => {
-//   const [open, setOpen] = useState(false);
-//   const [active, setActive] = useState(false);
-//   const currentUrl = window.location.pathname;
-
-//   useEffect(() => {
-//     if (currentUrl === to) {
-//       setActive(true);
-//     } else {
-//       setActive(false);
-//     }
-//   }, [currentUrl, to]);
-
-//   return (
-//     <div
-//       onMouseEnter={() => setOpen(true)}
-//       onMouseLeave={() => setOpen(false)}
-//       // onClick={() => setActive(true)}
-//       className="relative h-fit w-fit cursor-pointer">
-//       <Link
-//         to={to}
-//         className={`${active ? "font-bold" : ""} relative text-[#003997]`}>
-//         {children}
-//         {(to !== "/contactUs" && (open || active)) && (
-
-//           <span
-//             style={{
-//               transform: active ? "scaleX(1)" : open ? "scaleX(1)" : "scaleX(0)"
-//             }}
-//             className="absolute -bottom-8 -left-2 -right-2 h-1 origin-left
-//                           rounded-full bg-[#003997] transition-transform duration-300 delay-100 ease-in-out"
-//           />
-//         )}
-//       </Link>
-//     </div>
-//   );
-// };
