@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { officeSpace } from "../../assets";
 import arrow_down from "../../assets/arrow_down.svg";
-// import { AiOutlineArrowDown } from "react-icons/ai";
 
 const CTAServices = () => {
   return (
