@@ -65,6 +65,10 @@ import vmL from "../assets/partners/vmL.svg"
 import lagg from "../assets/carouselPictures/lagg.png"
 import las from "../assets/carouselPictures/las.png"
 import nimc from "../assets/carouselPictures/nimc.png"
+import card1 from "../assets/card1.png"
+import card2 from "../assets/card2.png"
+import card3 from "../assets/card3.png"
+import card4 from "../assets/card4.png"
 
 
 export {
@@ -74,7 +78,7 @@ export {
     identity_solution, tech_solution, AboutVid, editedContact, LandingVid,
     aCareer, officeSpace, contactIde, logoPicu, aboutUs, careerPic, aboutUsPic,
     off1, off2, off3, off4, off5, off6, off7, off8, Sunset, jideAgbaje, circular, 
-    bg, robot, zeroreg, face, finger, home, 
+    bg, robot, zeroreg, face, finger, home, card1, card2, card3, card4,
     home2, identikoWeb, vmware, veritas, neuro, microsoft, lenovo, idemia, hp,
     cisco, msPix, nigPix, recognition, identiko
 };

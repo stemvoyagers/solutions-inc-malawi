@@ -4,7 +4,7 @@ import tech_solution from "../../assets/services_icon/tech_solution.svg";
 import enrollment_services from "../../assets/services_icon/enrollment_services.svg";
 import software_application from "../../assets/services_icon/software_application.svg";
 import identity_solution from "../../assets/services_icon/identity_solution.svg";
-import { hp, idemia, microsoft, veritas } from "../../assets";
+import { card1, card2, card3, card4, } from "../../assets";
 
 const services = [
   {
@@ -12,28 +12,28 @@ const services = [
     img: tech_solution,
     title: "TECH SOLUTIONS",
     description: "Our solutions are all about simplification imitation",
-    bgImg: veritas
+    bgImg: card1
   },
   {
     id: "div2",
     img: enrollment_services,
     title: "ENROLMENT SERVICES",
     description: "Our solutions are all about simplification imitation",
-    bgImg: hp
+    bgImg: card2
   },
   {
     id: "div3",
     img: identity_solution,
     title: "IDENTITY SOLUTIONS",
     description: "Our solutions are all about simplification imitation",
-    bgImg: microsoft
+    bgImg: card3
   },
   {
     id: "div4",
     img: software_application,
     title: "SOFTWARE APPLICATION",
     description: "Our solutions are all about simplification imitation",
-    bgImg: idemia
+    bgImg: card4
   },
 ];
 
@@ -104,16 +104,16 @@ const Hero = () => {
           opacity: 1;
         }
         #div1.card-bg{
-          background-image: url(${veritas});
+          background-image: url(${card1});
         }
         #div2.card-bg{
-          background-image: url(${hp});
+          background-image: url(${card2});
         }
         #div3.card-bg{
-          background-image: url(${microsoft});
+          background-image: url(${card3});
         }
         #div4.card-bg{
-          background-image: url(${idemia});
+          background-image: url(${card4});
         }
         `}
       </style>    
