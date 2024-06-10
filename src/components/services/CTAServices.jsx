@@ -5,7 +5,7 @@ import arrow_down from "../../assets/arrow_down.svg";
 const CTAServices = () => {
   return (
     <div
-      className="bg-no-repeat bg-left relative py-[12%] md:py-[12%] lg:py-[12%] xl:py-[12%] w-full z-1 px-4 md:px-0"
+      className="bg-no-repeat bg-cover bg-center relative py-[12%] md:py-[12%] lg:py-[12%] xl:py-[12%] w-full z-1 px-4 md:px-0"
       style={{
         backgroundImage: `url(${officeSpace})`,
         position: "relative",
@@ -13,7 +13,7 @@ const CTAServices = () => {
     >
       <div className="text-white max-w-screen-xl mx-auto mt-40 mb-20 z-10 ">
         <div className="group gap-10 z-10 flex flex-col justify-center items-center text-center translate-y-20">
-          <div className="text-[100%] md:text-[100%]  md:mb-2 text-white ">
+          <div className="text-[100%] md:text-[100%]  md:mb-2 text-black font-bold ">
             Secure Your Future <br />
             With Advanced Biometrics Solution
           </div>

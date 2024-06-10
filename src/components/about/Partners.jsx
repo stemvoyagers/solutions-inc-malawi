@@ -60,7 +60,7 @@ const Partners = () => {
             display: flex;
             overflow: hidden;
             position: relative;
-            width: 300%;
+            width: 250%;
           }
           .marquee-content {
             display: flex;

@@ -24,7 +24,7 @@ const GallerySwipe = () => {
       <h2 className="text-center text-xl md:text-3xl font-bold text-black mt-12 md:mb-0">Our Featured Works</h2>
       <div className='flex flex-col md:flex-row justify-center items-center gap-10 md:gap-12 p-12'>
         {projects.map((project, idx) => (
-          <div key={idx} className = "shadow-md hover:shadow-xl">
+          <div key={idx} className = "shadow-md hover:shadow-xl hover:scale-110 transition-all scroll-smooth">
             <div>
               <img src={project.img} alt='projectImg' className='w-full h-fit' />
             </div>

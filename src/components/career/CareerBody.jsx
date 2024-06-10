@@ -83,11 +83,17 @@ const CareerBody = () => {
      
         <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0">
           <h2 className="text-xl md:text-3xl font-bold mb-2">
-            OUR CAREER LIST
+          Join Our Team!
           </h2>
+<p className="w-[95%] text-balance">
+          Are you a talented and creative individual seeking new opportunities to
+grow and thrive? Whether you are a seasoned professional or just starting
+out, we are on the lookout for exceptional talent to join our dynamic team.
+Tell us about yourself and your unique skills, and let us explore how you
+can contribute to our exciting journey</p>
           <div>
-            <div className="mt-4 flex gap-5">
-              <div className="border w-[40%]  p-4 hover:bg-[#9801011c] text-sm py-2 shadow">
+            <div className="mt-4 flex flex-col md:flex-row gap-5">
+              <div className="border w-[100%] md:w-[40%]  p-4 hover:bg-[#9801011c] text-sm py-2 shadow">
                 <div className="w-full py-2 font-semibold mb-2 ">
                  RECENT VACANCY
                 </div>
@@ -98,7 +104,7 @@ const CareerBody = () => {
                 </div>
               </div>
 
-              <div className="border  w-[40%] p-4 hover:bg-[#63980111] text-sm py-2 shadow">
+              <div className="border w-[100%] md:w-[40%] p-4 hover:bg-[#63980111] text-sm py-2 shadow">
                 <div className="w-full py-2 font-semibold mb-2 ">
                   APPLICATIONS
                 </div>
@@ -110,8 +116,8 @@ const CareerBody = () => {
               </div>
             </div>
 
-            <div className="mt-2 flex gap-5">
-              <div className="border w-[40%]  p-4 hover:bg-[#01981011] text-sm py-2 shadow">
+            <div className="mt-2 flex flex-col md:flex-row gap-5">
+              <div className="border w-[100%] md:w-[40%]  p-4 hover:bg-[#01981011] text-sm py-2 shadow mt-10 md:mt-0">
                 <div className="w-full py-2 font-semibold mb-2 ">
                   INFRASTRUCTURE 
                 </div>
@@ -122,7 +128,7 @@ const CareerBody = () => {
                 </div>
               </div>
 
-              <div className="border w-[40%]  p-4 hover:bg-[#98011811] text-sm py-2 shadow">
+              <div className="border w-[100%] md:w-[40%]  p-4 hover:bg-[#98011811] text-sm py-2 shadow">
                 <div className="w-full grid gap-3">
                   <p className="font-semibold"> OVERALL SERVICES </p>
                   <p> IT </p>
@@ -149,11 +155,11 @@ const CareerBody = () => {
                   onChange={(e) =>
                     handleInputChange("service", e.target.value)
                   }
-                  className="w-full bg-[#F7F8FA] border border-[#7F9395] rounded-md focus:outline-none focus:border-[#1F6FE2] text-xs p-[3%]"
+                  className="w-full bg-[#F7F8FA] border uppercase border-[#7F9395] rounded-md focus:outline-none focus:border-[#1F6FE2] text-xs p-[3%]"
                 >
-                  <option value="Select a Service">OUR SERVICES</option>
+                  <option value="Select a Service" className="font-bold">OUR SERVICES</option>
                   <option value="Enrollment Options">Enrollment Options</option>
-                  <option value="Identity Management Solution">Identity Management Solution</option>
+                  <option value="Identity Management Solution">Identity Based Solution</option>
                   <option value="Software Application services"> Software Application services</option>
                   <option value="Demographic Data Harmonized">Demographic Data Harmonized</option>
                   <option value="ABI’s (Civil & Criminal)">ABI’s (Civil & Criminal)</option>

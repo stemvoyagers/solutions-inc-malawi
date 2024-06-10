@@ -1,56 +1,72 @@
 
+import {useState} from "react"
 import { useNavigate } from "react-router-dom/dist";
 import tech_solution from "../../assets/services_icon/tech_solution.svg";
 import enrollment_services from "../../assets/services_icon/enrollment_services.svg";
 import software_application from "../../assets/services_icon/software_application.svg";
 import identity_solution from "../../assets/services_icon/identity_solution.svg";
-import { card1, card2, card3, card4, } from "../../assets";
+import { card1, card2, card3, card4, no1, no2, no3, no4 } from "../../assets";
+
 
 const services = [
 
   {
     id: "div1",
+    image: no1,
     img: identity_solution,
     title: "IDENTITY-BASED SOLUTION",
     description: "Our solutions are all about simplification imitation",
+    details: "Our solutions are all about simplification imitation Our solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitation",
     bgImg: card2
   },
   {
     id: "div2",
+    image: no2,
     img: software_application,
     title: "SOFTWARE APPLICATION",
     description: "Our solutions are all about simplification imitation",
+    details: "Our solutions are all about simplification imitation Our solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitation",
     bgImg: card4
   },
   {
     id: "div3",
+    image: no3,
     img: tech_solution,
     title: "TECH SOLUTION",
     description: "Our solutions are all about simplification imitation",
+    details: "Our solutions are all about simplification imitation Our solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitation",
     bgImg: card3
   },
   {
     id: "div4",
+    image: no4,
     img: enrollment_services,
     title: "ENROLMENT SERVICES",
     description: "Our solutions are all about simplification imitation",
+    details: "Our solutions are all about simplification imitation Our solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitation",
     bgImg: card1
   },
 ];
 
 const Hero = () => {
   const navigate = useNavigate();
+  const [showModal, setShowModal] = useState(false);
+  const [selectedService, setSelectedService] = useState(null);
 
   const handleClick = () => {
     if (window.location.pathname !== "/services") {
-      navigate("/services");
+    navigate("/services");
     }
+    };
+
+  const handleServiceClick = (service) => {
+    setSelectedService(service);
+    setShowModal(true);
   };
 
-  const handleAClick = () => {
-    if (window.location.pathname !== "/service") {
-      // navigate("/service");
-    }
+  const handleModalClose  = () => {
+    setShowModal(false);
+    setSelectedService(null);
   };
 
   return (
@@ -66,12 +82,12 @@ const Hero = () => {
             <div
               key={idx}
               id={service.id}
-              className="group cursor-pointer border rounded-md relative flex flex-col items-center 
+              className="group cursor-pointer border rounded-md relative hover:scale-110 flex flex-col items-center 
                         overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl p-8 grid-cols-1 
                         text-center duration-500"
                         
               
-              onClick={handleAClick}
+                        onClick={() => handleServiceClick(service)}
                >
                <div className={`card-bg absolute bg-cover bg-center bg-no-repeat inset-0 transition-opacity duration-500 ${service.id}`}
                style={{ backgroundImage: `url(${service.bgImg})` }}>
@@ -91,8 +107,28 @@ const Hero = () => {
             onClick={handleClick} >
             See all services {"⇾"}
           </button>
-        </div>
+        </div>   
       </div>
+
+      {showModal && selectedService && (
+        <div className="fixed top-10 left-0 right-0 md:w-full text-white mx-auto bg-[#003997] bg-opacity-95 z-50 flex items-center justify-center">
+          <div className="p-8 rounded-md shadow-md grid grid-cols-1">
+            <h2 className="text-xl font-bold mb-4 text-center">{selectedService.title}</h2>
+            <img
+              src={selectedService.image}
+              alt={selectedService.title}
+              className="w-[20%] mx-auto mb-4"
+            />
+            <p className="text-sm text-balance">{selectedService.details}</p>
+            <button
+              className="bg-white text-[#970000] border rounded-full p-2 mt-4 w-fit hover:scale-110"
+              onClick={handleModalClose}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
 
 
 
@@ -122,5 +158,6 @@ const Hero = () => {
     </div>
   );
 };
+
 
 export default Hero;
