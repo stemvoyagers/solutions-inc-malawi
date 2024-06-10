@@ -62,31 +62,31 @@ const ContactBody = () => {
             <ToastContainer />
 
             <div className="relative max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28 z-50">
-                <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0 text-justify">
+                <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0 text-justify text-balance">
                     <h2 className="text-xl md:text-3xl font-bold mb-1">CONTACT US</h2>
                     <form>
                         <div className="mb-4">
-                            <p className="w-2/3 cursor-pointer text-[12px] md:text-sm py-2 text-black" >
+                            <p className="w-3/3 cursor-pointer text-[12px] md:text-[16px] py-2 text-black" >
                                 If you have any questions or require advice, please feel free to
                                 get in touch with us. Our team is here and ready to assist you.
                             </p>
                         </div>
                         <div className="mb-2">
-                            <p className="w-full py-2 text-black text-sm font-semibold">
+                            <p className="w-full py-2 text-black text-[15px] font-semibold">
                                 Our offices are open:
                             </p>
-                            <p className="w-full text-black text-[12px] md:text-sm  lg:text-sm">
+                            <p className="w-full text-black text-[12px] md:text-[15px]  lg:text-[15px]">
                                 Monday to Friday from 7:00 a.m. to 5:00 p.m.
                             </p>
                         </div>
 
                         <div className="mt-4 flex gap-5">
                             <div>
-                                <p className="w-full py-2 text-black text-sm font-semibold"> Address: </p>
-                                <p className="w-full text-black text-[12px] md:text-sm font-subFont">
+                                <p className="w-full py-2 text-black text-[15px] font-semibold"> Address: </p>
+                                <p className="w-full text-black text-[12px] md:text-[15px] font-semibold">
                                     Cooperate office: Suite10 Canaan Plaza, Plot 2 Blk 105,
-                                    Lekki Phase 1, Lagos <br />  <br />
-                                    Operation office: 2nd Floor, CITN (Chartered Institute of Taxation)
+                                    Lekki Phase 1, Lagos </p> 
+                                 <p className="w-full py-2 text-black  text-[15px]">  Operation office: 2nd Floor, CITN (Chartered Institute of Taxation)
                                     House,  <br />Plot 16, Jobi Fele way, Central Business District, Ikeja, Lagos.
                                 </p>
                             </div>
@@ -94,8 +94,8 @@ const ContactBody = () => {
 
                         <div className="mt-2 flex gap-5">
                             <div>
-                                <p className="w-full py-2 text-black text-sm font-semibold"> Phone: </p>
-                                <p className="w-full text-black text-[12px] md:text-sm font-subFont">
+                                <p className="w-full py-2 text-black text-[15px] font-semibold"> Phone: </p>
+                                <p className="w-full text-black text-[12px] md:text-[15px] font-subFont">
                                     +234 800 0000 000 (whatsapp/call) <br />
                                     +234 900 0000 000 (call only)
                                 </p>
@@ -104,8 +104,8 @@ const ContactBody = () => {
 
                         <div className="mb-4 flex gap-5">
                             <div>
-                                <p className="w-full py-2 text-black  text-sm font-semibold"> Email: </p>
-                                <p className="w-full text-black text-sm font-subFont">
+                                <p className="w-full py-2 text-black  text-[15px] font-semibold"> Email: </p>
+                                <p className="w-full text-black text-[15px] font-subFont">
                                     info@identikosolutions.com
                                 </p>
                             </div>

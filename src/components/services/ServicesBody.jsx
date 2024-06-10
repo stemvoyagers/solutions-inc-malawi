@@ -5,39 +5,39 @@ import { enrollment_services, identity_solution, software_application, tech_solu
 const servicesData = [
     {
         no: 1, image: tech_solution,
-        title: 'TECH SOLUTIONS', description: 'Our solutions are all about simpl Our solutions are all about mplificationification',
+        title: 'Identity Based Solution', description: 'Our solutions are all about simpl Our solutions are all about mplificationification',
 
     },
     {
         no: 2, image: enrollment_services,
-        title: 'ENROLMENT SERVICES', description: 'Our solutions are all about simpl Our solutions are all about simplificationification',
+        title: 'Software Application services', description: 'Our solutions are all about simpl Our solutions are all about simplificationification',
 
     },
     {
         no: 3, image: identity_solution,
-        title: 'IDENTITY SOLUTIONS', description: ' Our solutions are all about simpl Our solutions are all about simplificationification',
+        title: 'Demographic Data Harmonized', description: ' Our solutions are all about simpl Our solutions are all about simplificationification',
 
     },
     {
         no: 4, image: software_application,
-        title: 'SOFTWARE APPLICATION', description: 'Our solutions are all about simpl Our solutions are all about',
+        title: 'ABI’s (Civil & Criminal)', description: 'Our solutions are all about simpl Our solutions are all about',
     },
     {
         no: 5, image: identity_solution,
-        title: 'SWEET SERVICES', description: 'Our solutions are all about sweetness and delight',
+        title: 'Foundational Civil Registration', description: 'Our solutions are all about sweetness and delight',
     },
     {
         no: 6, image: software_application,
-        title: 'DOERR SERVICES', description: 'Our solutions are all about innovation and excellence',
+        title: 'Card Production & Personalization', description: 'Our solutions are all about innovation and excellence',
     },
 
     {
         no: 7, image: software_application,
-        title: 'ENROLMENT SERVICES', description: 'Our solutions are all about simplification and optimization',
+        title: 'Identity Verification', description: 'Our solutions are all about simplification and optimization',
     },
     {
         no: 8, image: software_application,
-        title: 'SWEET SERVICES', description: 'Our solutions are all about sweetness and delight',
+        title: 'Mobile verification', description: 'Our solutions are all about sweetness and delight',
     },
     {
         no: 9, image: identity_solution,
