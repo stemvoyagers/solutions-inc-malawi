@@ -69,6 +69,30 @@ import card1 from "../assets/card1.png"
 import card2 from "../assets/card2.png"
 import card3 from "../assets/card3.png"
 import card4 from "../assets/card4.png"
+import no1 from "../assets/services_icon/no1.jpg"
+import no2 from "../assets/services_icon/no2.jpg"
+import no3 from "../assets/services_icon/no3.jpg"
+import no4 from "../assets/services_icon/no4.jpg"
+import no5 from "../assets/services_icon/no5.jpg"
+import no6 from "../assets/services_icon/no6.jpg"
+import no7 from "../assets/services_icon/no7.jpg"
+import no8 from "../assets/services_icon/no8.jpg"
+import no9 from "../assets/services_icon/no9.jpg"
+import no10 from "../assets/services_icon/no10.jpg"
+import no11 from "../assets/services_icon/no11.jpg"
+import no12 from "../assets/services_icon/no12.jpg"
+import no13 from "../assets/services_icon/no13.jpg"
+import no14 from "../assets/services_icon/no14.jpg"
+import no15 from "../assets/services_icon/no15.jpg"
+import no17 from "../assets/services_icon/no17.jpg"
+import no18 from "../assets/services_icon/no18.jpg"
+import no19 from "../assets/services_icon/no19.jpg"
+import no20 from "../assets/services_icon/no20.jpg"
+import no21 from "../assets/services_icon/no21.jpg"
+import no23 from "../assets/services_icon/no23.jpg"
+import no25 from "../assets/services_icon/no25.jpg"
+import no27 from "../assets/services_icon/no27.jpg"
+
 
 
 export {
@@ -80,5 +104,7 @@ export {
     off1, off2, off3, off4, off5, off6, off7, off8, Sunset, jideAgbaje, circular, 
     bg, robot, zeroreg, face, finger, home, card1, card2, card3, card4,
     home2, identikoWeb, vmware, veritas, neuro, microsoft, lenovo, idemia, hp,
-    cisco, msPix, nigPix, recognition, identiko
+    cisco, msPix, nigPix, recognition, identiko, no1, no2, no3, no4, no5, no6,
+    no7, no8, no9, no10, no11, no12, no13, no14, no15, no17, no18, no19, no20, 
+    no21, no23, no25, no27
 };

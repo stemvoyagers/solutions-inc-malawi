@@ -66,7 +66,7 @@ const Hero = () => {
             <div
               key={idx}
               id={service.id}
-              className="group cursor-pointer border rounded-md relative flex flex-col items-center 
+              className="group cursor-pointer border rounded-md relative hover:scale-110 flex flex-col items-center 
                         overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl p-8 grid-cols-1 
                         text-center duration-500"
                         
