@@ -24,7 +24,7 @@ const CTAHome = () => {
     <div
       className="h-full md:h-screen overflow-hidden relative"
       style={{
-        backgroundColor: videoLoading ? "blue" : "transparent",
+        backgroundColor: videoLoading ? "#2959A7" : "transparent",
       }}
     >
       <video
@@ -46,7 +46,7 @@ const CTAHome = () => {
 
         <Link to="#section-1">
           <div
-            className="absolute bottom-24 left-0 right-0 mx-auto hidden md:flex justify-center
+            className="absolute top-50 left-0 right-0 mx-auto hidden md:flex justify-center
             items-center text-white font-bold rounded-full"
           >
             <div className="rounded-full p-3 animate-bounce">

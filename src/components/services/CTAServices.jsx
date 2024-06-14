@@ -11,7 +11,7 @@ const CTAServices = () => {
         position: "relative",
       }}
     >
-      <div className="text-white max-w-screen-xl mx-auto mt-40 mb-20 z-10 ">
+      <div className="text-white max-w-screen-xl mx-auto mt-40 mb-20 z-10  vh-[10%]">
         <div className="group gap-10 z-10 flex flex-col justify-center items-center text-center translate-y-20">
           <div className="text-[100%] md:text-[100%]  md:mb-2 text-black font-bold ">
             Secure Your Future <br />
