@@ -35,20 +35,6 @@ const PreCTAAbout = () => {
                 alt="img1"
             />
 
-            {/* <div className=" absolute md:z-50 text-[50%] md:text-[150%]  ml-[6%] text-left mt-32 text-white w-full h-full md:top-0 flex items-center justify-start">
-                <div className="text-left text-shadow-lg">
-                    <p> Advancing Technology With Innovation, Best In Nigeria. </p>
-                </div>
-
-                <Link to="#section-1" className="absolute top-50 left-1/2 -translate-x-1/2 -translate-y-[20%]  hidden md:flex justify-center">
-                    <p className="mr-40 animate-bounce text-center">  <img src={arrow_down} className="w-6 h-auto" /> </p>
-
-                </Link>
-            </div> */}
-
-
-
-
             <div className=" absolute md:z-50 text-[50%] md:text-[150%] text-left text-white w-full h-full md:top-0 flex items-end justify-start">
                 <div className="ml-9 text-left text-shadow-lg mb-[15%]">
                     <p> Advancing Technology With Innovation, Best In Nigeria. </p>
