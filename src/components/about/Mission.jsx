@@ -54,11 +54,7 @@ const Mission = () => {
                     Our enrolment solutions provide a wide
                     selection of customizable functionality
                     for our clients.
-                    Our ICT professionals are experts in
-                    biometrics, identity management systems, and system integration.
-                    Our enrolment solutions provide a wide
-                    selection of customizable functionality
-                    for our clients.  </p>
+                     </p>
 
                 <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-[6%] md:gap-[10%] md:mt-8">
                     <div id="div1" className={`bg-yellow-500 text-white hover:scale-110 rounded-xl overflow-hidden border shadow-md p-16 md:p-8 duration-500 transition-all scroll-smooth ${isVisible1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
