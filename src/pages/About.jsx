@@ -6,18 +6,13 @@ import { useState, useEffect } from "react"
 import { identiko_logo } from "../assets";
 
 const About = () => {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const handleLoading = () => {
-      setIsLoading(true);      
-    };
-
-    window.addEventListener("beforeunload", handleLoading);
-    return () => {
-      window.removeEventListener("beforeunload", handleLoading);
-    };
-  }, []);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 4000)
+  }, [])
 
   return isLoading ? (
     <div className="loading-state flex justify-center items-center min-h-screen" >
