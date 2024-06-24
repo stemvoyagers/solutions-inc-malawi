@@ -59,10 +59,10 @@ const Hero = () => {
     }
     };
 
-  const handleServiceClick = (service) => {
-    setSelectedService(service);
-    setShowModal(true);
-  };
+  // const handleServiceClick = (service) => {
+  //   setSelectedService(service);
+  //   setShowModal(true);
+  // };
 
   const handleModalClose  = () => {
     setShowModal(false);
@@ -87,7 +87,7 @@ const Hero = () => {
                         text-center duration-500"
                         
               
-                        onClick={() => handleServiceClick(service)}
+                        // onClick={() => handleServiceClick(service)}
                >
                <div className={`card-bg absolute bg-cover bg-center bg-no-repeat inset-0 transition-opacity duration-500 ${service.id}`}
                style={{ backgroundImage: `url(${service.bgImg})` }}>
