@@ -14,13 +14,13 @@ const CTACareer = () => {
     >
        <div className="text-white max-w-screen-xl mx-auto z-10  h-full md:top-0 flex justify-start items-end text-left">
         <div className="ml-9 text-left text-shadow-lg mb-[15%]">
-          <div className="text-[50%] md:text-[250%]  md:mb-4 translate-y-72">
+          <div className="text-[50%] md:text-[250%]  md:mb-4 translate-y-56">
             Career
           </div>
         </div>
         <Link to="#section-1">
           <div
-            className="absolute top-[80%] left-0 right-0 mx-auto flex justify-center
+            className="absolute top-[70%] left-0 right-0 mx-auto flex justify-center
                  items-center text-white font-bold mt-1  rounded-full"
           >
             <div className="rounded-full p-3 animate-bounce">
