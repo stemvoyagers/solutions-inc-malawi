@@ -8,13 +8,18 @@ import GallerySwipe from "../components/home/GallerySwipe"
 import { identiko_logo } from "../assets";
 
 const Home = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000)
-  }, [])
+    const handleLoading = () => {
+      setIsLoading(true);      
+    };
+
+    window.addEventListener("beforeunload", handleLoading);
+    return () => {
+      window.removeEventListener("beforeunload", handleLoading);
+    };
+  }, []);
 
   return isLoading ? (
     <div className="loading-state flex justify-center items-center min-h-screen" >
