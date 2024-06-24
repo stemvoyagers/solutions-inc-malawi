@@ -13,8 +13,8 @@ const CTAContact = () => {
       }}
     >
       <div className="text-black max-w-screen-xl mx-auto z-10  h-full md:top-0 flex justify-start items-end text-left">
-        <div className="ml-9 text-left text-shadow-lg mb-[15%]">
-          <div className="text-[50%] md:text-[250%]  md:mb-4 translate-y-72">
+        <div className="ml-9 text-left text-shadow-lg pb-[15%]">
+          <div className="text-[50%] md:text-[250%]  md:mb-4 translate-y-40">
             Connect With Us          </div>
           <Link to="#section-1">
             <div
