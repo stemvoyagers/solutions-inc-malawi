@@ -15,8 +15,8 @@ const services = [
     image: no1,
     img: identity_solution,
     title: "IDENTITY-BASED SOLUTION",
-    description: "Our solutions are all about simplification imitation",
-    details: "Our solutions are all about simplification imitation Our solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitation",
+    description: "Reliable ID systems verify identities across fields",
+    details: "A reliable identification system is key in different fields for ID verification solutions like health insurance, border control, online authentication, voter verification, license checks, benefit administration, and entitlement checks for social security and healthcare while also validating the document holder's identity.",
     bgImg: card2
   },
   {
@@ -24,8 +24,8 @@ const services = [
     image: no2,
     img: software_application,
     title: "SOFTWARE APPLICATION",
-    description: "Our solutions are all about simplification imitation",
-    details: "Our solutions are all about simplification imitation Our solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitation",
+    description: "Transforming businesses with robust, scalable, agile apps",
+    details: "Through the years, we have helped by in transforming businesses by building robust and scalable apps. Our enterprise application services employ tested agile methodologies to provide innovative solutions.",
     bgImg: card4
   },
   {
@@ -33,8 +33,8 @@ const services = [
     image: no3,
     img: tech_solution,
     title: "TECH SOLUTION",
-    description: "Our solutions are all about simplification imitation",
-    details: "Our solutions are all about simplification imitation Our solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitation",
+    description: "Customizable, seamless enrollment solutions with high-quality data",
+    details: "Solutions for identification and access management regulate resource access by controlling user Identity data. The strength of the identification system depends on having a reliable User ID verification solution integrated into it",
     bgImg: card3
   },
   {
@@ -42,8 +42,8 @@ const services = [
     image: no4,
     img: enrollment_services,
     title: "ENROLMENT SERVICES",
-    description: "Our solutions are all about simplification imitation",
-    details: "Our solutions are all about simplification imitation Our solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitation",
+    description: "Transforming Your Vision with Innovative Tech Solutions",
+    details: "Our mobile, fixed, and online enrollment solutions provide fully customizable capabilities for enrollments in the public and private sectors. Our solutions guarantee seamless enrollments, high-quality data capture, and minimal delays because they include hardware, software, and services.",
     bgImg: card1
   },
 ];
