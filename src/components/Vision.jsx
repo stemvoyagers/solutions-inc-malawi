@@ -19,7 +19,7 @@ const Vision = () => {
                 <div className = "flex flex-col md:w-[50%] gap-4 justify-center items-center">
                     <div className={` flex flex-col justify-center text-center text-white'
                             }`} >
-                        <p className="text-xl md:text-2xl font-bold">Our Misson</p>
+                        <p className="text-xl md:text-2xl font-bold">Our Mission</p>
                         <p className="text-xs md:text-xl text-justify mt-2">From the private sector for
                             employee enrolment to the public sector Our enrolment solutions provide a wide
                             selection of customizable functionality for our clients. From the private sector for

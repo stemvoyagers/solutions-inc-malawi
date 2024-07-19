@@ -60,7 +60,7 @@ const Hero = () => {
           <p className="text-xl md:text-3xl font-bold"> OUR SERVICES </p>
           <p className="text-xs md:text-xl">
             {" "}
-            Our solutions are all about simplification and optimization{" "}
+            Empowering Your Business with Innovative Solutions and Expert Support{" "}
           </p>
         </div>
 
@@ -69,8 +69,8 @@ const Hero = () => {
             <div
               key={idx}
               id={service.id}
-              className="group cursor-pointer border rounded-md relative h-fit flex flex-col items-center 
-                        overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl p-8 grid-cols-1 
+              className="group cursor-pointer border rounded-md relative h-fit flex flex-col items-center
+                        overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl p-8 grid-cols-1
                         text-center duration-500 pb-20 pt-20"
             >
               <div
@@ -122,7 +122,7 @@ const Hero = () => {
           }
           .animate-slide-up {
           animation: slide-up 2s ease-out;
-        } 
+        }
 
         .group:hover img{
           opacity: 1;
@@ -147,7 +147,7 @@ const Hero = () => {
           transform: translateY(0)
           transition: transform 0.5s ease-in-out
           opacity: 1;
-        } 
+        }
 
         .card-bg{
           opacity: 0;
@@ -188,7 +188,7 @@ const Hero = () => {
         -webkit-line-clamp:unset;
         max-height: 500px;
         overflow: visible
-        }         
+        }
         `}
       </style>
     </div>
