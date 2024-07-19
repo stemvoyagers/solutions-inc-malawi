@@ -4,6 +4,7 @@ import PreCTAAbout from "../components/about/PreCTAAbout"
 import Partners from "../components/about/Partners"
 import { useState, useEffect } from "react"
 import { identiko_logo } from "../assets";
+import Vision from "../components/Vision"
 
 const About = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,6 +24,7 @@ const About = () => {
       <PreCTAAbout />
       <CTAAbout />
       <Mission />
+      <Vision/>
       <Partners />
     </div>
   )

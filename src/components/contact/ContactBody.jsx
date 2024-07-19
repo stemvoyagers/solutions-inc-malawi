@@ -9,19 +9,13 @@ import emailjs from '@emailjs/browser';
 
 const ContactBody = () => {
     const [loading, setLoading] = useState(false);
-
-    const [formData, setFormData] = useState({
-        service: "", name: "", phone: "",
-        email: "", message: "",
-    })
-
+    const [formData, setFormData] = useState({ service: "", name: "", phone: "", email: "", message: "", })
     const form = useRef();
-
     const handleInputChange = (name, value) => {
         setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
     };
 
-    const sendEmail = async (e) => {        
+    const sendEmail = async (e) => {
         e.preventDefault();
         setLoading(true)
         const formDataObject = {
@@ -38,18 +32,16 @@ const ContactBody = () => {
             }, formDataObject)
             .then(
                 () => {
-                    // console.log('Submission Successful!');
                     toast.success('Contact Form Submission Successful!');
-                    setLoading(false); 
+                    setLoading(false);
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
                     toast.error('Submission failed, please try again!');
-                    setLoading(false); 
+                    setLoading(false);
                 },
             );
-        };
-
+    };
 
     return (
         <div id="section-1" className="relative w-full pb-20 pt-20 px-4 md:px-0 bg-cover bg-center"
@@ -60,10 +52,9 @@ const ContactBody = () => {
             }}>
             <div className="absolute top-0 left-0 w-full h-full bg-white opacity-95"></div>
             <ToastContainer />
-
             <div className="relative max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28 z-50">
-                <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0 text-justify text-balance">
-                    <h2 className="text-xl md:text-3xl font-bold mb-1">CONTACT US</h2>
+                <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0 text-justify text-balance transform animate-slide-up">
+                    {/* <h2 className="text-xl md:text-3xl font-bold mb-1">CONTACT US</h2> */}
                     <form>
                         <div className="mb-4">
                             <p className="w-3/3 cursor-pointer text-[12px] md:text-[16px] py-2 text-black" >
@@ -85,13 +76,12 @@ const ContactBody = () => {
                                 <p className="w-full py-2 text-black text-[15px] font-semibold"> Address: </p>
                                 <p className="w-full text-black text-[12px] md:text-[15px] font-semibold">
                                     Cooperate office: Suite10 Canaan Plaza, Plot 2 Blk 105,
-                                    Lekki Phase 1, Lagos </p> 
-                                 <p className="w-full py-2 text-black  text-[15px]">  Operation office: 2nd Floor, CITN (Chartered Institute of Taxation)
+                                    Lekki Phase 1, Lagos </p>
+                                <p className="w-full py-2 text-black  text-[15px]">  Operation office: 2nd Floor, CITN (Chartered Institute of Taxation)
                                     House,  <br />Plot 16, Jobi Fele way, Central Business District, Ikeja, Lagos.
                                 </p>
                             </div>
                         </div>
-
                         <div className="mt-2 flex gap-5">
                             <div>
                                 <p className="w-full py-2 text-black text-[15px] font-semibold"> Phone: </p>
@@ -101,7 +91,6 @@ const ContactBody = () => {
                                 </p>
                             </div>
                         </div>
-
                         <div className="mb-4 flex gap-5">
                             <div>
                                 <p className="w-full py-2 text-black  text-[15px] font-semibold"> Email: </p>
@@ -112,14 +101,10 @@ const ContactBody = () => {
                         </div>
                     </form>
                 </div>
-
                 <div className="w-full">
-
-                    <form ref={form} onSubmit={sendEmail}
-                    >
+                    <form ref={form} onSubmit={sendEmail} >
                         <div className="mb-4 justify-between bg-[#003997] p-8 rounded-lg">
                             <h2 className="text-xl md:text-3xl font-bold mb-2 text-center text-white">Request a Quote</h2>
-
                             <div className="mt-4 mb-2">
                                 <select
                                     type="text"
@@ -159,52 +144,30 @@ const ContactBody = () => {
                                     <option value="Smart City/Campus">Smart City/Campus</option>
                                 </select>
                             </div>
-
                             <input
                                 className="mb-2 shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                name="name"
-                                type="text"
-                                placeholder="Name*"
-                                value={formData.name}
-                                onChange={(e) => handleInputChange("name", e.target.value)}
-                                required
+                                name="name" type="text" placeholder="Name*" value={formData.name}
+                                onChange={(e) => handleInputChange("name", e.target.value)} required
                             />
-
                             <PhoneInput
                                 defaultCountry="NG"
                                 className="mb-2 shadow bg-white appearance-none cursor-pointer  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                name="phone"
-                                placeholder="8012345678"
-                                value={formData.phoneNumber}
-                                onChange={(value) => handleInputChange("phoneNumber", value)}
-                                required
+                                name="phone" placeholder="8012345678" value={formData.phoneNumber}
+                                onChange={(value) => handleInputChange("phoneNumber", value)} required
                             />
-
                             <input
                                 className=" mb-2 shadow appearance-none border cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                name="email"
-                                type="email"
-                                placeholder="Email*"
-                                value={formData.email}
-                                onChange={(e) => handleInputChange("email", e.target.value)}
-                                required
+                                name="email" type="email" placeholder="Email*" value={formData.email}
+                                onChange={(e) => handleInputChange("email", e.target.value)} required
                             />
-
                             <textArea
                                 className="shadow appearance-none border h-24 cursor-pointer rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                name="message"
-                                type="text"
-                                placeholder="Message*"
-                                value={formData.message}
-                                onChange={(e) => handleInputChange("message", e.target.value)}
-                                required
+                                name="message" type="text" placeholder="Message*" value={formData.message}
+                                onChange={(e) => handleInputChange("message", e.target.value)} required
                             />
-
                             <div className="mb-4 cursor-pointer">
                                 <input
-                                    type="checkbox"
-                                    name="terms"
-                                    required
+                                    type="checkbox" name="terms" required
                                     onChange={(e) => handleInputChange("terms", e.target.checked)}
                                 />
                                 <label className="text-xs md:text-sm text-white mt-2">I agree to the <Link to="/privacy">Privacy Policy & Terms and Conditions</Link></label>
@@ -219,9 +182,8 @@ const ContactBody = () => {
                     </form>
                 </div>
             </div>
-
+            <style>{`@keyframes slide-up{ from{ transform: translateY(100%); opacity: 0 } to{ transform: translateY(0%); opacity: 1 }} .animate-slide-up {animation: slide-up 2s ease-out;`} </style>
         </div>
     );
 }
-
 export default ContactBody;

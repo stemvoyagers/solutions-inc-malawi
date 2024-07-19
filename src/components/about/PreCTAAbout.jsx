@@ -1,57 +1,20 @@
-import { Link } from "react-router-dom";
-import { AboutVid } from "../../assets";
-import arrow_down from "../../assets/arrow_down.svg";
-import { useState, useEffect } from "react";
-
+import { aboutUs } from "../../assets";
 const PreCTAAbout = () => {
-    const [videoLoaded, setVideoLoaded] = useState(false);
-    const [videoLoading, setVideoLoading] = useState(true);
-
-    useEffect(() => {
-        const video = document.querySelector("video");
-        video.addEventListener("loadeddata", () => {
-            setVideoLoaded(true);
-            setVideoLoading(false);
-        });
-        setTimeout(() => {
-            if (!videoLoaded) {
-                setVideoLoading(false);
-            }
-        }, 5000);
-    }, [videoLoaded]);
-
     return (
-        <div className="h-full md:h-screen overflow-hidden relative"
+        <div
+            className="bg-no-repeat bg-cover relative h-[40vh] md:h-[60vh] w-full z-1"
             style={{
-                backgroundColor: videoLoading ? "#2959A7" : "transparent",
+                backgroundImage: `url(${aboutUs})`,
+                backgroundPosition: 'center',
+                position: "relative",
             }}
         >
-            <video
-                className="h-full md:h-auto bg:center min-w-full min-h-full relative m-0 p-0"
-                src={AboutVid}
-                autoPlay
-                loop
-                muted
-                alt="img1"
-            />
-
-            <div className=" absolute md:z-50 text-[50%] md:text-[150%] text-left text-white w-full h-full md:top-0 flex items-end justify-start">
-                <div className="ml-9 text-left text-shadow-lg mb-[15%]">
-                    <p> Advancing Technology With Innovation, Best In Nigeria. </p>
-
+            <div className=" absolute md:z-50 text-[50%] md:text-5xl text-left text-white w-full h-full md:top-8 flex items-end justify-start">
+                <div className="hidden md:block ml-9 text-left font-extrabold text-shadow-xl mb-[15%] transform animate-slide-up">
+                    <p> Advancing Technology With Innovation</p>
                 </div>
-
-                <Link to="#section-1"
-
-                    className="absolute top-[80%] left-0 right-0 mx-auto hidden md:flex justify-center
-            items-center text-white font-bold rounded-full">
-
-                    <div className="rounded-full p-3 animate-bounce">
-                        <img src={arrow_down} className="w-6 h-auto" />
-                    </div>
-
-                </Link>
             </div>
+            <style>{`@keyframes slide-up{ from{ transform: translateY(100%); opacity: 0 } to{ transform: translateY(0%); opacity: 1 }} .animate-slide-up {animation: slide-up 2s ease-out;`} </style>
         </div>
     );
 };

@@ -28,6 +28,7 @@ const Home = () => {
       <Hero />
       {/* <VdHome /> */}
       <AboutHome />
+       {/* <CTAHome /> */}
       {/* <BFooterHome /> */}
       <Partners />
       <GallerySwipe />

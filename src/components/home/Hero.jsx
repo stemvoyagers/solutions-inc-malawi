@@ -54,7 +54,7 @@ const Hero = () => {
   };
 
   return (
-    <div id="section-1" className="w-full mt-[20%] md:-mt-[20%]">
+    <div id="section-1" className="w-full mt-[20%] md:-mt-[25%]">
       <div className="max-w-screen-xl mx-auto text-center items-center justify-center">
         <div className="text-center text-black">
           <p className="text-xl md:text-3xl font-bold"> OUR SERVICES </p>
@@ -79,16 +79,17 @@ const Hero = () => {
               ></div>
               <div className="overlay absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-500"></div>
 
+
               <img
                 src={service.img}
-                className="w-20 z-10 group-hover:filter group-hover:invert group-hover:brightness-0 mb-20"
+                className=" title w-20 z-10 group-hover:filter group-hover:invert group-hover:brightness-0 mb-20 group-hover:text-white  group-hover:translate-y-[-300%]"
                 alt={service.title}
               />
-              <p className="absolute title text-sm md:text-md mt-20 mb-12 md:mb-0 font-bold z-10 group-hover:text-white group-hover:translate-y-[-300%]">
+              <p className="absolute description text-sm md:text-md mt-20 mb-12 md:mb-0 font-bold z-10 group-hover:text-white group-hover:translate-y-[-320%]">
                 {" "}
                 {service.title}{" "}
               </p>
-              <p className="absolute description  text-sm md:text-md mt-28 mb-12 md:mb-0 z-10 group-hover:text-white w-40 group-hover:w-full group-hover:translate-y-[-70%] group-hover:text-overflow-ellipsis">
+              <p className="absolute description p-1  text-sm md:text-md mt-28 mb-12 md:mb-10 z-10 group-hover:text-white w-40 group-hover:w-full group-hover:translate-y-[-50%] group-hover:text-overflow-ellipsis">
                 {service.description}
                 <span className="hidden group-hover:inline">{service.description.slice(service.description.indexOf(" ", 50))}</span>
               </p>
@@ -124,7 +125,7 @@ const Hero = () => {
         } 
 
         .group:hover img{
-          opacity: 0;
+          opacity: 1;
         }
 
          .group:hover .title{
@@ -172,7 +173,7 @@ const Hero = () => {
           display: -webkit-box;
           -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
-          transition: all 2s ease-in-out;
+          transition: all 1s ease-in-out;
         }
 
         .description {

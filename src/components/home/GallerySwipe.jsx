@@ -28,7 +28,7 @@ const GallerySwipe = () => {
             <div>
               <img src={project.img} alt='projectImg' className='w-full h-[50%]' />
             </div>
-            <div className='bg-white border rounded-b-md p-2'>
+            <div className='bg-white border rounded-b-md p-2 w-full h-40'>
               <p className='font-bold mt-4 mb-2 w-[90%]'>{project.title}</p>
               <p className='mb-4'>{project.description}</p>
             </div>

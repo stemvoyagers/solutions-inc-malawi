@@ -25,7 +25,7 @@ const MainHero = () => {
 
   return (
     <div className="overflow-y-hidden w-full h-auto overflow-x-hidden bg-[#edebe8] md:-translate-y-[45%]">
-      <div className="w-screen h-50vh relative">
+      <div className="w-screen relative">
         <div
           style={{
             transform: `translateX(-${currentSlide * 100}vw)`,
@@ -35,7 +35,7 @@ const MainHero = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className="relative w-screen h-50vh flex  items-center justify-center" >
+              className="relative w-screen flex items-center justify-center" >
               <img
                 className="w-screen"
                 src={slide.image}
