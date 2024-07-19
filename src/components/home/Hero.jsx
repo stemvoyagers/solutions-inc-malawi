@@ -11,36 +11,36 @@ const services = [
     id: "div1",
     image: no1,
     img: identity_solution,
-    title: "IDENTITY-BASED SOLUTION",
+    title: "Identity & Security Solutions",
     description:
-      "Reliable ID systems verify identities across fields. A reliable identification system is key in different fields for ID.",
+      "Comprehensive identity and security services safeguard personal and organizational data. We provide advanced biometric and verification solutions to ensure secure and reliable identity management.",
     bgImg: card2,
   },
   {
     id: "div2",
     image: no2,
     img: software_application,
-    title: "SOFTWARE APPLICATION",
+    title: "Software & IT Solutions",
     description:
-      "Transforming businesses with robust, scalable, agile apps. Through the years, we have helped by in transforming businesses.",
+      "Innovative software and IT services streamline operations and enhance efficiency. From development to integration, we deliver robust solutions tailored to your business needs, ensuring security and scalability.",
     bgImg: card4,
   },
   {
     id: "div3",
     image: no3,
     img: tech_solution,
-    title: "TECH SOLUTION",
+    title: "Managed Services & SmartCity Solutions",
     description:
-      "Customizable, seamless enrollment solutions with high-quality data. Solutions for identification and access management regulate",
+      "Tailored managed services and smart solutions optimize business processes and customer experiences. We offer specialized support to enhance operational efficiency and meet unique organizational needs.",
     bgImg: card3,
   },
   {
     id: "div4",
     image: no4,
     img: enrollment_services,
-    title: "ENROLMENT SERVICES",
+    title: "Surveillance & Monitoring Solutions",
     description:
-      "Transforming Your Vision with Innovative Tech Solutions. Our mobile, fixed, and online enrollment solutions provide fully custome.",
+      "Advanced surveillance and monitoring systems ensure security and real-time management. Our solutions include electronic voting, traffic management, and IoT-enabled systems to maintain safety and control.",
     bgImg: card1,
   },
 ];
@@ -71,7 +71,7 @@ const Hero = () => {
               id={service.id}
               className="group cursor-pointer border rounded-md relative h-fit flex flex-col items-center 
                         overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl p-8 grid-cols-1 
-                        text-center duration-500"
+                        text-center duration-500 pb-20 pt-20"
             >
               <div
                 className={`card-bg absolute bg-cover bg-center bg-no-repeat inset-0 transition-opacity duration-500 ${service.id}`}
@@ -85,11 +85,11 @@ const Hero = () => {
                 className=" title w-20 z-10 group-hover:filter group-hover:invert group-hover:brightness-0 mb-20 group-hover:text-white  group-hover:translate-y-[-300%]"
                 alt={service.title}
               />
-              <p className="absolute description text-sm md:text-md mt-20 mb-12 md:mb-0 font-bold z-10 group-hover:text-white group-hover:translate-y-[-320%]">
+              <p className="absolute description text-balance text-sm md:text-md mt-20 mb-12 md:mb-0 font-bold z-10 group-hover:text-white group-hover:translate-y-[-500%]">
                 {" "}
                 {service.title}{" "}
               </p>
-              <p className="absolute description p-1  text-sm md:text-md mt-28 mb-12 md:mb-10 z-10 group-hover:text-white w-40 group-hover:w-full group-hover:translate-y-[-50%] group-hover:text-overflow-ellipsis">
+              <p className="absolute description p-1 text-balance  text-sm md:text-md mt-28 mb-12 md:mb-10 z-10 group-hover:text-white w-40 group-hover:w-full group-hover:translate-y-[-50%] group-hover:text-overflow-ellipsis">
                 {service.description}
                 <span className="hidden group-hover:inline">{service.description.slice(service.description.indexOf(" ", 50))}</span>
               </p>

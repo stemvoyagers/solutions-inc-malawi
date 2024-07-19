@@ -7,10 +7,10 @@ const MainHero = () => {
   const data = [aboutUs, officeSpace2, aboutUs, officeSpace2];
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const slides = [
-    { image: data[0], text: "CLASSIC TECH EXPERT" },
-    { image: data[1], text: "CRAFTED WITH AI PRECISION" },
-    { image: data[2], text: "TECH MEETS COMFORT" },
-    { image: data[3], text: "USEFUL FOR YOU & I" },
+    { image: data[0], text: "Your Trusted Experts in Identity & ICT Solutions" },
+    { image: data[1], text: "Cutting-Edge Tech for Public & Private Sectors" },
+    { image: data[2], text: "Dedicated to Excellence in Identity & ICT" },
+    { image: data[3], text: "Expert Tech Solutions for Secure Identification" },
   ];
 
   useEffect(() => {

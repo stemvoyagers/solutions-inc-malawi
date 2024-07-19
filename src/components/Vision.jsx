@@ -1,4 +1,4 @@
-import { aboutUs, contactIde2 } from "../assets"
+import { aboutUs } from "../assets"
 import { circular } from "../assets"
 
 const Vision = () => {
@@ -16,7 +16,8 @@ const Vision = () => {
                         <img className="md:h-fit object-cover relative m-0 p-0 cover rounded-xl" src={aboutUs} alt="img1" />
                     </div>
 
-                    <div className={`md:w-[50%] flex flex-col justify-center text-center text-white'
+                <div className = "flex flex-col md:w-[50%] gap-4 justify-center items-center">
+                    <div className={` flex flex-col justify-center text-center text-white'
                             }`} >
                         <p className="text-xl md:text-2xl font-bold">Our Misson</p>
                         <p className="text-xs md:text-xl text-justify mt-2">From the private sector for
@@ -26,15 +27,7 @@ const Vision = () => {
                         </p>
                     </div>
 
-
-                </div>
-            </div>
-
-            <div className="mt-8 overflow-x-hidden">
-                <div className="flex flex-col-reverse md:flex-row  gap-12" >
-
-
-                    <div className={`overflow-x-hidden md:w-[50%] flex flex-col justify-center text-white  z-50 text-center mb-16 md:mb-0'
+                    <div className={`overflow-x-hidden  flex flex-col justify-center text-white  z-50 text-center mb-16 md:mb-0'
                             }`} >
                         <p className="text-xl md:text-2xl font-bold">Our Vision</p>
                         <p className="text-xs md:text-xl text-justify mt-2">Our enrolment solutions provide a wide
@@ -43,11 +36,13 @@ const Vision = () => {
                             employee enrolment to the public sector
                         </p>
                     </div>
-                    <div id="div1" className={` group  md:w-[50%]`}>
-                        <img className="md:h-auto  object-cover relative m-0 p-0 cover rounded-xl" src={contactIde2} alt="img1" />
-                    </div>
+
+</div>
+
                 </div>
             </div>
+
+           
         </div>
     )
 }
