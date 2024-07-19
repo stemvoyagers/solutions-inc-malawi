@@ -20,15 +20,7 @@ const AboutHome = () => {
                     Who We Are
                 </h2>
                 <p>
-                    <p className="text-balance transform animate-slide-up">At the heart of Identiko lies a steadfast commitment to
-                        innovation, reliability, integrity, and dedication. Our leadership
-                        team brings over 20 years of unparalleled expertise, delivering
-                        top-tier solutions across diverse industries such as banking,
-                        security, breweries, FMCGs, construction, and
-                        telecommunications. Their profound experience extends to
-                        executing sensitive government projects at local, state, and
-                        national levels, ensuring the highest standards of excellence and
-                        security.
+                    <p className="text-balance transform animate-slide-up">Identiko leads in Identity management innovation, with a dedicated team experienced in Identity Management Systems, Biometrics, ICT Consultancy, and System Integration. We provide secure identification solutions for private and public sectors, partnering with top technology firms to deliver reliable services. Our expertise spans over two decades, serving industries like banking, security, FMCGs, construction, and telecommunications.
                     </p><br /><br />
                     <Link to='/about-us'>
 

@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="flex flex-col items-center align-middle gap-2 md:gap-4">
                     <div className="font-bold text-md md:text-xl">Compliance</div>
                     <Link to = '/isms-policy'><span className="cursor-pointer">ISO Policy</span></Link>
-                    <Link to = '/privacy-policy'><span className="cursor-pointer">Privacy Policy</span></Link>                    
+                    <Link to = '/privacy-policy'><span className="cursor-pointer">Privacy Policy</span></Link>
                 </div>
 
                 <div className="flex flex-col items-center align-middle gap-2 md:gap-4">
@@ -25,14 +25,18 @@ const Footer = () => {
                         <MdOutlineEmail />
                         <a href={`mailto:info@identikosolutions.com`}><span>info@identikosolutions.com</span></a>
                     </span>
-                    <span className="flex items-center gap-2 cursor-pointer">                       
-                        <span>Plot 16, Jobi Fele way, Alausa, Ikeja, Lagos</span>
+                    <span className="flex flex-col items-center gap-2 cursor-pointer">
+                        <span>2nd Floor, CITN House, Plot 16, Jobi Fele Way, Ikeja, Lagos</span>
+                        <span>2nd Floor, Oakland Centre, Plot 2940 Aguiyi Ironsi Street, Maitama, Abuja</span>
+
+
+
                     </span>
                     <div className="flex gap-8 cursor-pointer">
                         <a href="https://www.instagram.com/identiko_solutions?igsh=MTF2eTdsdzlqd2t6dg=="><div className="rounded-full border border-white p-2"><FaInstagram /> </div></a>
-                        <div className="rounded-full border border-white p-2"><MdFacebook /></div>
-                        <div className="rounded-full border border-white p-2"><FaXTwitter /></div>
-                        <a href="https://www.linkedin.com/company/identikosolutions/"><div className="rounded-full border border-white p-2"><FaLinkedin /> </div> </a>                      
+                        {/* <div className="rounded-full border border-white p-2"><MdFacebook /></div> */}
+                        {/* <div className="rounded-full border border-white p-2"><FaXTwitter /></div> */}
+                        <a href="https://www.linkedin.com/company/identikosolutions/"><div className="rounded-full border border-white p-2"><FaLinkedin /> </div> </a>
                     </div>
                 </div>
 

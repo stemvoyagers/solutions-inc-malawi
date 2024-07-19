@@ -27,8 +27,8 @@ const Partners = () => {
     <div className="mb-12 md:mt-20 text-center overflow-hidden">
       <div className="flex flex-col items-center justify-center align-middle gap-2 ml-[6%] md:ml-[0%] mr-[4%] md:mr-[0%]">
         <div className="font-bold text-xl md:text-3xl mt-12">Our Partners</div>
-        <span className="text-sm md:text-xl text-center md:w-[47%]">
-          We bring together a team of 1st class world partners to provide our clients with top grade services in all aspects of our solutions
+        <span className="text-sm md:text-xl text-center md:w-[37%]">
+        We collaborate with world-class partners to deliver top-grade services across all our solutions.
         </span>
         <div className="w-full mt-4 text-center overflow-hidden relative">
           <div className="marquee">
