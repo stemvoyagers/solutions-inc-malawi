@@ -16,13 +16,13 @@ const ContactSubscribe = () => {
             </p>
             <a href={`tel:+2348094710197`} className="opacity-75">+234-(0)8094710197</a>
           </div>
-          <div className="flex flex-row gap-1 items-center">
+          {/* <div className="flex flex-row gap-1 items-center">
             <p>
               <FaPhone className="rotate-90 gap-1" />
             </p>
             <a href={`tel:+2348094710197`} className="opacity-75">+234-(0)8094710197</a>
        
-          </div>
+          </div> */}
           <div className="flex flex-row gap-1 items-center">
             <p>              <FaEnvelope />
             </p>
