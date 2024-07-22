@@ -16,18 +16,18 @@ const Vision = () => {
                         <img className="md:h-fit object-cover relative m-0 p-0 cover rounded-xl" src={aboutUs} alt="img1" />
                     </div>
 
-                <div className = "flex flex-col md:w-[50%] gap-4 justify-center items-center">
+                <div className = "flex flex-col md:w-[50%] gap-16 justify-center items-center">
                     <div className={` flex flex-col justify-center text-center text-white'
                             }`} >
-                        <p className="text-xl md:text-2xl font-bold">Our Mission</p>
-                        <p className="text-xs md:text-xl text-justify mt-2">To drive innovation, technology, and economic development while building a sustainable, value-driven business.
+                        <p className="text-xl md:text-5xl font-bold">Our Mission</p>
+                        <p className="text-xs md:text-2xl mt-2 text-center px-2">To drive innovation, technology, and economic development while building a sustainable, value-driven business.
                         </p>
                     </div>
 
-                    <div className={`overflow-x-hidden  flex flex-col justify-center text-white  z-50 text-center mb-16 md:mb-0'
+                    <div className={`overflow-x-hidden  flex flex-col justify-center text-white  z-50 text-center md:mb-0'
                             }`} >
-                        <p className="text-xl md:text-2xl font-bold">Our Vision</p>
-                        <p className="text-xs md:text-xl text-justify mt-2">To be a leading, competent, and dependable ICT solutions provider.
+                        <p className="text-xl md:text-5xl font-bold">Our Vision</p>
+                        <p className="text-xs md:text-2xl text-center mt-2 px-2">To be a leading, competent, and dependable ICT solutions provider.
                         </p>
                     </div>
 

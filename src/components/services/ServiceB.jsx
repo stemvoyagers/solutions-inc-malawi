@@ -1,54 +1,54 @@
 
 const services = [
     {
-        
+
         title: "Software Services",
         description: "We provide flexible, low-cost solutions to enhance business operations. From IT strategy consulting to end-to-end software development, Identiko Solutions delivers scalable, impactful technology solutions. Our international expertise ensures reliable software development with best practice methodologies and deep domain expertise",
-    
+
     },
     {
-        
+
         title: "Software Application",
         description:
             "At Identiko, we transform businesses through robust, scalable application development. Our enterprise services use a proven agile process for innovative solutions, including deep domain analysis, the right team, and a structured 4D methodology for implementation",
-        
+
     },
     {
-        
+
         title: "Software Development",
         description:
             "Identiko offers comprehensive software development services, focusing on agility and scalability. We conduct thorough domain analysis, assemble expert teams, and create innovative, reliable solutions that drive business transformation and meet specific organizational goals",
-       
+
     },
-    {       
+    {
         title: "Software Integration Service",
         description:  "Identiko specializes in software integration, ensuring seamless connectivity between systems. Our expert team develops tailored strategies and solutions to optimize workflows, enhance data accuracy, and improve operational efficiency, driving business success",
      },
-     {       
+     {
         title: "Cloud Solutions",
         description:  "Modernize, migrate, manage, and optimize cloud infrastructure with multi-cloud strategies, automation, and top security practices. We guide you through your cloud journey, from migration to management, enhancing growth and value across your enterprise",
      },
-     {       
+     {
         title: "Cyber Security Solutions",
         description:  "The evolving cyber threat landscape poses risks that many companies can’t manage in-house. Our custom cybersecurity solutions protect your technology and data, ensuring business continuity and safeguarding against costly breaches and reputational damage with expert, tailored defense strategies",
      },
-     {       
+     {
         title: "Data Analytics",
         description:  "Data is growing rapidly, and businesses must quickly derive insights from it. Our cost-effective Business Intelligence (BI) and Analytics services offer a solid foundation for actionable insights, enabling faster, informed decision-making and efficient data management",
      },
-     {       
+     {
         title: "Migrations & System Integration",
         description:  "Enterprises often face information silos from various technology solutions. Identiko Solutions connects disparate systems, enabling seamless collaboration across teams without disrupting existing systems. Our integration services enhance delivery speed, reporting, and automation for efficient data synchronization and process management",
      },
-     {       
+     {
         title: "Workplace Modernization Solutions",
         description:  "Transforming the workplace requires a holistic strategy integrating technology, operations, culture, and employee experience. We provide cost-efficient, secure platforms that enhance mobility, productivity, collaboration, and security, empowering workers in a digitally advanced, automated environment",
      },
-     {       
+     {
         title: "Advanced Infrastructure Solutions",
         description:  "Today’s IT environments are complex, requiring interconnected systems that deliver secure, scalable, and resilient infrastructure. We design and implement effective IT solutions that meet real-world demands, expertly pairing top technologies to fit each client’s needs",
      },
-     {       
+     {
         title: "Network Modernization Solution",
         description:  "Aging networks pose challenges like higher failure rates and compromised security, limiting responsiveness and business opportunities. Network modernization is crucial for digital transformation, as IT leaders seek agile, software-driven solutions to meet evolving demands and enhance network agility",
      },
@@ -66,25 +66,21 @@ const ServiceB = () => {
                     </p>
                 </div>
 
-                <div className="max-w-screen-xl mx-auto py-10 md:py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-[2%] md:pl-12 md:pr-12">
-                    {services.map((service, idx) => (
-                        <div
-                            key={idx}
-                            id={service.id}
-                            className="group cursor-pointer border rounded-md relative flex flex-col 
-                        overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl 
-                        text-center duration-500 h-56  p-4"
-                        >
-                            <p className="absolute description text-balance text-sm md:text-md mb-12 md:mb-0 font-bold z-10">
-                                {" "}
-                                {service.title}{" "}
-                            </p>
-                            <p className="absolute description mt-4 left-0 right-0 text-justify pl-6 pr-6 text-sm md:text-md mb-12 md:mb-10 z-10  w-fit">
-                                {service.description}
-                            </p>
-                        </div>
-                    ))}
-                </div>
+                <div className="max-w-screen-xl mx-auto py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-12">
+  {services.map((service, idx) => (
+    <div
+      key={idx}
+      id={service.id}
+      className="group cursor-pointer border rounded-lg relative flex flex-col overflow-hidden bg-white shadow-md hover:shadow-lg transition-shadow duration-300 h-64 p-6"
+    >
+      <div className="flex flex-col items-center justify-center h-full space-y-4">
+        <p className="text-lg font-bold text-center text-gray-900">{service.title}</p>
+        <p className="text-sm text-justify text-gray-700 px-4">{service.description}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
             </div>
 
         </div>

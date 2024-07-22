@@ -41,30 +41,28 @@ const Mission = () => {
 
             <div className="relative max-w-screen-xl mx-auto mt-4 md:mt-0 px-4 md:px-8 lg:px-12 xl:px-16 flex flex-col justify-center items-center gap-y-10 text-center z-50">
 
-                <h2 className="font-semibold text-xl md:text-3xl md:mb-2 mt-0">
+                <h2 className="font-semibold text-xl md:text-4xl md:mb-2 mt-0">
                     Our Core Values
                 </h2>
 
 
-                <div className="w-full mx-auto py-10 md:py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-[2%] md:pl-12 md:pr-12">
-                    {services.map((service, idx) => (
-                        <div
-                            key={idx}
-                            id={service.id}
-                            className="group cursor-pointer border rounded-md relative flex flex-col
-                        overflow-hidden bg-[#014c98] text-[#ffffff] shadow-md hover:shadow-xl
-                        text-center justify-center duration-500 h-48 p-4"
-                        >
-                            <p className="absolute description top-5 md:top-10 text-balance text-sm md:text-md mb-12 md:mb-0 font-bold z-10">
-                                {" "}
-                                {service.title}{" "}
-                            </p>
-                            <p className="absolute description mt-16 left-0 right-0 text-justify pl-6 pr-6 text-sm md:text-md mb-12 md:mb-10 z-10  w-fit">
-                                {service.description}
-                            </p>
-                        </div>
-                    ))}
-                </div>
+                <div className="container mx-auto px-4 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {services.map((service, idx) => (
+    <div
+      key={idx}
+      id={service.id}
+      className="group cursor-pointer border rounded-lg overflow-hidden bg-blue-900 text-white shadow-md hover:shadow-lg transition-shadow duration-300"
+    >
+      <div className="flex flex-col h-full justify-between p-6">
+        <div>
+          <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
+          <p className="text-base">{service.description}</p>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
             </div>
             <style>{`@keyframes slide-up{ from{ transform: translateY(100%); opacity: 0 } to{ transform: translateY(0%); opacity: 1 }} .animate-slide-up {animation: slide-up 2s ease-out;`} </style>
         </div>

@@ -18,7 +18,7 @@ const services = [
     // {
     //     title: "Monitoring & Management",
     //     description: "",
-    // },  
+    // },
 ];
 
 const ServiceD = () => {
@@ -33,25 +33,21 @@ const ServiceD = () => {
                     </p>
                 </div>
 
-                <div className="max-w-screen-xl mx-auto py-10 md:py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-[2%] md:pl-12 md:pr-12">
-                    {services.map((service, idx) => (
-                        <div
-                            key={idx}
-                            id={service.id}
-                            className="group cursor-pointer border rounded-md relative flex flex-col 
-                        overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl 
-                        text-center duration-500 h-56 p-4"
-                        >
-                            <p className="absolute description text-balance text-sm md:text-md mb-12 md:mb-0 font-bold z-10">
-                                {" "}
-                                {service.title}{" "}
-                            </p>
-                            <p className="absolute description mt-4 left-0 right-0 text-justify pl-6 pr-6 text-sm md:text-md mb-12 md:mb-10 z-10  w-fit">
-                                {service.description}
-                            </p>
-                        </div>
-                    ))}
-                </div>
+                <div className="max-w-screen-xl mx-auto py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-12">
+  {services.map((service, idx) => (
+    <div
+      key={idx}
+      id={service.id}
+      className="group cursor-pointer border rounded-lg relative flex flex-col overflow-hidden bg-white shadow-md hover:shadow-lg transition-shadow duration-300 h-64 p-6"
+    >
+      <div className="flex flex-col items-center justify-center h-full space-y-4">
+        <p className="text-lg font-bold text-center text-gray-900">{service.title}</p>
+        <p className="text-sm text-justify text-gray-700 px-4">{service.description}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
             </div>
 
         </div>
