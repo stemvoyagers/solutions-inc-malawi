@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from '@emailjs/browser';
+import { MdAccessTimeFilled } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdOutlineCall, MdOutlineEmail } from "react-icons/md";
 
 const ContactBody = () => {
     const [loading, setLoading] = useState(false);
@@ -44,7 +47,7 @@ const ContactBody = () => {
     };
 
     return (
-        <div id="section-1" className="relative w-full pb-20 pt-20 px-4 md:px-0 bg-cover bg-center"
+        <div id="section-1" className="relative w-full pb-20 pt-10 px-4 md:px-0 bg-cover bg-center"
             style={{
                 backgroundImage: `url(${circular})`,
                 backgroundSize: 'cover',
@@ -52,53 +55,84 @@ const ContactBody = () => {
             }}>
             <div className="absolute top-0 left-0 w-full h-full bg-white opacity-95"></div>
             <ToastContainer />
+            <div className="text-center font-extrabold text-shadow-xl  transform animate-slide-up text-5xl py-4">
+          Connect With Us
+        </div>
             <div className="relative max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28 z-50">
-                <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0 text-justify text-balance transform animate-slide-up">
+
+                <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0 text-center text-balance transform animate-slide-up">
+
                     {/* <h2 className="text-xl md:text-3xl font-bold mb-1">CONTACT US</h2> */}
                     <form>
                         <div className="mb-4">
-                            <p className="w-3/3 cursor-pointer text-[12px] md:text-[16px] py-2 text-black" >
+                            <p className="w-3/3 text-lg py-2 text-black" >
                                 If you have any questions or require advice, please feel free to
-                                get in touch with us. Our team is here and ready to assist you.
+                                <a className="cursor-pointer text-blue-800 underline"> Get In Touch</a> with us. Our team is here and ready to assist you.
                             </p>
                         </div>
                         <div className="mb-2">
-                            <p className="w-full py-2 text-black text-[15px] font-semibold">
-                                Our offices are open:
-                            </p>
-                            <p className="w-full text-black text-[12px] md:text-[15px]  lg:text-[15px]">
-                                Monday to Friday from 7:00 a.m. to 5:00 p.m.
+                        <span className="flex items-center justify-center gap-2 cursor-pointer">
+                        <MdAccessTimeFilled />
+                        <span className=" py-2 text-black text-xl font-semibold">Our Offices are open:</span>
+                        </span>
+                            <p className="w-full text-black text-lg">
+                                Monday to Friday from <span className="font-medium">8:00 a.m. - 5:00 p.m.</span>
                             </p>
                         </div>
 
                         <div className="mt-4 flex gap-5">
                             <div>
-                                <p className="w-full py-2 text-black text-[15px] font-semibold"> Address: </p>
-                                <p className="w-full text-black text-[12px] md:text-[15px] font-semibold">
-                                    Cooperate office: Suite10 Canaan Plaza, Plot 2 Blk 105,
-                                    Lekki Phase 1, Lagos </p>
-                                <p className="w-full py-2 text-black  text-[15px]">  Operation office: 2nd Floor, CITN (Chartered Institute of Taxation)
-                                    House,  <br />Plot 16, Jobi Fele way, Central Business District, Ikeja, Lagos.
-                                </p>
+                                <span className="flex items-center justify-center gap-2 cursor-pointer">
+                                <FaLocationDot />
+                        <span className=" py-2 text-black text-xl font-semibold">Address</span>
+                        </span>
+                                <p className="w-full text-black text-lg py-1">2nd Floor, CITN House, Plot 16, Jobi Fele Way, Ikeja, Lagos</p>
+                        <p className="w-full text-black text-lg py-1">2nd Floor, Oakland Centre, Plot 2940 Aguiyi Ironsi Street, Maitama, Abuja</p>
+
                             </div>
                         </div>
-                        <div className="mt-2 flex gap-5">
+
+<div className="flex flex-row justify-around">
+
+                        <div className="mt-4 flex gap-5">
+                            <div className="flex flex-col gap-2">
+                            <span className="flex items-center justify-center gap-2 cursor-pointer">
+                            <MdOutlineCall />
+                        <span className=" py-2 text-black text-xl font-semibold">Phone</span>
+                        </span>
+                                <a href={`tel:+2348094710197`}><span>+234-(0)704 381 7509</span></a>
+                                <a href={`tel:+2348094710197`}><span>+234-(0)809 471 0197</span></a>
+                            </div>
+                        </div>
+
+                        <div className="mt-4 flex gap-5">
+                            <div className="flex flex-col gap-1">
+                            <span className="flex items-center justify-center gap-2 cursor-pointer">
+                            <MdOutlineEmail />
+                        <span className=" py-2 text-black text-xl font-semibold">Email</span>
+                        </span>
+                                <a href={`mailto:info@identikosolutions.com`}className="cursor-pointer text-blue-800 underline">info@identikosolutions.com</a>
+
+                            </div>
+                        </div>
+</div>
+                        {/* <div className="mt-4 flex gap-5">
                             <div>
-                                <p className="w-full py-2 text-black text-[15px] font-semibold"> Phone: </p>
-                                <p className="w-full text-black text-[12px] md:text-[15px] font-subFont">
+                                <p className="w-full py-2 text-black text-xl font-semibold"> Phone: </p>
+                                <p className="w-full text-black text-lg py-1">
                                     +234 800 0000 000 (whatsapp/call) <br />
                                     +234 900 0000 000 (call only)
                                 </p>
                             </div>
-                        </div>
-                        <div className="mb-4 flex gap-5">
+                        </div> */}
+                        {/* <div className="mt-2 flex gap-5">
                             <div>
                                 <p className="w-full py-2 text-black  text-[15px] font-semibold"> Email: </p>
                                 <p className="w-full text-black text-[15px] font-subFont">
                                     info@identikosolutions.com
                                 </p>
                             </div>
-                        </div>
+                        </div> */}
                     </form>
                 </div>
                 <div className="w-full">

@@ -81,10 +81,10 @@ const Hero = () => {
 
               <img
                 src={service.img}
-                className=" title w-20 z-10 group-hover:filter group-hover:invert group-hover:brightness-0 mb-20 group-hover:text-white  group-hover:translate-y-[-300%]"
+                className=" title w-20 z-10 group-hover:filter group-hover:invert group-hover:brightness-0 mt-[-40px] mb-20 group-hover:text-white  group-hover:translate-y-[-300%]"
                 alt={service.title}
               />
-              <p className="absolute description text-balance text-sm md:text-xl mt-20 mb-12 md:mb-0 font-bold z-10 group-hover:text-white group-hover:translate-y-[-300%]">
+              <p className="absolute description text-balance text-sm md:text-xl mt-16 mb-12 md:mb-0 font-bold z-10 group-hover:text-white group-hover:translate-y-[-300%]">
                 {" "}
                 {service.title}{" "}
               </p>

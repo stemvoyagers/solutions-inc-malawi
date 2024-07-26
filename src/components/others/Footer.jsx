@@ -1,5 +1,6 @@
-import { MdFacebook, MdOutlineCall, MdOutlineEmail } from "react-icons/md";
+import { MdOutlineCall, MdOutlineEmail } from "react-icons/md";
 import { FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
 // import { msPix, nigPix } from "../../assets";
 import { Link } from "react-router-dom";
 
@@ -19,19 +20,28 @@ const Footer = () => {
                     <div className="font-bold text-md md:text-xl">Get In Touch</div>
                      <span className="flex items-center gap-2 cursor-pointer">
                         <MdOutlineCall />
-                        <a href={`tel:+2348094710197`}><span>+234-(0)8094710197</span></a>
+                        <a href={`tel:+2348094710197`}><span>+234-(0)704 381 7509</span></a>
+                    </span>
+                     <span className="flex items-center gap-2 cursor-pointer">
+                        <MdOutlineCall />
+                        <a href={`tel:+2348094710197`}><span>+234-(0)809 471 0197</span></a>
                     </span>
                     <span className="flex items-center gap-2 cursor-pointer">
                         <MdOutlineEmail />
                         <a href={`mailto:info@identikosolutions.com`}><span>info@identikosolutions.com</span></a>
                     </span>
-                    <span className="flex flex-col items-center gap-2 cursor-pointer">
+                    <span className="flex items-center gap-2 cursor-pointer">
+                    <FaLocationDot />
                         <span>2nd Floor, CITN House, Plot 16, Jobi Fele Way, Ikeja, Lagos</span>
+                        </span>
+
+                    <span className="flex items-center gap-2 cursor-pointer">
+                    <FaLocationDot />
                         <span>2nd Floor, Oakland Centre, Plot 2940 Aguiyi Ironsi Street, Maitama, Abuja</span>
+                        </span>
 
+                        {/* <span></span> */}
 
-
-                    </span>
                     <div className="flex gap-8 cursor-pointer">
                         <a href="https://www.instagram.com/identiko_solutions?igsh=MTF2eTdsdzlqd2t6dg=="><div className="rounded-full border border-white p-2"><FaInstagram /> </div></a>
                         {/* <div className="rounded-full border border-white p-2"><MdFacebook /></div> */}
