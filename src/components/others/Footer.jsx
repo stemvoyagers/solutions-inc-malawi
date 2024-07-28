@@ -1,5 +1,5 @@
 import { MdOutlineCall, MdOutlineEmail } from "react-icons/md";
-import { FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaLinkedin } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 // import { msPix, nigPix } from "../../assets";
 import { Link } from "react-router-dom";
