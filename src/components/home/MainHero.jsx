@@ -77,7 +77,7 @@ const MainHero = () => {
               {loading ? (
                 <div className="w-full h-64 md:h-96 lg:h-[600px] bg-gray-300 animate-pulse"></div>
               ) : (
-                <img className="w-full h-64 md:h-96 lg:h-[500px] object-cover" src={slide.image} alt={`img-${index}`} />
+                <img className="w-full h-64 md:h-96 lg:h-[70vh] object-cover" src={slide.image} alt={`img-${index}`} />
               )}
               <div className="absolute z-30 flex flex-col items-center justify-center text-center w-full h-full bg-black bg-opacity-50">
                 <p

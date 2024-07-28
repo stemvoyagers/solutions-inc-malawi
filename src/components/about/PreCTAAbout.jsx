@@ -2,7 +2,7 @@ import { aboutUs } from "../../assets";
 const PreCTAAbout = () => {
     return (
         <div
-            className="bg-no-repeat bg-cover relative h-[40vh] md:h-[60vh] w-full z-1"
+            className="bg-no-repeat bg-cover relative h-[40vh] md:h-[70vh] w-full z-1"
             style={{
                 backgroundImage: `url(${aboutUs})`,
                 backgroundPosition: 'center',
