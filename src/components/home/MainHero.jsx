@@ -8,10 +8,10 @@ const MainHero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loading, setLoading] = useState(true);
   const slides = [
-    { image: aboutUs, text: "Your Trusted Experts in Identity & ICT Solutions" },
-    { image: heroImage, text: "Cutting-Edge Technology for Public & Private Sectors" },
-    { image: slide3, text: "Dedicated to Excellence in Identity & ICT" },
-    { image: slide4, text: "Expert Technology Solutions for Secure Identification" },
+    { image: aboutUs, text: "Empowering Businesses with Cutting-Edge Technology" },
+    { image: heroImage, text: "Ensuring Reliable and Secure Identity Management" },
+    { image: slide3, text: "Optimizing Operations for a Smarter Future" },
+    { image: slide4, text: "Ensuring Safety with Real-Time Management" },
   ];
 
   const duplicatedSlides = slides.concat(slides);
@@ -81,7 +81,7 @@ const MainHero = () => {
               )}
               <div className="absolute z-30 flex flex-col items-center justify-center text-center w-full h-full bg-black bg-opacity-50">
                 <p
-                  className={`text-white font-bold text-xl md:text-5xl text-shadow-xl transform animate-slide-up`}
+                  className={`text-white font-bold text-xl md:text-4xl text-shadow-xl transform animate-slide-up`}
                   key={`${index}-${currentSlide}`}
                 >
                   {slide.text}

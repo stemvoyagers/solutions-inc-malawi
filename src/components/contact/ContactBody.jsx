@@ -53,7 +53,7 @@ const ContactBody = () => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }}>
-            <div className="absolute top-0 left-0 w-full h-full bg-white opacity-95"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-blue-50 opacity-60"></div>
             <ToastContainer />
             <div className="text-center font-extrabold text-shadow-xl  transform animate-slide-up text-4xl py-4">
           Connect With Us
