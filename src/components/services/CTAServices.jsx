@@ -1,5 +1,5 @@
 // import { Link } from "react-router-dom";
-import { officeSpace } from "../../assets";
+import { serviceso } from "../../assets";
 // import arrow_down from "../../assets/arrow_down.svg";
 
 const CTAServices = () => {
@@ -7,7 +7,7 @@ const CTAServices = () => {
     <div
       className="bg-no-repeat bg-cover relative h-[40vh] md:h-[60vh] w-full z-1"
       style={{
-        backgroundImage: `url(${officeSpace})`,
+        backgroundImage: `url(${serviceso})`,
         backgroundPosition: 'center',
         position: "relative",
       }}
@@ -19,18 +19,7 @@ const CTAServices = () => {
         </div>
       </div>
 
-      {/* <Link to="#section-1">
-        <div
-          className="absolute top-[75%] left-0 right-0 flex justify-center
-                 items-center text-white"
-        >
-          <div className="animate-bounce">
-            <img src={arrow_down} className="w-6 h-auto" />
-          </div>
-        </div>
-      </Link> */}
-
-      <style>{`@keyframes slide-up{ from{ transform: translateY(100%); opacity: 0 } to{ transform: translateY(0%); opacity: 1 }} .animate-slide-up {animation: slide-up 2s ease-out;`} </style>
+          <style>{`@keyframes slide-up{ from{ transform: translateY(100%); opacity: 0 } to{ transform: translateY(0%); opacity: 1 }} .animate-slide-up {animation: slide-up 2s ease-out;`} </style>
     </div>
   );
 };

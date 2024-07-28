@@ -27,6 +27,8 @@ import off5 from "../assets/off5.jpg"
 import off6 from "../assets/off6.jpg"
 import off7 from "../assets/off7.jpg"
 import off8 from "../assets/off8.jpg"
+import careero from "../assets/careero.jpg"
+import serviceso from "../assets/serviceso.jpg"
 import homela from "../assets/homela.jpg"
 import aboutUsPic from "../assets/aboutUsPic.jpg"
 import careerPic from "../assets/careerPic.jpg"
@@ -109,5 +111,5 @@ export {
     home2, identikoWeb, vmware, veritas, neuro, microsoft, lenovo, idemia, hp,
     cisco, msPix, nigPix, recognition, identiko, no1, no2, no3, no4, no5, no6,
     no7, no8, no9, no10, no11, no12, no13, no14, no15, no17, no18, no19, no20, 
-    no21, no23, no25, no27, officeSpace2, homela
+    no21, no23, no25, no27, officeSpace2, homela, serviceso, careero,
 };
