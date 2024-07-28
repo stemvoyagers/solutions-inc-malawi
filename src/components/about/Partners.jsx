@@ -1,13 +1,12 @@
-import {microsoftL, neuroL, nimcL, sterlingL, veritasL, verveL, vmL,
-  ciscoL, hpL, huaweiL, idemiaL, interswitchL, lagosL, lenovoL, manageL,  } from "../../assets";
+import {microsoftL, neuroL, veritasL, vmL,
+  ciscoL, hpL, huaweiL, idemiaL, interswitchL, lagosL, lenovoL, } from "../../assets";
 
 const partners1 = [
   { logo: microsoftL, alt: "msImg" },
   { logo: neuroL, alt: "msImg" },
-  { logo: nimcL, alt: "nigImg" },
-  { logo: sterlingL, alt: "msImg" },
+  // { logo: nimcL, alt: "nigImg" },
+  // { logo: sterlingL, alt: "msImg" },
   { logo: veritasL, alt: "msImg" },
-  { logo: verveL, alt: "nigImg" },
   { logo: ciscoL, alt: "msImg" },
   { logo: vmL, alt: "msImg" },
 ];
@@ -19,7 +18,6 @@ const partners2 = [
   { logo: lagosL, alt: "msImg" },
   { logo: interswitchL, alt: "msImg" },
   { logo: lenovoL, alt: "msImg" },
-  { logo: manageL, alt: "msImg" },
 ];
 
 const Partners = () => {

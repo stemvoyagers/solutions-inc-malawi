@@ -24,14 +24,13 @@ const Services = () => {
     <div>
       <CTAServices />
       {/* <ServicesBody /> */}
-     
-      <ServiceB/>
+
       <ServiceA />
+      <ServiceB/>
       <ServiceC/>
-      <ServiceD/>
+      {/* <ServiceD/> */}
     </div>
   )
 }
 
 export default Services
-

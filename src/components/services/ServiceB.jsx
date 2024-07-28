@@ -1,25 +1,25 @@
 
 const services = [
-    {
+    // {
 
-        title: "Software Services",
-        description: "We provide flexible, low-cost solutions to enhance business operations. From IT strategy consulting to end-to-end software development, Identiko Solutions delivers scalable, impactful technology solutions. Our international expertise ensures reliable software development with best practice methodologies and deep domain expertise",
+    //     title: "Software Services",
+    //     description: "We provide flexible, low-cost solutions to enhance business operations. From IT strategy consulting to end-to-end software development, Identiko Solutions delivers scalable, impactful technology solutions. Our international expertise ensures reliable software development with best practice methodologies and deep domain expertise",
 
-    },
-    {
+    // },
+    // {
 
-        title: "Software Application",
-        description:
-            "At Identiko, we transform businesses through robust, scalable application development. Our enterprise services use a proven agile process for innovative solutions, including deep domain analysis, the right team, and a structured 4D methodology for implementation",
+    //     title: "Software Application",
+    //     description:
+    //         "At Identiko, we transform businesses through robust, scalable application development. Our enterprise services use a proven agile process for innovative solutions, including deep domain analysis, the right team, and a structured 4D methodology for implementation",
 
-    },
-    {
+    // },
+    // {
 
-        title: "Software Development",
-        description:
-            "Identiko offers comprehensive software development services, focusing on agility and scalability. We conduct thorough domain analysis, assemble expert teams, and create innovative, reliable solutions that drive business transformation and meet specific organizational goals",
+    //     title: "Software Development",
+    //     description:
+    //         "Identiko offers comprehensive software development services, focusing on agility and scalability. We conduct thorough domain analysis, assemble expert teams, and create innovative, reliable solutions that drive business transformation and meet specific organizational goals",
 
-    },
+    // },
     {
         title: "Software Integration Service",
         description:  "Identiko specializes in software integration, ensuring seamless connectivity between systems. Our expert team develops tailored strategies and solutions to optimize workflows, enhance data accuracy, and improve operational efficiency, driving business success",
@@ -52,6 +52,14 @@ const services = [
         title: "Network Modernization Solution",
         description:  "Aging networks pose challenges like higher failure rates and compromised security, limiting responsiveness and business opportunities. Network modernization is crucial for digital transformation, as IT leaders seek agile, software-driven solutions to meet evolving demands and enhance network agility",
      },
+     {
+        title: "Managed Services & Outsourcing",
+        description: "Modern businesses need advanced technology to thrive, but managing data growth, apps, multiclouds, and cyberthreats is challenging. Our Managed Services and Outsourcing provide expert support to handle these tasks, optimizing your IT environment and supporting innovation",
+    },
+    {
+        title: "Smart Customer Experience Solutions",
+        description: "Customer expectations are evolving rapidly, pushing organizations to adapt. As consumers go digital-first, we offer advanced AI and contact center analytics to enhance customer experience, identify key touchpoints, and use data analytics for improved business results",
+    },
 ];
 
 const ServiceB = () => {

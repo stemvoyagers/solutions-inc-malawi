@@ -40,7 +40,7 @@ const CTAHome = () => {
         <div className="ml-9 text-left text-shadow-lg mb-[15%]">
           <p className="md:text-[40px] mb-4">Identiko Integrated Solutions</p>
           <p> Your Ultimate Destination for Digital Identity,  </p>
-          <p> Verification, and Tech Solutions.</p>{" "}
+          <p> Verification, and Technology Solutions.</p>{" "}
         </div>
 
         <Link to="#section-1">

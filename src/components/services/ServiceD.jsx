@@ -3,18 +3,7 @@ const services = [
     //     title: "Electronic Voting Solution",
     //     description: "",
     // },
-    {
-        title: "Traffic Management Systems",
-        description: "Smart Traffic Management Systems (STMS) expand city capacity without new highways, reducing traffic jams, pollution, and delays. Our STMS integrates traffic cabinets and transportation systems to enhance citywide flow and safety, improving overall quality of life",
-    },
-    {
-        title: "Electronic Surveillance",
-        description: "Identiko provides electronic surveillance solutions with GPS tracking, cameras, and microphones. Our systems integrate these components to offer flexible, scalable solutions tailored to diverse project needs",
-    },
-    {
-        title: "IOT and Electronic Sensor",
-        description: "We provide IoT solutions for smart cities, using sensors and connected devices to improve traffic management, surveillance, waste disposal, and resource use, offering expert advice for tailored implementation to meet specific needs",
-    },
+ 
     // {
     //     title: "Monitoring & Management",
     //     description: "",

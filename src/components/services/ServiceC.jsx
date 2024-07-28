@@ -1,12 +1,5 @@
 const services = [
-    {
-        title: "Managed Services & Outsourcing",
-        description: "Modern businesses need advanced technology to thrive, but managing data growth, apps, multiclouds, and cyberthreats is challenging. Our Managed Services and Outsourcing provide expert support to handle these tasks, optimizing your IT environment and supporting innovation",
-    },
-    {
-        title: "Smart Customer Experience Solutions",
-        description: "Customer expectations are evolving rapidly, pushing organizations to adapt. As consumers go digital-first, we offer advanced AI and contact center analytics to enhance customer experience, identify key touchpoints, and use data analytics for improved business results",
-    },
+
     // {
     //     title: "E-government Services Platform",
     //     description: "",
@@ -24,6 +17,18 @@ const services = [
     //     description: "",
     // },
     {
+        title: "Traffic Management Systems",
+        description: "Smart Traffic Management Systems (STMS) expand city capacity without new highways, reducing traffic jams, pollution, and delays. Our STMS integrates traffic cabinets and transportation systems to enhance citywide flow and safety, improving overall quality of life",
+    },
+    {
+        title: "Electronic Surveillance",
+        description: "Identiko provides electronic surveillance solutions with GPS tracking, cameras, and microphones. Our systems integrate these components to offer flexible, scalable solutions tailored to diverse project needs",
+    },
+    {
+        title: "IOT and Electronic Sensor",
+        description: "We provide IoT solutions for smart cities, using sensors and connected devices to improve traffic management, surveillance, waste disposal, and resource use, offering expert advice for tailored implementation to meet specific needs",
+    },
+    {
         title: "Prisons/Correctional Facility Management",
         description: "Jail ID uses multi-biometric technologies to verify inmates and visitors, confirming identities during booking, release, transfers, and visits. It integrates with NEC's security management for centralized access control, CCTV, and alarm monitoring",
     },
@@ -34,7 +39,7 @@ const ServiceC = () => {
         <div id="section-1" className="w-full mt-[20%] md:mt-[5%]">
             <div className="max-w-screen-xl mx-auto text-center items-center justify-center  px-2 md:px-0">
                 <div className="text-center text-black">
-                    <p className="text-xl md:text-3xl font-bold"> MANAGED SERVICES AND SMARTCITY SOLUTIONS </p>
+                    <p className="text-xl md:text-3xl font-bold"> SMARTCITY AND SURVEILLANCE SOLUTIONS </p>
                     <p className="text-xs md:text-xl md:ml-40 md:mr-40 text-center flex justify-center items-center">
                         {" "}
                         We offer specialized support to enhance operational efficiency and meet unique organizational needs {" "}
