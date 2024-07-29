@@ -39,7 +39,7 @@ import contactIde2 from "../assets/recognition02.png"
 import officeSpace from "../assets/newS.jpg"
 import officeSpace2 from "../assets/officeSpace.jpg"
 import aCareer from "../assets/aCareer.jpg"
-import LandingVid from "../assets/lanlan.mp4"
+import LandingVid from "../assets/landingVid.mp4"
 import AboutVid from "../assets/aboutU.mp4"
 import editedContact from "../assets/editedContact.jpg"
 import enrollment_services from "../assets/services_icon/enrollment_services.svg"
@@ -106,10 +106,10 @@ export {
     vision, anocar, identiko_logo, software_application, enrollment_services,
     identity_solution, tech_solution, AboutVid, editedContact, LandingVid, contactIde2,
     aCareer, officeSpace, contactIde, logoPicu, aboutUs, careerPic, aboutUsPic,
-    off1, off2, off3, off4, off5, off6, off7, off8, Sunset, jideAgbaje, circular, 
+    off1, off2, off3, off4, off5, off6, off7, off8, Sunset, jideAgbaje, circular,
     bg, robot, zeroreg, face, finger, home, card1, card2, card3, card4,
     home2, identikoWeb, vmware, veritas, neuro, microsoft, lenovo, idemia, hp,
     cisco, msPix, nigPix, recognition, identiko, no1, no2, no3, no4, no5, no6,
-    no7, no8, no9, no10, no11, no12, no13, no14, no15, no17, no18, no19, no20, 
+    no7, no8, no9, no10, no11, no12, no13, no14, no15, no17, no18, no19, no20,
     no21, no23, no25, no27, officeSpace2, homela, serviceso, careero,
 };
