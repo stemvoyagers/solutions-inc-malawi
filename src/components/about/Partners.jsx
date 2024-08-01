@@ -22,7 +22,7 @@ const partners2 = [
 
 const Partners = () => {
   return (
-    <div className="mb-12 md:mt-20 text-center overflow-hidden">
+    <div className="mb-12 mt-12 text-center overflow-hidden">
       <div className="flex flex-col items-center justify-center align-middle gap-2 ml-[6%] md:ml-[0%] mr-[4%] md:mr-[0%]">
         <div className="font-bold text-xl md:text-3xl mt-12">Our Partners</div>
         <span className="text-sm md:text-xl text-center md:w-[37%]">

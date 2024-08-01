@@ -127,7 +127,7 @@ const servicesData = [
     details:
       "Our solutions are all about simplification imitation Our solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitationOur solutions are all about simplification imitation",
   },
-  
+
 ];
 
 const ServicesBody = () => {
@@ -154,7 +154,7 @@ const ServicesBody = () => {
         <div className="text-center text-black">
           <p className="text-md md:text-3xl mt-20  font-bold">OUR SERVICES</p>
           <p className="text-xs md:text-sm">
-            Our solutions are all about simplification and optimisation{" "}
+            Our solutions are all about simplification and optimization{" "}
           </p>
         </div>
 
@@ -163,8 +163,8 @@ const ServicesBody = () => {
             <div
               key={idx}
               id={`div${idx + 1}`}
-              className={`group cursor-pointer border rounded-md relative hover:scale-110 flex flex-col items-center 
-                        overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl p-8 grid-cols-1 
+              className={`group cursor-pointer border rounded-md relative hover:scale-110 flex flex-col items-center
+                        overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl p-8 grid-cols-1
                         text-center duration-500`}
             >
               <div className={`card-bg absolute bg-cover bg-center bg-no-repeat inset-0 transition-opacity duration-500 ${service.id}`}
@@ -239,7 +239,7 @@ const ServicesBody = () => {
           .group:hover .details{
           transform: translateY(-100%)
           transition: transform 0.5s ease-in-out
-        }        
+        }
         .card-bg{
           opacity: 0;
         }
