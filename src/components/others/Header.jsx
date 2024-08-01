@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { identiko } from "../../assets";
-import { useNavigate } from "react-router-dom/dist";
 import { MdMenu, MdClose } from "react-icons/md";
 
 const Header = () => {
@@ -14,67 +13,70 @@ const Header = () => {
   };
 
   return (
-    <div className="overflow-x-hidden top-0 flex items-center  text-[#000000] shadow-sm  justify-between px-8">
-      <Link to="/">
-        <div>
+    <div className="overflow-x-hidden top-0 flex items-center text-black shadow-sm justify-between px-8 py-4 bg-white relative z-50">
+      <div className="flex items-center">
+        <div className="md:hidden cursor-pointer z-50">
+          {isMenuOpen ? (
+            <MdClose
+              onClick={() => setIsMenuOpen(false)}
+              className="text-black text-2xl"
+            />
+          ) : (
+            <MdMenu
+              onClick={() => setIsMenuOpen(true)}
+              className="text-black text-2xl"
+            />
+          )}
+        </div>
+        <Link to="/" className="flex items-center">
           <img
             src={identiko}
             alt="webImg"
-            className="w-[65%] max-w-[200px] cursor-pointer rounded-lg"
-            onClick={handleClick || setIsMenuOpen(false)}
+            className="w-[65%] max-w-[200px] cursor-pointer rounded-lg ml-4"
+            onClick={handleClick || (() => setIsMenuOpen(false))}
           />
-        </div>
-      </Link>
+        </Link>
+      </div>
 
       <div className="hidden md:flex items-center justify-center">
-        <div className="flex justify-center items-center gap-12 ">
+        <div className="flex justify-center items-center gap-12">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about-us">About Us</NavLink>
           <NavLink to="/our-services">Services</NavLink>
           <NavLink to="/career-page">Career</NavLink>
-
-          <div className="border p-2 cursor-pointer rounded-md text-[#ffffff] bg-[#000000]  hover:bg-[#000000d7]  flex justify-end duration-300 delay-100 transition-transform">
+          <div className="border p-2 cursor-pointer rounded-md text-white bg-black hover:bg-opacity-90 flex justify-end duration-300">
             <NavLink to="/contact-us">Contact Us</NavLink>
           </div>
         </div>
       </div>
 
-      <div className="md:hidden cursor-pointer">
-        {isMenuOpen ? (
-          <MdClose
-            onClick={() => setIsMenuOpen(false)}
-            className="text-[#000000] text-xl"
-          />
-        ) : (
-          <MdMenu
-            onClick={() => setIsMenuOpen(true)}
-            className="text-[#000000] text-xl"
-          />
-        )}
-      </div>
-
+      {/* Background Blur and Menu */}
       {isMenuOpen && (
-        <div
-          className="md:hidden absolute top-[7%] left-0 right-0 z-50 border-b bg-[#000000] transition delay-150 duration-300 ease-in-out"
-          style={{ maxHeight: isMenuOpen ? "300px" : "0" }}
-        >
-          <MobileNavLink to="/about-us" onClick={() => setIsMenuOpen(false)}>
-            {" "}
-            About Us{" "}
-          </MobileNavLink>
-          <MobileNavLink to="/our-services" onClick={() => setIsMenuOpen(false)}>
-            {" "}
-            Services{" "}
-          </MobileNavLink>
-          <MobileNavLink to="/career-page" onClick={() => setIsMenuOpen(false)}>
-            {" "}
-            Career{" "}
-          </MobileNavLink>
-          <MobileNavLink to="/contact-us" onClick={() => setIsMenuOpen(false)}>
-            {" "}
-            Contact Us{" "}
-          </MobileNavLink>
-        </div>
+        <>
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 z-40 backdrop-blur-sm"
+            onClick={() => setIsMenuOpen(false)}
+          ></div>
+          <div
+            className="md:hidden fixed top-0 left-0 h-screen w-[30vw] bg-black text-white z-50 transform translate-x-[-100%] transition-transform duration-500 ease-in-out"
+            style={{ transform: isMenuOpen ? "translateX(0)" : "translateX(-100%)" }}
+          >
+            {/* Close Button at the Top */}
+            <div className="flex justify-end p-4">
+              <MdClose
+                className="text-3xl cursor-pointer"
+                onClick={() => setIsMenuOpen(false)}
+              />
+            </div>
+            <div>
+              <MobileNavLink to="/" onClick={() => setIsMenuOpen(false)}>Home</MobileNavLink>
+              <MobileNavLink to="/about-us" onClick={() => setIsMenuOpen(false)}>About Us</MobileNavLink>
+              <MobileNavLink to="/our-services" onClick={() => setIsMenuOpen(false)}>Services</MobileNavLink>
+              <MobileNavLink to="/career-page" onClick={() => setIsMenuOpen(false)}>Career</MobileNavLink>
+              <MobileNavLink to="/contact-us" onClick={() => setIsMenuOpen(false)}>Contact Us</MobileNavLink>
+            </div>
+          </div>
+        </>
       )}
     </div>
   );
@@ -97,18 +99,16 @@ const NavLink = ({ to, children }) => {
     <div
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
-      // onClick={() => setActive(true)}
       className="relative h-fit w-fit cursor-pointer"
     >
-      <Link to={to} className={`${active ? "font-bold" : ""} relative`}>
+      <Link to={to} className={`${active ? "font-extrabold" : ""} relative`}>
         {children}
-        {to !== "/contact-us" && (
+        {active && (
           <span
             style={{
-              transform: open ? "scaleX(1)" : "scaleX(0)",
+              transform: "scaleX(1)",
             }}
-            className="absolute -bottom-5 -left-2 -right-2 h-1 origin-left 
-                          rounded-full bg-[#000000] transition-transform duration-300 ease-out"
+            className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 h-1 w-1 bg-black rounded-full transition-transform duration-300"
           />
         )}
       </Link>
@@ -117,12 +117,16 @@ const NavLink = ({ to, children }) => {
 };
 
 const MobileNavLink = ({ to, children, onClick }) => {
+  const currentUrl = window.location.pathname;
+
   return (
     <div
-      className="p-4 cursor-pointer hover:bg-white text-[#ffffff] hover:text-[#000000] z-20 duration-300 bg-[#000000]"
+      className={`py-4 cursor-pointer hover:bg-white  hover:text-black duration-300 ${
+        currentUrl === to ? "font-extrabold" : ""
+      }`}
       onClick={onClick}
     >
-      <p className="text-xs z-20 rounded-full flex items-center justify-center">
+      <p className="text-center">
         <Link to={to}>{children}</Link>
       </p>
     </div>

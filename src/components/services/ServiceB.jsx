@@ -45,11 +45,11 @@ const services = [
 
 const ServiceB = () => {
   return (
-    <div id="section-1" className="w-full mt-[20%] md:mt-[5%]">
-      <div className="max-w-screen-xl mx-auto text-center items-center justify-center px-2 md:px-0">
+    <div id="section-1" className="w-full mt-[10%] md:mt-[5%]">
+      <div className="w-full mx-auto text-center items-center justify-center px-28 md:px-0">
         <div className="text-center text-black">
           <p className="text-xl md:text-3xl font-bold"> SOFTWARE AND IT SOLUTIONS </p>
-          <p className="text-xs md:text-xl md:ml-40 md:mr-40 text-center flex justify-center items-center">
+          <p className="text-sm md:text-xl md:ml-40 md:mr-40 text-center flex justify-center items-center">
             {" "}
             From development to integration, we deliver robust solutions tailored to your business needs{" "}
           </p>
@@ -62,9 +62,9 @@ const ServiceB = () => {
               id={service.id}
               className="group cursor-pointer border rounded-lg relative flex flex-col overflow-hidden bg-white shadow-md hover:shadow-lg transition-shadow duration-300 h-64 p-6"
             >
-              <div className="flex flex-col items-center justify-center h-full space-y-4">
+              <div className="flex flex-col items-center justify-start h-full space-y-4">
                 <p className="text-lg font-bold text-center text-gray-900">{service.title}</p>
-                <p className="text-sm text-justify text-gray-700 px-4">{service.description}</p>
+                <p className="text-sm text-center text-gray-700 px-4">{service.description}</p>
               </div>
             </div>
           ))}

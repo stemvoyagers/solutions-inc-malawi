@@ -5,7 +5,7 @@ import { identiko_logo } from "../assets";
 import ServiceA from "../components/services/ServiceA";
 import ServiceB from "../components/services/ServiceB";
 import ServiceC from "../components/services/ServiceC";
-import ServiceD from "../components/services/ServiceD";
+// import ServiceD from "../components/services/ServiceD";
 
 const Services = () => {
   const [isLoading, setIsLoading] = useState(true);
