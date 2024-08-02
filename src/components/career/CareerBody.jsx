@@ -70,7 +70,7 @@ const CareerBody = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-white opacity-95"></div>
       <ToastContainer />
 
-      <div className="relative max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-12 z-50">
+      <div className="relative max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-12 z-10">
         <div className="w-full flex flex-col justify items-center pl-4 md:pl-0 pr-4 md:pr-0 gap-8 md:gap-0 transform animate-slide-up">
           <div className="md:mt-4 flex flex-col items-center gap-0 md:gap-5 text-center">
             <div className="w-[100%] md:p-4 text-2xl font-semibold">

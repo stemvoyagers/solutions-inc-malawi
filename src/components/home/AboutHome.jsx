@@ -38,7 +38,7 @@ const AboutHome = () => {
           className={`w-[80vw] bg-no-repeat shadow-xl h-full lg:h-[385px] bg-cover bg-center min-w-full min-h-full relative m-0 p-0 ${isLoading ? 'hidden' : 'block'}`}
         />
       </div>
-      <div className="md:w-1/2 bg-white text-black lg:gap-10 ml-6 mr-[4%] p-6 z-50 lg:h-[385px] flex flex-col items-start justify-center">
+      <div className="md:w-1/2 bg-white text-black lg:gap-10 ml-6 mr-[4%] p-6 z-10 lg:h-[385px] flex flex-col items-start justify-center">
         <h2 className="font-semibold text-xl md:text-3xl lg:text-4xl md:mb-1 sm:mb-4 mb-2">Who We Are</h2>
         <p className='flex flex-col'>
           <p className="text-balance transform animate-slide-up text-sm sm:text-base">

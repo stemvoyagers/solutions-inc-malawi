@@ -10,7 +10,7 @@ const Vision = () => {
                 backgroundPosition: 'center',
             }}>
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-95"></div>
-            <div className="mt-8 overflow-x-hidden text-white z-50">
+            <div className="mt-8 overflow-x-hidden text-white z-10">
                 <div className="flex flex-col md:flex-row gap-4 md:gap-12" >
                     <div id="div1" className={` group  md:w-[50%] flex items-center`}>
                         <img className="md:h-fit object-cover relative m-0 p-0 cover rounded-xl" src={aboutUs} alt="img1" />

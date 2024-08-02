@@ -58,7 +58,7 @@ const ContactBody = () => {
       <div className="text-center font-extrabold text-shadow-xl  transform animate-slide-up text-4xl py-4">
         Connect With Us
       </div>
-      <div className="relative max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-28 z-50">
+      <div className="relative max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-28 z-10">
 
         <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0 text-center text-balance transform animate-slide-up">
 
