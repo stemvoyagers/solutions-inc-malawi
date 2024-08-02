@@ -33,7 +33,7 @@ const Mission = () => {
             }}>
             <div className="absolute top-0 left-0 w-full h-full bg-white opacity-95"></div>
             <>
-                <div className="relative max-w-screen-xl mx-auto mt-4 md:mt-0 px-4 md:px-8 lg:px-12 xl:px-16 flex flex-col justify-center items-center gap-y-10 text-center z-50">
+                <div className="relative max-w-screen-xl mx-auto mt-4 md:mt-0 px-4 md:px-8 lg:px-12 xl:px-16 flex flex-col justify-center items-center gap-y-10 text-center z-10">
                     <h2 className="font-semibold text-3xl md:text-4xl md:mb-2 mt-0"> Our Core Values </h2>
                     <div className="flex flex-col w-96 md:w-full md:grid md:grid-cols-6 gap-4 justify-items-center">
                         <div className="col-span-2 border rounded-lg p-6 overflow-hidden bg-blue-900 text-white shadow-md hover:shadow-lg transition-shadow duration-300">

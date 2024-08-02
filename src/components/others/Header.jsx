@@ -13,8 +13,8 @@ const Header = () => {
   };
 
   return (
-    <div className="overflow-x-hidden top-0 flex items-center text-black shadow-sm justify-between px-8 py-4 bg-white relative z-50">
-      <div className="flex items-center">
+    <div className="overflow-x-hidden top-0 flex items-center text-black shadow-sm justify-between px-8 py-2 bg-white relative z-50">
+      <div className="flex items-center gap-4">
         <div className="md:hidden cursor-pointer z-50">
           {isMenuOpen ? (
             <MdClose
@@ -101,14 +101,14 @@ const NavLink = ({ to, children }) => {
       onMouseLeave={() => setOpen(false)}
       className="relative h-fit w-fit cursor-pointer"
     >
-      <Link to={to} className={`${active ? "font-extrabold" : ""} relative`}>
+      <Link to={to} className={`${active ? "font-bold" : ""} relative hover:border-b-4 hover:border-black`}>
         {children}
         {active && (
           <span
             style={{
               transform: "scaleX(1)",
             }}
-            className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 h-1 w-1 bg-black rounded-full transition-transform duration-300"
+            className="absolute -bottom-2 left-0 transform -translate-x-1/2 h-1 w-full bg-black rounded-full transition-transform duration-300"
           />
         )}
       </Link>
@@ -122,7 +122,7 @@ const MobileNavLink = ({ to, children, onClick }) => {
   return (
     <div
       className={`py-4 cursor-pointer hover:bg-white  hover:text-black duration-300 ${
-        currentUrl === to ? "font-extrabold" : ""
+        currentUrl === to ? "font-extrabold border-white border-r-4" : "font-light"
       }`}
       onClick={onClick}
     >
