@@ -60,7 +60,8 @@ const Hero = () => {
               key={idx}
               id={service.id}
               className="w-[100%] group cursor-pointer border rounded-md relative h-fit flex flex-col items-center
-                        overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl p-8 grid-cols-1
+                        overflow-hidden bg-[#ffffff] shadow-md hover:shadow-xl
+                        grid-cols-1
                         text-center duration-500 pb-20 pt-20"
             >
               <div
@@ -80,9 +81,9 @@ const Hero = () => {
                 {" "}
                 {service.title}{" "}
               </p>
-              <p className="absolute description md:pl-6 md:pr-6 text-center  text-sm md:text-md mt-28 mb-12 md:mb-10 z-10 group-hover:text-white w-fit group-hover:w-full group-hover:translate-y-[-60%] group-hover:text-overflow-ellipsis">
+              <p className="absolute description md:pl-20 md:pr-20 text-center  text-sm md:text-md mt-28 mb-12 md:mb-10 z-10 group-hover:text-white w-fit group-hover:w-full group-hover:translate-y-[-60%] group-hover:text-overflow-ellipsis">
                 {service.description}
-                <span className="hidden group-hover:inline">{service.description.slice(service.description.indexOf(" ", 50))}</span>
+                {/* <span className="hidden group-hover:inline">{service.description.slice(service.description.indexOf(" ", 50))}</span> */}
               </p>
             </div>
           ))}
