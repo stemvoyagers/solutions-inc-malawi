@@ -20,14 +20,14 @@ const Vision = () => {
                     <div className={` flex flex-col justify-center text-center text-white'
                             }`} >
                         <p className="text-xl md:text-5xl font-bold">Our Mission</p>
-                        <p className="text-sm md:text-2xl mt-2 text-center px-2">To drive innovation, technology, and economic development while building a sustainable, value-driven business.
+                        <p className="text-sm md:text-2xl mt-2 text-center px-2">To create a service-based company which drives innovation, technology and economic development for our customers while building a growing and sustainable business model that provides value and a sense of pride to everyone.
                         </p>
                     </div>
 
                     <div className={`overflow-x-hidden  flex flex-col justify-center text-white  z-50 text-center md:mb-0'
                             }`} >
                         <p className="text-xl md:text-5xl font-bold">Our Vision</p>
-                        <p className="text-sm md:text-2xl text-center mt-2 px-2">To be a leading, competent, and dependable ICT solutions provider.
+                        <p className="text-sm md:text-2xl text-center mt-2 px-2">To be a Leading, Competent and Dependable Information Communication and Technology Solutions and Services Provider.
                         </p>
                     </div>
 

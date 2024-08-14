@@ -1,5 +1,5 @@
 import {microsoftL, neuroL, veritasL, vmL,
-  ciscoL, hpL, huaweiL, idemiaL, interswitchL, lagosL, lenovoL, } from "../../assets";
+  ciscoL, hpL, huaweiL, idemiaL, lenovoL, } from "../../assets";
 
 const partners1 = [
   { logo: microsoftL, alt: "msImg" },
@@ -15,8 +15,8 @@ const partners2 = [
   { logo: hpL, alt: "msImg" },
   { logo: huaweiL, alt: "msImg" },
   { logo: idemiaL, alt: "nigImg" },
-  { logo: lagosL, alt: "msImg" },
-  { logo: interswitchL, alt: "msImg" },
+  // { logo: lagosL, alt: "msImg" },
+  // { logo: interswitchL, alt: "msImg" },
   { logo: lenovoL, alt: "msImg" },
 ];
 
@@ -25,8 +25,8 @@ const Partners = () => {
     <div className="mb-12 mt-12 text-center overflow-hidden">
       <div className="flex flex-col items-center justify-center align-middle gap-2 ml-[6%] md:ml-[0%] mr-[4%] md:mr-[0%]">
         <div className="font-bold text-xl md:text-3xl mt-12">Our Partners</div>
-        <span className="text-sm md:text-xl text-center md:w-[37%]">
-        We collaborate with world-class partners to deliver top-grade services across all our solutions.
+        <span className="text-sm md:text-xl text-center md:w-[45%]">
+        We collaborate with industry-leading partners to create innovative solutions that surpass customer expectations and contribute to their overall business success across our comprehensive services and product portfolio.
         </span>
         <div className="w-full mt-4 text-center overflow-hidden relative">
           <div className="marquee">

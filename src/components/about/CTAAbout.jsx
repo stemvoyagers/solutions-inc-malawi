@@ -12,7 +12,7 @@ const CTAAbout = () => {
 
             <div className="relative max-w-screen-xl mx-auto mt-4 md:mt-0 mb-4 md:mb-0 flex flex-col md:flex-row items-center justify-center md:justify-between gap-8 md:gap-x-20 px-4 md:px-0 font-bold z-10">
                 <div className="flex justify-evenly md:w-[40%] font-semibold text-[100%] md:text-[200%] mb-2 text-black z-10 text-center md:text-left" >
-                    We are specialized in all of  our services, we give not just the set piece in our services  but masterpiece
+                We are specialized in all of our services, we give not just the set piece but the masterpiece.
                 </div>
 
                 <div>
