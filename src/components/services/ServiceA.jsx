@@ -20,7 +20,7 @@ const services = [
         description: "Our enrollment solutions offer customizable features for private and public sectors. Mobile, fixed, and online options include all necessary hardware, software, and services to ensure smooth enrollment, accurate data capture, and minimal delays",
     },
     {
-        title: "Demographic Data Harmonized",
+        title: "Demographic Data Harmonization",
         description: "We address unorganized, duplicated, and fragmented identity data affecting sectors and governments. Our innovative solutions integrate multiple databases into a single, adaptable identity database, eliminating duplicates and meeting diverse functional requirements",
     },
     {

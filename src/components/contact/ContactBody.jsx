@@ -161,7 +161,7 @@ const ContactBody = () => {
                 <option value="Biometric Solutions">Biometric Solutions</option>
                 <option value="Identity-Based Solution">Identity-Based Solution</option>
                 <option value="Enrolment Services">Enrolment Services</option>
-                <option value="Demographic Data Harmonized">Demographic Data Harmonized</option>
+                <option value="Demographic Data Harmonization">Demographic Data Harmonization</option>
                 <option value="ABIS (Civil & Criminal) Solution">ABIS (Civil & Criminal) Solution</option>
                 <option value="Foundational Civil Registration">Foundational Civil Registration</option>
                 <option value="Card Production & Personalization">Card Production & Personalization</option>

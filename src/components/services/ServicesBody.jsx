@@ -38,7 +38,7 @@ const servicesData = [
   {
     no: 3,
     image: no3,
-    title: "Demographic Data Harmonized",
+    title: "Demographic Data Harmonization",
     description:
       " Our solutions are all about simpl Our solutions are all about",
     details:
