@@ -1,5 +1,6 @@
 import { aboutUs } from "../assets"
 import { circular } from "../assets"
+import Cards from "./Cards"
 
 const Vision = () => {
     return (
@@ -8,8 +9,9 @@ const Vision = () => {
                 backgroundImage: `url(${circular})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-            }}>
-            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-95"></div>
+                }}>
+                    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-95"></div>
+                {/*
             <div className="mt-8 overflow-x-hidden text-white z-10">
                 <div className="flex flex-col md:flex-row gap-4 md:gap-12" >
                     <div id="div1" className={` group  md:w-[50%] flex items-center`}>
@@ -34,9 +36,9 @@ const Vision = () => {
 </div>
 
                 </div>
-            </div>
+            </div> */}
 
-
+<Cards />
         </div>
     )
 }

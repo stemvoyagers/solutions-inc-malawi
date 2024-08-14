@@ -22,9 +22,9 @@ const About = () => {
   ) : (
     <div>
       <PreCTAAbout />
+      <Vision/>
       <CTAAbout />
       <Mission />
-      <Vision/>
       <Partners />
     </div>
   )
