@@ -97,22 +97,24 @@ const NavLink = ({ to, children }) => {
 
   return (
     <div
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
-      className="relative h-fit w-fit cursor-pointer"
-    >
-      <Link to={to} className={`${active ? "font-bold" : ""} relative hover:border-b-4 hover:border-black`}>
-        {children}
-        {active && (
-          <span
-            style={{
-              transform: "scaleX(1)",
-            }}
-            className="absolute -bottom-2 left-0 transform -translate-x-1/2 h-1 w-full bg-black rounded-full transition-transform duration-300"
-          />
-        )}
-      </Link>
-    </div>
+  onMouseEnter={() => setOpen(true)}
+  onMouseLeave={() => setOpen(false)}
+  className="relative h-fit w-fit cursor-pointer"
+>
+  <Link
+    to={to}
+    className={`${active ? "font-bold" : ""} relative`}
+  >
+    {children}
+    <span
+      style={{
+        transform: active || open ? "scaleX(1)" : "scaleX(0)",
+      }}
+      className="absolute -bottom-1 left-0 h-1 w-full bg-black rounded-full transition-transform duration-300 origin-left"
+    />
+  </Link>
+</div>
+
   );
 };
 
