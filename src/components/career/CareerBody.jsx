@@ -6,6 +6,7 @@ import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
 import { Link } from "react-router-dom";
 import emailjs from '@emailjs/browser';
+import Cards from "./CareerCard";
 
 // Set the maximum allowed file size in bytes (50KB = 50 * 1024)
 const MAX_FILE_SIZE = 50 * 1024;
@@ -161,6 +162,10 @@ const CareerBody = () => {
               excel in today’s and tomorrow’s knowledge-driven society.
             </div>
           </div>
+        </div>
+        <div className="mt-5">
+          <p className="text-lg md:text-xl font-medium">Why Identiko? Discover Our Dynamic Work Culture</p>
+        <Cards />
         </div>
 
         <div className="w-fit mx-auto flex justify-center items-center">
