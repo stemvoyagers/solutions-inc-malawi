@@ -10,7 +10,7 @@ const services = [
     id: "div2",
     image: no2,
     img: software_application,
-    title: "Software & IT Solutions",
+    title: "Software & IT Solution",
     description:
       "Innovative software and IT services streamline operations and enhance efficiency. From development to integration, we deliver robust solutions tailored to your business needs, ensuring security and scalability.",
     bgImg: card4,
@@ -19,7 +19,7 @@ const services = [
     id: "div1",
     image: no1,
     img: identity_solution,
-    title: "Identity & Security Solutions",
+    title: "Advanced Technology & Secure Systems",
     description:
       "Comprehensive identity and security services safeguard personal and organizational data. We provide advanced biometric and verification solutions to ensure secure and reliable identity management.",
     bgImg: card2,
@@ -28,7 +28,7 @@ const services = [
     id: "div3",
     image: no3,
     img: tech_solution,
-    title: "SmartCity & Surveillance Solutions",
+    title: "Urban Innovation & Surveillance Solution",
     description:
       "Tailored managed services and smart solutions optimize business processes and customer experiences. We offer specialized support to enhance operational efficiency and meet unique organizational needs.",
     bgImg: card3,

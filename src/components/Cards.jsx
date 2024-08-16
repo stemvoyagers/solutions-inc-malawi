@@ -20,7 +20,7 @@ const Cards = () => {
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-4 md:px-8">
       <Card
         title="Who We Are"
-        description="Identiko leads in Identity management innovation, with a dedicated team experienced in Identity Management Systems, Biometrics, ICT Consultancy, and System Integration. We provide secure identification solutions for private and public sectors, partnering with top technology firms to deliver reliable services. Our expertise spans over two decades, serving industries like banking, security, FMCGs, construction, and telecommunications."
+        description="At Identiko, we are at the forefront of IT solutions, specializing in innovative access management and advanced technology integration. Our dedicated team brings extensive experience in Access Management Systems, Biometrics, ICT Consultancy, and System Integration. We offer comprehensive IT solutions designed to meet the diverse needs of both private and public sectors, ensuring secure and efficient systems."
         bgColor="bg-yellow-500"
         borderColor="bg-yellow-600"
       />

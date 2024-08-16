@@ -39,8 +39,8 @@ const PolicyImages = () => {
                 >
                     <img src={ISO_IEC_27701_T} alt="ISO_IEC_27701_T" className="w-[52px]"/>
                     <img src={ISO_IEC_27001_T} alt="ISO_IEC_27001_T" className="w-[52px]" />
-                    <img src={NDPR} alt="NDPR" className="w-[52px]" />
-                    <img src={NDPR_QR} alt="NDPR_QR" className="w-[52px]" />
+                    <img src={NDPR} alt="NDPR" className="w-[60px]" />
+                    {/* <img src={NDPR_QR} alt="NDPR_QR" className="w-[52px]" /> */}
                 </button>
             )}
         </>

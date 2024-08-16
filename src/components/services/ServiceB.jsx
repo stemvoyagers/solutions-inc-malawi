@@ -2,8 +2,8 @@
 const services = [
 
   {
-    title: "Software Integration Service",
-    description: "Identiko specializes in software integration, ensuring seamless connectivity between systems. Our expert team develops tailored strategies and solutions to optimize workflows, enhance data accuracy, and improve operational efficiency, driving business success",
+    title: "Software Development",
+    description: "In a rapidly changing digital environment, off-the-shelf software often falls short. Our custom solutions address your unique challenges, streamlining operations and driving innovation with scalable, high-quality software that ensures seamless integration and long-term success",
   },
   {
     title: "Cloud Solution",
@@ -48,7 +48,7 @@ const ServiceB = () => {
     <div id="section-1" className="w-full mt-[10%] md:mt-[5%]">
       <div className="w-full mx-auto text-center items-center justify-center px-28 md:px-0">
         <div className="text-center text-black">
-          <p className="text-xl md:text-3xl font-bold"> SOFTWARE AND IT SOLUTION </p>
+          <p className="text-xl md:text-3xl font-bold"> SOFTWARE & IT SOLUTION </p>
           <p className="text-sm md:text-xl md:ml-40 md:mr-40 text-center flex justify-center items-center">
             {" "}
             From development to integration, we deliver robust solutions tailored to your business needs{" "}

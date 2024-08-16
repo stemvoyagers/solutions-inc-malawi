@@ -1,11 +1,14 @@
-import {microsoftL, neuroL, veritasL, vmL,
-  ciscoL, hpL, huaweiL, idemiaL, lenovoL, } from "../../assets";
+import {microsoftL, neuroL, veritasL, vmL, ciscoL, hpL, huaweiL, idemiaL, lenovoL, } from "../../assets";
+import sterlingL from "../../assets/sterling_logo.svg";
+import n_logo from "../../assets/n_logo.svg";
+import telpo from "../../assets/telpo.svg";
+import veeam from "../../assets/veeam_logo.svg";
 
 const partners1 = [
   { logo: microsoftL, alt: "msImg" },
   { logo: neuroL, alt: "msImg" },
-  // { logo: nimcL, alt: "nigImg" },
-  // { logo: sterlingL, alt: "msImg" },
+  { logo: n_logo, alt: "n_logo" },
+  { logo: sterlingL, alt: "msImg" },
   { logo: veritasL, alt: "msImg" },
   { logo: ciscoL, alt: "msImg" },
   { logo: vmL, alt: "msImg" },
@@ -15,8 +18,8 @@ const partners2 = [
   { logo: hpL, alt: "msImg" },
   { logo: huaweiL, alt: "msImg" },
   { logo: idemiaL, alt: "nigImg" },
-  // { logo: lagosL, alt: "msImg" },
-  // { logo: interswitchL, alt: "msImg" },
+  { logo: telpo, alt: "telpo" },
+  { logo: veeam, alt: "veeam" },
   { logo: lenovoL, alt: "msImg" },
 ];
 
@@ -32,8 +35,8 @@ const Partners = () => {
           <div className="marquee">
             <div className="marquee-content reverse gap-6">
               {partners1.concat(partners1).map((partner, index) => (
-                <div key={index} className="flex md:p-3 md:gap-4 justify-center items-center">
-                  <img src={partner.logo} alt={partner.alt} className="w-24 md:w-[70%]" />
+                <div key={index} className="flex md:p-1 md:gap-4 justify-center items-center">
+                  <img src={partner.logo} alt={partner.alt} className="w-24 md:w-48" />
                 </div>
               ))}
             </div>
@@ -43,8 +46,8 @@ const Partners = () => {
           <div className="marquee">
             <div className="marquee-content gap-6">
               {partners2.concat(partners2).map((partner, idx) => (
-                <div key={idx} className="flex md:p-3 gap-4 justify-center items-center">
-                  <img src={partner.logo} alt={partner.alt} className="w-24 md:w-[70%]" />
+                <div key={idx} className="flex md:p-1 gap-4 justify-center items-center">
+                  <img src={partner.logo} alt={partner.alt} className="w-24 md:w-48" />
                 </div>
               ))}
             </div>

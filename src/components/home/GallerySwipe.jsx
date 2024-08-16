@@ -50,7 +50,7 @@ const GallerySwipe = () => {
       </span>
       <div className='flex flex-col md:flex-row justify-center items-center gap-10 md:gap-12 p-12'>
         {projects.map((project, idx) => (
-          <div key={idx} className="shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 w-[25%] h-[420px] border rounded-lg">
+          <div key={idx} className="shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 w-[30%] h-[330px] border rounded-lg">
             <div className='bg-white border rounded-lg overflow-hidden h-full flex flex-col items-center gap-1'>
               {loading ? (
                 <div className="w-[280px] h-40 bg-gray-300 animate-pulse mt-4"></div>

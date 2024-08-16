@@ -6,7 +6,7 @@ const ServiceD = () => {
         <div id="section-1" className="w-full mt-[20%] md:mt-[5%]">
             <div className="max-w-screen-xl mx-auto text-center items-center justify-center px-2 md:px-0">
                 <div className="text-center text-black">
-                    <p className="text-xl md:text-3xl font-bold"> SURVEILLANCE AND MONITORING SOLUTIONS </p>
+                    <p className="text-xl md:text-3xl font-bold"> SURVEILLANCE AND MONITORING SOLUTION </p>
                     <p className="text-xs md:text-xl md:ml-40 md:mr-40 text-center flex justify-center items-center">
                     {" "}
                         Our solutions include electronic voting, traffic management, and IoT-enabled systems to maintain safety and control{" "}
