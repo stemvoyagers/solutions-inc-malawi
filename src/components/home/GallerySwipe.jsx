@@ -21,7 +21,7 @@ const GallerySwipe = () => {
 
   return (
     <div className='overflow-x-hidden overflow-y-hidden flex flex-col items-center mb-4'>
-      <h2 className="text-center text-xl md:text-3xl font-bold text-black mt-12 md:mb-0">Our Featured Works</h2>
+      <h2 className="text-center text-xl md:text-3xl font-bold text-black mt-12 mb-2">OUR FEATURED WORKS</h2>
       <span className="text-sm md:text-xl text-center md:w-[47%]">
       Explore some of our top projects, showcasing our expertise and innovation in software and identity solutions.
         </span>

@@ -19,7 +19,7 @@ const AboutHome = () => {
 
   return (
     <div
-      className="relative w-full mx-auto h-fit pt-[6%] pb-[6%] flex flex-col md:flex-row justify-center items-center mt-20 mb-20 bg-cover bg-center gap-4 md:gap-0"
+      className="relative w-full mx-auto h-fit pt-[6%] pb-[6%] flex flex-col md:flex-row justify-center items-center mt-20 md:mb-2 mb-0 bg-cover bg-center gap-4 md:gap-0"
       style={{
         backgroundImage: `url(${circular})`,
         backgroundSize: 'cover',
@@ -39,12 +39,14 @@ const AboutHome = () => {
         />
       </div>
       <div className="md:w-1/2 bg-white text-black lg:gap-10 ml-6 mr-[4%] p-6 z-10 lg:h-[385px] flex flex-col items-start justify-center">
-        <h2 className="font-semibold text-xl md:text-3xl lg:text-4xl md:mb-1 sm:mb-4 mb-2">Who We Are</h2>
+        <h2 className="font-semibold text-xl md:text-3xl lg:text-4xl">Who We Are</h2>
         <p className='flex flex-col'>
-          <p className="text-balance transform animate-slide-up text-sm sm:text-base">
-            Identiko leads in Identity management innovation, with a dedicated team experienced in Identity Management Systems, Biometrics, ICT Consultancy, and System Integration. We provide secure identification solutions for private and public sectors, partnering with top technology firms to deliver reliable services. Our expertise spans over two decades, serving industries like banking, security, FMCGs, construction, and telecommunications.
+          <p className="text-balance transform animate-slide-up text-sm sm:text-base text-justify">
+          At Identiko, we are at the forefront of IT solutions, specializing in innovative access management and advanced technology integration. Our dedicated team brings extensive experience in Access Management Systems, Biometrics, ICT Consultancy, and System Integration. We offer comprehensive IT solutions designed to meet the diverse needs of both private and public sectors, ensuring secure and efficient systems. <br />
+
+By partnering with leading technology firms, we deliver cutting-edge services that drive digital transformation. With over two decades of expertise, we proudly serve a range of industries, including banking, security, FMCGs, construction, and telecommunications, providing tailored solutions that enhance operational efficiency and security.
           </p>
-          <br /><br />
+          <br />
           <Link to='/about-us'>
             <button className="w-fit hover:text-[#003a97b3] text-[#003997]">Learn More {'⇾'}</button>
           </Link>

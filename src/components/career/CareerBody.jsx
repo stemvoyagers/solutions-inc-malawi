@@ -182,11 +182,12 @@ const CareerBody = () => {
                     className={`w-full border rounded-md p-3 shadow appearance-none focus:outline-none cursor-pointer focus:border-[#1F6FE2] ${errors.service ? 'border-red-500' : 'border-[#7F9395]'}`}
                   >
                     <option value="" disabled selected>* Job Openings *</option>
-                    <option value="Frontend Development">Frontend Development</option>
+                    {/* <option value="Frontend Development">Frontend Development</option>
                     <option value="Backend Development">Backend Development</option>
                     <option value="Mobile Development">Mobile Development</option>
                     <option value="Project Management">Project Management</option>
-                    <option value="UI/UX Designer">UI/UX Designer</option>
+                    <option value="UI/UX Designer">UI/UX Designer</option> */}
+                    <option value="No Vacant roles">No Vacant roles</option>
                     <option value="Other">Other</option>
                   </select>
                   {errors.service && <p className="text-red-500 text-sm mt-1">{errors.service}</p>}

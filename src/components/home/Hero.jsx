@@ -47,7 +47,7 @@ const Hero = () => {
     <div id="section-1" className="w-full mt-16">
       <div className="max-w-screen-xl mx-auto text-center items-center justify-center">
         <div className="text-center text-black">
-          <p className="text-xl md:text-3xl font-bold"> OUR SERVICES </p>
+          <p className="text-xl md:text-3xl font-bold mb-2"> OUR SERVICES </p>
           <p className="text-base md:text-xl">
             {" "}
             Empowering Your Business with Innovative Solutions and Expert Support{" "}
