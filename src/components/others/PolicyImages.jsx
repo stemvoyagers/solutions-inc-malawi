@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 // import { msPix, nigPix } from "../../assets";
 import NDPR from "../../assets/NDPR.svg";
 // import NDPR_QR from "../../assets/NDPR_QR.svg";
@@ -32,22 +32,23 @@ const PolicyImages = () => {
     // }, []);
 
     return (
-        <>
-
                 <div
 
                     // onClick={scrollToTop}
-                    className="fixed flex items-center justify-end bottom-2 z-50 right-2 gap-2 transition-all duration-300"
+                    className="fixed flex items-center justify-end bottom-2 right-2 gap-2 transition-all duration-300"
                 >
-                    <Link to = '/isms-policy'>
-                    <img src={ISO_IEC_27701_T} alt="ISO_IEC_27701_T" className="w-[52px]"/>
-                    </Link>
-                    <img src={ISO_IEC_27001_T} alt="ISO_IEC_27001_T" className="w-[52px]" />
-                    <img src={NDPR} alt="NDPR" className="w-[52px]" />
-                    {/* <img src={NDPR_QR} alt="NDPR_QR" className="w-[52px]" /> */}
-                </div>
+                    <a href = '/isms-policy'>
+                    <img src={ISO_IEC_27701_T} alt="ISO_IEC_27701_T" className="w-[52px] cursor-pointer"/>
+                    </a>
 
-        </>
+                    <a href = '/isms-policy'>
+                    <img src={ISO_IEC_27001_T} alt="ISO_IEC_27001_T" className="w-[52px] cursor-pointer" />
+                    </a>
+
+                    <a href = 'https://services.ndpc.gov.ng/portal/?page=verify-c&d=ang3592545471880&id=94692&sn=4064f8e0fc63229562d2c4932282427e&t=audit_filing&tp=nwp_audit'>
+                    <img src={NDPR} alt="NDPR" className="w-[52px] cursor-pointer" />
+                    </a>
+                </div>
     );
 };
 
