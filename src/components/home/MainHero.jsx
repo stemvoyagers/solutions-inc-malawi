@@ -8,8 +8,8 @@ const MainHero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loading, setLoading] = useState(true);
   const slides = [
-    { image: aboutUs, text: "Empowering Businesses with Cutting-Edge Technology" },
     { image: heroImage, text: "Ensuring Reliable and Secure Identity Management" },
+    { image: aboutUs, text: "Empowering Businesses with Cutting-Edge Technology" },
     { image: slide3, text: "Optimizing Operations for a Smarter Future" },
     { image: slide4, text: "Ensuring Safety with Real-Time Management" },
   ];
