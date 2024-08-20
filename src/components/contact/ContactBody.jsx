@@ -92,9 +92,10 @@ const ContactBody = () => {
             <div className="mb-4 w-full text-lg font-semibold text-black">
               <p className="py-2">
               If you have any questions, please feel free to…
-                <a href={`mailto:info@identikosolutions.com`} className="cursor-pointer text-blue-800"> Get In Touch</a> with us ( <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@identikosolutions.com" target="_blank" className="cursor-pointer text-blue-800">Gmail</a>,   <a href="https://outlook.live.com/owa/?path=/mail/action/compose&to=info@identikosolutions.com" target="_blank" className="cursor-pointer text-blue-800">Outlook.com</a>, <a href="https://compose.mail.yahoo.com/?to=info@identikosolutions.com" target="_blank" className="cursor-pointer text-blue-800">Yahoo Mail</a>
-                ). Our team is here and ready to assist you.
-              </p>
+                <a href={`mailto:info@identikosolutions.com`} className="cursor-pointer text-blue-800"> Get In Touch</a> with us Our team is here and ready to assist you.
+                </p>
+                 {/* ( <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@identikosolutions.com" target="_blank" className="cursor-pointer text-blue-800">Gmail</a>,   <a href="https://outlook.live.com/owa/?path=/mail/action/compose&to=info@identikosolutions.com" target="_blank" className="cursor-pointer text-blue-800">Outlook.com</a>, <a href="https://compose.mail.yahoo.com/?to=info@identikosolutions.com" target="_blank" className="cursor-pointer text-blue-800">Yahoo Mail</a>
+                ).  */}
             </div>
             <div className="mb-4">
               <span className="flex items-center justify-center gap-2 cursor-pointer">
@@ -145,7 +146,7 @@ const ContactBody = () => {
           </div>
         )}
         <form ref={form} onSubmit={sendEmail} className="max-w-2xl mx-auto p-8 bg-white rounded-lg shadow-lg">
-        <h2 className="text-xl md:text-3xl font-bold mb-6 text-center text-[#003997]">Got Questions? Ask Away!</h2>
+        <h2 className="text-xl md:text-3xl font-bold mb-6 text-center text-[#003997]">Request A Quote</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4">
           <div className="col-span-2 mb-4">
             <label htmlFor="service" className="block mb-2 text-lg text-gray-700">Service <span className="text-red-700">*</span></label>
