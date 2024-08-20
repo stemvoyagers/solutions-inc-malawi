@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { Link } from "react-router-dom";
 import { circular } from "../../assets";
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
@@ -34,6 +35,7 @@ const ContactBody = () => {
     if (!formData.phone) newErrors.phone = "Phone number is required.";
     if (!formData.email) newErrors.email = "Email is required.";
     if (!formData.message) newErrors.message = "Message cannot be empty.";
+    if (!formData.terms) newErrors.message = "You must agree to the terms";
     return newErrors;
   };
 
@@ -89,10 +91,10 @@ const ContactBody = () => {
       </div>
       <div className="relative max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-28 z-10">
         <div className="w-full pl-4 md:pl-0 pr-4 md:pr-0 text-center text-balance transform animate-slide-up">
-            <div className="mb-4 w-full text-lg font-semibold text-black">
+            <div className="mb-4 w-full text-lg font-normal text-black">
               <p className="py-2">
-              If you have any questions, please feel free to…
-                <a href={`mailto:info@identikosolutions.com`} className="cursor-pointer text-blue-800"> Get In Touch</a> with us Our team is here and ready to assist you.
+              If you have any questions, please feel free to <br />
+                <a href={`mailto:info@identikosolutions.com`} className="cursor-pointer text-blue-800 underline"> Get In Touch</a> with us Our team is here and ready to assist you.
                 </p>
                  {/* ( <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@identikosolutions.com" target="_blank" className="cursor-pointer text-blue-800">Gmail</a>,   <a href="https://outlook.live.com/owa/?path=/mail/action/compose&to=info@identikosolutions.com" target="_blank" className="cursor-pointer text-blue-800">Outlook.com</a>, <a href="https://compose.mail.yahoo.com/?to=info@identikosolutions.com" target="_blank" className="cursor-pointer text-blue-800">Yahoo Mail</a>
                 ).  */}
@@ -116,7 +118,7 @@ const ContactBody = () => {
                 <p className="text-black text-lg py-1">2nd Floor, Oakland Centre, Plot 2940 Aguiyi Ironsi Street, Maitama, Abuja</p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row md:justify-around text-center justify-center items-center">
+            <div className="flex flex-col md:flex-row md:justify-around text-center justify-center">
               <div className="mt-4 flex gap-5">
                 <div className="flex flex-col gap-2">
                   <span className="flex items-center justify-center gap-2 cursor-pointer">
@@ -241,6 +243,20 @@ const ContactBody = () => {
             ></textarea>
             {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
           </div>
+          <div className="col-span-2">
+                <label htmlFor="terms" className="inline-flex items-center">
+                  <input
+                    type="checkbox"
+                    name="terms"
+                    checked={formData.terms}
+                    onChange={(e) => handleInputChange("terms", e.target.checked)}
+                    className="form-checkbox"
+                    required
+                  />
+                  <span className="ml-2 text-sm text-gray-700">I agree to the <Link to="/terms" className="text-blue-500 underline">Terms and Conditions</Link> <span className="text-red-700">*</span></span>
+                </label>
+                {errors.terms && <p className="text-red-500 text-xs mt-1">{errors.terms}</p>}
+              </div>
         </div>
         <button
           type="submit"
