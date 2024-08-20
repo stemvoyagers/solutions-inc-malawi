@@ -35,7 +35,7 @@ const PolicyImages = () => {
                 <div
 
                     // onClick={scrollToTop}
-                    className="fixed flex items-center justify-end bottom-2 right-2 gap-2 transition-all duration-300"
+                    className="fixed flex items-center justify-end bottom-2 z-50 right-2 gap-2 transition-all duration-300"
                 >
                     <a href = '/isms-policy'>
                     <img src={ISO_IEC_27701_T} alt="ISO_IEC_27701_T" className="w-[52px] cursor-pointer"/>
