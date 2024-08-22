@@ -20,8 +20,8 @@ const services = [
 const ServiceC = () => {
     return (
         <div id="section-1" className="w-full mt-[10%] md:mt-[5%]">
-            <div className="w-full mx-auto text-center items-center justify-center  px-28 md:px-0">
-                <div className="text-center text-black">
+            <div className="w-full mx-auto text-center items-center justify-center  px-4 md:px-0">
+                <div className="text-center text-black flex flex-col gap-1">
                     <p className="text-xl md:text-3xl font-bold">URBAN INNOVATION & SURVEILLANCE SOLUTION</p>
                     <p className="text-sm md:text-xl md:ml-40 md:mr-40 text-center flex justify-center items-center">
                         {" "}
