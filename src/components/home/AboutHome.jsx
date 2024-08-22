@@ -38,8 +38,8 @@ const AboutHome = () => {
           className={`w-[80vw] bg-no-repeat shadow-xl h-full lg:h-[385px] bg-cover bg-center min-w-full min-h-full relative m-0 p-0 ${isLoading ? 'hidden' : 'block'}`}
         />
       </div>
-      <div className="md:w-1/2 bg-white text-black lg:gap-10 ml-6 mr-[4%] p-6 z-10 lg:h-[385px] flex flex-col items-start justify-center">
-        <h2 className="font-semibold text-xl md:text-3xl lg:text-4xl">Who We Are</h2>
+      <div className="md:w-1/2 bg-white text-black lg:gap-3 ml-6 mr-[4%] p-6 z-10 lg:h-[385px] flex flex-col items-start justify-center">
+        <h2 className="font-semibold text-xl md:text-3xl lg:text-4xl mb-2">Who We Are</h2>
         <p className='flex flex-col'>
           <p className="text-balance transform animate-slide-up text-sm sm:text-base text-justify">
           At Identiko, we are at the forefront of IT solutions, specializing in innovative access management and advanced technology integration. Our dedicated team brings extensive experience in Access Management Systems, Biometrics, ICT Consultancy, and System Integration. We offer comprehensive IT solutions designed to meet the diverse needs of both private and public sectors, ensuring secure and efficient systems. <br />

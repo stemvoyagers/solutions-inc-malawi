@@ -54,7 +54,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="max-w-screen-xl mx-auto py-10 md:py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2%] md:gap-[2%] px-20 md:px-12 place-items-center">
+        <div className="max-w-screen-xl mx-auto py-10 md:py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2%] md:gap-[2%] px-3 md:px-12 place-items-center">
           {services.map((service, idx) => (
             <div
               key={idx}

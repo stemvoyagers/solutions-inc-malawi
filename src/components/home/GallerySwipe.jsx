@@ -41,7 +41,7 @@ const GallerySwipe = () => {
           'OUR FEATURED WORKS'
         )}
       </h2>
-      <span className="text-base md:text-xl text-center w-[70%]">
+      <span className="text-base md:text-xl text-center w-[90%] md:w-[70%]">
         {loading ? (
           <div className="h-4 bg-gray-300 animate-pulse w-3/4 md:w-2/3 mx-auto mt-2"></div>
         ) : (
@@ -50,7 +50,7 @@ const GallerySwipe = () => {
       </span>
       <div className='flex flex-col md:flex-row justify-center items-center gap-10 md:gap-12 md:p-12 p-3'>
         {projects.map((project, idx) => (
-          <div key={idx} className="shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 w-96 md:w-[30%] h-[330px] border rounded-lg">
+          <div key={idx} className="shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 w-80 md:w-[30%] h-[330px] border rounded-lg">
             <div className='bg-white border rounded-lg overflow-hidden h-full flex flex-col items-center gap-1'>
               {loading ? (
                 <div className="w-[280px] h-40 bg-gray-300 animate-pulse mt-4"></div>
@@ -58,14 +58,14 @@ const GallerySwipe = () => {
                 <img
                   src={project.img}
                   alt='projectImg'
-                  className='w-[80%] h-40 object-cover mt-4'
+                  className='w-[80%] md:w-[80%] h-40 object-cover mt-4'
                 />
               )}
               <div className='p-4 flex flex-col justify-between w-full gap-2'>
                 {loading ? (
                   <div className="h-4 bg-gray-300 animate-pulse w-3/4 mx-auto mt-2"></div>
                 ) : (
-                  <p className='text-lg font-bold text-gray-800 text-center'>{project.title}</p>
+                  <p className='text-base md:text-lg font-bold text-gray-800 text-center'>{project.title}</p>
                 )}
                 {loading ? (
                   <div className="h-4 bg-gray-300 animate-pulse w-2/3 mx-auto mt-2"></div>

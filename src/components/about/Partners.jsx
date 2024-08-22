@@ -25,9 +25,9 @@ const partners2 = [
 
 const Partners = () => {
   return (
-    <div className="mb-12 mt-5 text-center overflow-hidden">
-      <div className="flex flex-col items-center justify-center align-middle gap-2 ml-[6%] md:ml-[0%] mr-[4%] md:mr-[0%]">
-        <div className="mt-12 text-xl md:text-3xl font-bold">OUR PARTNERS</div>
+    <div className="mb-12 md:mt-7 text-center overflow-hidden">
+      <div className="flex flex-col items-center justify-center align-middle gap-3 ml-[6%] md:ml-[0%] mr-[4%] md:mr-[0%]">
+        <div className="mt-7 text-xl md:text-3xl font-bold">OUR PARTNERS</div>
         <span className="text-base md:text-xl text-center md:w-[55%]">
         We collaborate with industry-leading partners to create innovative solutions that surpass customer expectations and contribute to their overall business success across our comprehensive services and product portfolio.
         </span>
