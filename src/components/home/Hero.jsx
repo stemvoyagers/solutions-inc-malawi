@@ -46,7 +46,7 @@ const Hero = () => {
   return (
     <div id="section-1" className="w-full mt-16">
       <div className="max-w-screen-xl mx-auto text-center items-center justify-center">
-        <div className="text-center text-black">
+        <div className="text-center text-black w-[90%] mx-auto">
           <p className="text-xl md:text-3xl font-bold mb-2"> OUR SERVICES </p>
           <p className="text-base md:text-xl">
             {" "}
@@ -54,7 +54,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="max-w-screen-xl mx-auto py-10 md:py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2%] md:gap-[2%]  px-44 md:px-12 place-items-center">
+        <div className="max-w-screen-xl mx-auto py-10 md:py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2%] md:gap-[2%] px-20 md:px-12 place-items-center">
           {services.map((service, idx) => (
             <div
               key={idx}
@@ -76,12 +76,12 @@ const Hero = () => {
                 className=" title w-20 z-10 group-hover:filter group-hover:invert group-hover:brightness-0 mt-[-40px] mb-20 group-hover:text-white  group-hover:translate-y-[-300%]"
                 alt={service.title}
               />
-              <p className="absolute description text-balance text-base md:text-lg mt-16 mb-12 md:mb-0 font-bold z-10 group-hover:text-white group-hover:translate-y-[-350%]
+              <p className="absolute description text-balance text-base md:text-lg mt-16 mb-12 md:mb-0 font-bold z-10 group-hover:text-white group-hover:translate-y-[-380%]
               md:group-hover:translate-y-[-350%]">
                 {" "}
                 {service.title}{" "}
               </p>
-              <p className="absolute description md:px-8 text-center px-14 text-base md:text-md mt-28 mb-12 md:mb-10 z-10 group-hover:text-white w-fit group-hover:w-full group-hover:translate-y-[-60%] group-hover:text-overflow-ellipsis">
+              <p className="absolute description md:px-8 text-center px-10 text-base md:text-md mt-28 mb-12 md:mb-10 z-10 group-hover:text-white w-fit group-hover:w-full group-hover:translate-y-[-60%] group-hover:text-overflow-ellipsis">
                 {service.description}
                 {/* <span className="hidden group-hover:inline">{service.description.slice(service.description.indexOf(" ", 50))}</span> */}
               </p>
