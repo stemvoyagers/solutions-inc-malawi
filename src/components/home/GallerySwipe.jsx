@@ -41,16 +41,16 @@ const GallerySwipe = () => {
           'OUR FEATURED WORKS'
         )}
       </h2>
-      <span className="text-sm md:text-xl text-center md:w-[47%]">
+      <span className="text-base md:text-xl text-center w-[70%]">
         {loading ? (
           <div className="h-4 bg-gray-300 animate-pulse w-3/4 md:w-2/3 mx-auto mt-2"></div>
         ) : (
           'Explore some of our top projects, showcasing our expertise and innovation in software and identity solutions.'
         )}
       </span>
-      <div className='flex flex-col md:flex-row justify-center items-center gap-10 md:gap-12 p-12'>
+      <div className='flex flex-col md:flex-row justify-center items-center gap-10 md:gap-12 md:p-12 p-3'>
         {projects.map((project, idx) => (
-          <div key={idx} className="shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 w-[30%] h-[330px] border rounded-lg">
+          <div key={idx} className="shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 w-96 md:w-[30%] h-[330px] border rounded-lg">
             <div className='bg-white border rounded-lg overflow-hidden h-full flex flex-col items-center gap-1'>
               {loading ? (
                 <div className="w-[280px] h-40 bg-gray-300 animate-pulse mt-4"></div>
