@@ -1,4 +1,5 @@
-import { aboutUs } from "../../assets";
+// import { aboutUs } from "../../assets";
+import aboutUs from "../../assets/digital_blue_circle.jpg"
 const PreCTAAbout = () => {
     return (
         <div
