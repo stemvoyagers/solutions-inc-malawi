@@ -32,27 +32,39 @@ const Partners = () => {
         We collaborate with industry-leading partners to create innovative solutions that surpass customer expectations and contribute to their overall business success across our comprehensive services and product portfolio.
         </span>
         <div className="w-full mt-4 text-center overflow-hidden relative">
-          <div className="marquee">
-            <div className="marquee-content reverse gap-6">
-              {partners1.concat(partners1).map((partner, index) => (
-                <div key={index} className="flex md:p-1 md:gap-4 justify-center items-center">
-                  <img src={partner.logo} alt={partner.alt} className="w-24 md:w-48" />
-                </div>
-              ))}
-            </div>
-          </div>
+  <div className="marquee">
+    <div className="marquee-content reverse gap-6">
+      {partners1.concat(partners1).map((partner, index) => (
+        <div key={index} className="flex md:p-1 md:gap-4 justify-center items-center">
+          <img
+            src={partner.logo}
+            alt={partner.alt}
+            className="h-24 md:h-48 object-contain"
+            // Ensures uniform height and proper aspect ratio
+          />
         </div>
-        <div className="w-full mt-4 text-center overflow-hidden relative">
-          <div className="marquee">
-            <div className="marquee-content gap-6">
-              {partners2.concat(partners2).map((partner, idx) => (
-                <div key={idx} className="flex md:p-1 gap-4 justify-center items-center">
-                  <img src={partner.logo} alt={partner.alt} className="w-24 md:w-48" />
-                </div>
-              ))}
-            </div>
-          </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+<div className="w-full mt-4 text-center overflow-hidden relative">
+  <div className="marquee">
+    <div className="marquee-content reverse gap-6">
+      {partners2.concat(partners2).map((partner, index) => (
+        <div key={index} className="flex md:p-1 md:gap-4 justify-center items-center">
+          <img
+            src={partner.logo}
+            alt={partner.alt}
+            className="h-24 md:h-48 object-contain"
+            // Ensures uniform height and proper aspect ratio
+          />
         </div>
+      ))}
+    </div>
+  </div>
+</div>
+
       </div>
 
       <style>

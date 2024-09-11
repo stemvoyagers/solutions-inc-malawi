@@ -8,20 +8,20 @@ const Card = ({ title, description, bgColor, borderColor }) => {
   return (
     <div className="relative max-w-sm w-full mx-auto md:mb-7">
       <div className={`absolute inset-0 ${bgColor} transform -translate-x-4 translate-y-4 sm:-translate-x-6 sm:translate-y-6`} />
-      <div className="relative z-10 bg-white p-6 sm:p-8 shadow-lg h-full flex flex-col text-justify">
-        <h3 className="text-2xl sm:text-3xl lg:text-3xl font-bold flex items-center mb-4">
+      <div className="relative z-10 bg-white p-6 sm:p-8 shadow-lg h-full flex flex-col">
+        <h3 className="text-2xl sm:text-3xl lg:text-[2.9rem] font-bold flex items-center justify-center mb-4">
           <span className={`w-8 h-1 sm:w-12 sm:h-1 block mr-3 ${borderColor}`} />
           {title}
         </h3>
-        <p className="text-gray-600 text-sm sm:text-base lg:text-[1rem]">{description}</p>
+        <p className="text-gray-600 text-sm sm:text-base lg:text-xl tracking-widest">{description}</p>
       </div>
     </div>
   );
 };
 
-const ImageGrid = ({ images }) => {
+const ImageGrid = () => {
   return (
-    <div className="grid grid-cols-2 gap-2 relative z-10 p-2">
+    <div className="grid grid-cols-2 gap-2 relative z-10 p-2 bg-yellow-500">
       {/* {images.map((image, index) => (
         <div key={index} className="w-full">
           <img src={image.src} alt={image.alt} className="w-full h-auto" />
@@ -65,7 +65,7 @@ const Cards = () => {
 
       <Card
         title="Our Vision"
-        description="To be a leading, competent, and dependable provider of comprehensive Information Communication and Technology solutions and services, driving innovation and economic growth, while creating a sustainable business model that delivers value and pride."
+        description="To be a leading, competent, & dependable provider of comprehensive Information Communication & Technology solutions & services, driving innovation & economic growth, while creating a sustainable business model that delivers value & pride."
         bgColor="bg-blue-500"
         borderColor="bg-blue-500"
       />
