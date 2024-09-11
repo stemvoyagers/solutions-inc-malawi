@@ -1,8 +1,8 @@
 import {microsoftL, neuroL, veritasL, vmL, ciscoL, hpL, huaweiL, idemiaL, lenovoL, } from "../../assets";
-import sterlingL from "../../assets/sterling_logo.svg";
-import n_logo from "../../assets/n_logo.svg";
-import telpo from "../../assets/telpo.svg";
-import veeam from "../../assets/veeam_logo.svg";
+import sterlingL from "../../assets/partners/sterlingL.svg";
+import n_logo from "../../assets/partners/n_logo.svg";
+import telpoL from "../../assets/partners/telpoL.svg";
+import veeamL from "../../assets/partners/veeamL.svg";
 
 const partners1 = [
   { logo: microsoftL, alt: "msImg" },
@@ -18,8 +18,8 @@ const partners2 = [
   { logo: hpL, alt: "msImg" },
   { logo: huaweiL, alt: "msImg" },
   { logo: idemiaL, alt: "nigImg" },
-  { logo: telpo, alt: "telpo" },
-  { logo: veeam, alt: "veeam" },
+  { logo: telpoL, alt: "telpo" },
+  { logo: veeamL, alt: "veeam" },
   { logo: lenovoL, alt: "msImg" },
 ];
 

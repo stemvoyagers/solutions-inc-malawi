@@ -5,7 +5,7 @@ import hp from "../assets/hp.png";
 import idemia from "../assets/idemia.png";
 import lenovo from "../assets/lenovo.png";
 import microsoft from "../assets/microsoft.png";
-import neuro from "../assets/neuro.png";
+// import neuro from "../assets/neuro.png";
 import veritas from "../assets/veritas.png";
 import vmware from "../assets/vmware.png";
 import identikoWeb from "../assets/identikoWeb.png";
