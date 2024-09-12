@@ -51,6 +51,12 @@ const Cards = () => {
         bgColor="bg-yellow-500"
         borderColor="bg-yellow-600"
       /> */}
+      <Card
+        title="Our Vision"
+        description="To be a leading, competent, & dependable provider of comprehensive Information Communication & Technology solutions & services, driving innovation & economic growth, while creating a sustainable business model that delivers value & pride."
+        bgColor="bg-blue-500"
+        borderColor="bg-blue-500"
+      />
       <div className="relative max-w-sm w-full mx-auto md:mb-7">
       <div className='absolute inset-0 bg-yellow-500 transform -translate-x-4 translate-y-4 sm:-translate-x-6 sm:translate-y-6' />
       <ImageGrid/>
@@ -63,12 +69,7 @@ const Cards = () => {
       </div> */}
     </div>
 
-      <Card
-        title="Our Vision"
-        description="To be a leading, competent, & dependable provider of comprehensive Information Communication & Technology solutions & services, driving innovation & economic growth, while creating a sustainable business model that delivers value & pride."
-        bgColor="bg-blue-500"
-        borderColor="bg-blue-500"
-      />
+
       <Card
         title="Our Mission"
         description="To create a service-based company which drives innovation, technology and economic development for our customers while building a growing and sustainable business model that provides value and a sense of pride to everyone."

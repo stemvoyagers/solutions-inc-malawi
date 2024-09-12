@@ -125,8 +125,8 @@ const ContactBody = () => {
                     <MdOutlineCall className="text-xl text-blue-800" />
                     <span className="py-2 text-black text-lg font-semibold">Phone</span>
                   </span>
-                  <a href={`tel:+2348094710197`}><span className="text-blue-800">+234-(0)704 381 7509</span></a>
-                  <a href={`tel:+2348094710197`}><span className="text-blue-800">+234-(0)809 471 0197</span></a>
+                  <a href={`tel:+2348094710197`}><span className="text-blue-800">+234 704 381 7509</span></a>
+                  <a href={`tel:+2348094710197`}><span className="text-blue-800">+234 809 471 0197</span></a>
                 </div>
               </div>
               <div className="mt-4 flex gap-5">

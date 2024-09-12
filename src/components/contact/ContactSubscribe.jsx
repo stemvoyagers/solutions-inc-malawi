@@ -3,12 +3,10 @@ import {FaPhone, FaEnvelope } from "react-icons/fa";
 
 const ContactSubscribe = () => {
   return (
-     <div className="flex flex-col md:flex-row justify-between items-center w-full p-10 md:p-20 bg-slate-100 gap-8 md:gap-0 mt-12 md:mt-0">
+     <div className="flex justify-center items-center w-full p-10 md:p-20 bg-slate-100 mt-12 md:mt-0">
 
-        <div className=" flex flex-col items-center md:items-start gap-2">
+        {/* <div className=" flex flex-col items-center md:items-start gap-2">
           <h3 className="font-bold text-xl md:text-3xl">Contact Us</h3>
-
-          {/* <Link to = "contact-us"><p className="opacity-75 md:my-3">Contact Us</p></Link> */}
 
           <div className="flex flex-row gap-1 items-center">
             <p>
@@ -30,10 +28,10 @@ const ContactSubscribe = () => {
             </p>
             <a href={`mailto:info@identikosolutions.com`} className="opacity-75 ">info@identikosolutions.com</a>
           </div>
-        </div>
+        </div> */}
 
-        <div className="flex flex-col items-center sm:items-center md:items-start md:ml-[20%]">
-    <h3 className="hidden md:block font-bold md:text-3xl mb-2">
+        <div className="flex flex-col items-center">
+    <h3 className="hidden md:block font-bold md:text-3xl mb-2 text-center">
         Want To Know More About <br />Our Careers Section?
     </h3>
     <h3 className="md:hidden block font-bold md:text-3xl mb-2 text-center">

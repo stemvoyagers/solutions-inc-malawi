@@ -13,8 +13,8 @@ const CTAPrivacy = () => {
             <div className="absolute inset-0 bg-black opacity-70"></div>
 
 
-            <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-8 md:gap-x-20 px-4 md:px-0">
-                <div className="font-semibold text-[150%] md:text-[200%] md:text-md mb-2 text-white z-10 text-center md:text-left" >
+            <div className="max-w-screen-xl mx-auto flex items-center justify-center py-4">
+                <div className="font-semibold text-[120%] md:text-[200%] md:text-md mb-2 text-white z-10 text-center" >
                     PRIVACY POLICY
                 </div>
 

@@ -1,33 +1,33 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 
 const IsmsBody = () => {
-  const [isVisible1, setIsVisible1] = useState(false);
-  const [isVisible2, setIsVisible2] = useState(false);
-  const [isVisible3, setIsVisible3] = useState(false);
+  // const [isVisible1, setIsVisible1] = useState(false);
+  // const [isVisible2, setIsVisible2] = useState(false);
+  // const [isVisible3, setIsVisible3] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const top1 = document.getElementById('div1').getBoundingClientRect().top;
-      const top2 = document.getElementById('div2').getBoundingClientRect().top;
-      const top3 = document.getElementById('div3').getBoundingClientRect().top;
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const top1 = document.getElementById('div1').getBoundingClientRect().top;
+  //     const top2 = document.getElementById('div2').getBoundingClientRect().top;
+  //     const top3 = document.getElementById('div3').getBoundingClientRect().top;
 
-      const windowHeight = window.innerHeight;
+  //     const windowHeight = window.innerHeight;
 
-      setIsVisible1(top1 < windowHeight);
-      setIsVisible2(top2 < windowHeight);
-      setIsVisible3(top3 < windowHeight);
+  //     // setIsVisible1(top1 < windowHeight);
+  //     // setIsVisible2(top2 < windowHeight);
+  //     // setIsVisible3(top3 < windowHeight);
 
-    };
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
   return (
     <div className="w-full bg-white pt-[4%] pb-[4%]">
 
-      <p className="max-w-screen-xl mx-auto text-sm md:text-md mt-4 md:mt-0 mb-4 md:mb-0 text-justify px-4 md:px-8 lg:px-12 xl:px-16">
+      <p className="max-w-screen-xl mx-auto text-md md:text-lg mt-4 md:mt-0 mb-4 md:mb-0 text-justify px-4 md:px-8 lg:px-12 xl:px-16">
         Identiko Integrated Solutions Limited is a leading, a diversified business technology solutions provider committed to providing quality and innovative IT solutions such as;
         PII Processing, advanced infrastructure, workplace modernization, network modernization, cloud services, data analytics, cybersecurity, migration/integration, managed services,
         software development services, IT Security, Managed Services, Technology Consulting & Advisory to enable our clients to become high-performance business and governments.
@@ -35,14 +35,11 @@ const IsmsBody = () => {
         applicable business, statutory, regulatory, and legal requirements.
         Identiko Integrated Solutions Limited, is also committed to achieving the following. <br /><br />
 
-        <p id="div1" className={`text-sm md:text-md duration-500 transition-all scroll-smooth ${isVisible1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
-          }`} >1) To protect (Confidentiality)
+        <p id="div1" className={`text-md md:text-lg`} >1) To protect (Confidentiality)
           To protect information assets against unauthorized disclosure.<br /> <br /></p>
-        <p id="div2" className={`text-sm md:text-md duration-500 transition-all scroll-smooth ${isVisible2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
-          }`} >2) To maintain (Integrity)
+        <p id="div2" className={`text-md md:text-lg`} >2) To maintain (Integrity)
           To protect information assets from unauthorized or accidental modification ensuring the accuracy and completeness of the organization’s assets.<br /> <br /></p>
-        <p id="div3" className={`text-sm md:text-md duration-500 transition-all scroll-smooth ${isVisible3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[100%]'
-          }`} >3) To ensure (Availability)
+        <p id="div3" className={`text-md md:text-lg`} >3) To ensure (Availability)
           To ensure that Information assets are available as and when required adhering to the organization’s business objectives.
           To achieve these, we have set measurable objectives at all relevant functions and levels throughout the organization.
 
