@@ -34,7 +34,7 @@ const GallerySwipe = () => {
 
   return (
     <div className='overflow-x-hidden overflow-y-hidden flex flex-col items-center mb-4'>
-      <h2 className="text-center text-xl md:text-3xl font-bold text-black mt-12 mb-2">
+      <h2 className="text-center text-xl md:text-3xl font-bold text-black md:mt-12 mb-2">
         {loading ? (
           <div className="h-8 bg-gray-300 animate-pulse w-3/4 md:w-1/2 mx-auto"></div>
         ) : (

@@ -39,13 +39,13 @@ const Partners = () => {
         </span>
         <div className="w-full mt-2 text-center overflow-hidden relative">
   <div className="marquee">
-    <div className="marquee-content reverse gap-12">
+    <div className="marquee-content reverse">
       {partners1.concat(partners1).map((partner, index) => (
-        <div key={index} className="flex md:p-1 md:gap-4 justify-center items-center">
+        <div key={index} className="flex md:p-1 md:gap-4 justify-center items-center mr-2 ml-2 md:mr-5 md:ml-5">
           <img
             src={partner.logo}
             alt={partner.alt}
-            className="h-24 md:h-32 object-contain"
+            className="h-14"
             // Ensures uniform height and proper aspect ratio
           />
         </div>
@@ -54,15 +54,15 @@ const Partners = () => {
   </div>
 </div>
 
-<div className="w-full mt-2 text-center overflow-hidden relative">
+<div className="w-full -mt-5 md:mt-7 text-center overflow-hidden relative">
   <div className="marquee">
-    <div className="marquee-content gap-12">
+    <div className="marquee-content">
       {partners2.concat(partners2).map((partner, index) => (
-        <div key={index} className="flex md:p-1 md:gap-4 justify-center items-center">
+        <div key={index} className="flex md:p-1 md:gap-4 justify-center items-center mr-2 ml-2 md:mr-5 md:ml-5">
           <img
             src={partner.logo}
             alt={partner.alt}
-            className="h-24 md:h-32 object-contain"
+            className="h-14 object-contain"
             // Ensures uniform height and proper aspect ratio
           />
         </div>

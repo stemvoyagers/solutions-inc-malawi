@@ -53,7 +53,7 @@ const Cards = () => {
       /> */}
       <Card
         title="Our Vision"
-        description="To be a leading, competent, & dependable provider of comprehensive Information Communication & Technology solutions & services, driving innovation & economic growth, while creating a sustainable business model that delivers value & pride."
+        description="To be a Leading, Competent and Dependable Information Communication and Technology Solutions and Services Provider."
         bgColor="bg-blue-500"
         borderColor="bg-blue-500"
       />
