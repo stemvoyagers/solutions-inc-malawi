@@ -8,12 +8,12 @@ const Card = ({ title, description, bgColor, borderColor }) => {
   return (
     <div className="relative max-w-sm w-full mx-auto md:mb-7">
       <div className={`absolute inset-0 ${bgColor} transform -translate-x-4 translate-y-4 sm:-translate-x-6 sm:translate-y-6`} />
-      <div className="relative z-10 bg-white p-6 sm:p-8 shadow-lg h-full flex flex-col">
-        <h3 className="text-2xl sm:text-3xl lg:text-[2.9rem] font-bold flex items-center justify-center mb-4">
+      <div className="relative z-10 bg-white p-6 sm:p-8 shadow-lg h-full flex flex-col justify-center">
+        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold flex items-center mb-4">
           <span className={`w-8 h-1 sm:w-12 sm:h-1 block mr-3 ${borderColor}`} />
           {title}
         </h3>
-        <p className="text-gray-600 text-sm sm:text-base lg:text-xl tracking-widest">{description}</p>
+        <p className="text-gray-600 text-sm sm:text-base lg:text-lg tracking-widest">{description}</p>
       </div>
     </div>
   );
