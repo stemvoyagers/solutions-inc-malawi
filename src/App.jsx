@@ -20,6 +20,7 @@ import ContactPage from "./pages/ContactPage";
 import AService from "./pages/AService";
 import PolicyImages from "./components/others/PolicyImages";
 import Hero from "./components/home/Hero";
+import ScrollToTop from "./components/others/ScrollToTop";
 
 const Layout = () => {
   return (
@@ -92,6 +93,7 @@ const App = () => {
   return (
     <div className="font-bodyFont">
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />

@@ -3,7 +3,9 @@ import sterlingL from "../../assets/partners/sterlingL.svg";
 import n_logo from "../../assets/partners/n_logo.svg";
 import telpoL from "../../assets/partners/telpoL.svg";
 import veeamL from "../../assets/partners/veeamL.svg";
-import lassraL from "../../assets/partners/lasrraL.png";
+import lasrraL from "../../assets/partners/lasrraL.jpg";
+import aratekL from "../../assets/partners/aratekL.svg";
+import checkPointL from "../../assets/partners/checkPointL.svg";
 
 const partners1 = [
   { logo: microsoftL, alt: "msImg" },
@@ -13,6 +15,7 @@ const partners1 = [
   { logo: veritasL, alt: "msImg" },
   { logo: ciscoL, alt: "msImg" },
   { logo: vmL, alt: "msImg" },
+  { logo: checkPointL, alt: "checkPointLogo" },
 ];
 
 const partners2 = [
@@ -22,8 +25,8 @@ const partners2 = [
   { logo: telpoL, alt: "telpo" },
   { logo: veeamL, alt: "veeam" },
   { logo: lenovoL, alt: "msImg" },
-  { logo: lassraL, alt: "lassraLogo" },
-
+  { logo: lasrraL, alt: "lassraLogo" },
+  { logo: aratekL, alt: "aratekLogo" },
 ];
 
 const Partners = () => {
@@ -34,9 +37,9 @@ const Partners = () => {
         <span className="text-base md:text-xl text-center md:w-[55%]">
         We collaborate with industry-leading partners to create innovative solutions that surpass customer expectations and contribute to their overall business success across our comprehensive services and product portfolio.
         </span>
-        <div className="w-full mt-4 text-center overflow-hidden relative">
+        <div className="w-full mt-2 text-center overflow-hidden relative">
   <div className="marquee">
-    <div className="marquee-content reverse gap-6">
+    <div className="marquee-content reverse gap-12">
       {partners1.concat(partners1).map((partner, index) => (
         <div key={index} className="flex md:p-1 md:gap-4 justify-center items-center">
           <img
@@ -51,9 +54,9 @@ const Partners = () => {
   </div>
 </div>
 
-<div className="w-full mt-4 text-center overflow-hidden relative">
+<div className="w-full mt-2 text-center overflow-hidden relative">
   <div className="marquee">
-    <div className="marquee-content gap-6">
+    <div className="marquee-content gap-12">
       {partners2.concat(partners2).map((partner, index) => (
         <div key={index} className="flex md:p-1 md:gap-4 justify-center items-center">
           <img

@@ -148,7 +148,7 @@ const ContactBody = () => {
           </div>
         )}
         <form ref={form} onSubmit={sendEmail} className="max-w-2xl mx-auto p-8 bg-white rounded-lg shadow-lg">
-        <h2 className="text-xl md:text-3xl font-bold mb-6 text-center text-[#003997]">Request A Quote</h2>
+        <h2 className="text-xl md:text-3xl font-bold mb-6 text-center text-[#003997]">Get in Touch</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4">
           <div className="col-span-2 mb-4">
             <label htmlFor="service" className="block mb-2 text-lg text-gray-700">Service <span className="text-red-700">*</span></label>

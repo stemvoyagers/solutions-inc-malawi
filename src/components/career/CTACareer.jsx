@@ -11,9 +11,10 @@ const CTACareer = () => {
       }}
     >
       <div className=" absolute md:z-50 text-[50%] md:text-5xl text-left text-gray-50 w-full h-full md:top-8 flex items-end justify-start">
-        <div className="hidden md:block ml-9 text-left font-extrabold text-shadow-xl mb-[7%] transform animate-slide-up">
-          Join Our Team
-        </div>
+      <div className="hidden md:block ml-9 text-left font-extrabold mb-[7%] transform animate-slide-up" style={{ textShadow: "5px 4px 1px rgba(0, 0, 0, 0.5)" }}>
+  Join Our Team
+</div>
+
       </div>
       <style>{`@keyframes slide-up{ from{ transform: translateY(100%); opacity: 0 } to{ transform: translateY(0%); opacity: 1 }} .animate-slide-up {animation: slide-up 2s ease-out;`} </style>
     </div>
