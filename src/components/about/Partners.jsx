@@ -1,11 +1,26 @@
-import {microsoftL, neuroL, veritasL, vmL, ciscoL, hpL, huaweiL, idemiaL, lenovoL, } from "../../assets";
-import sterlingL from "../../assets/partners/sterlingL.svg";
-import n_logo from "../../assets/partners/n_logo.svg";
-import telpoL from "../../assets/partners/telpoL.svg";
-import veeamL from "../../assets/partners/veeamL.svg";
+import microsoftL from "../../assets/partners/microsoftL.png";
+import neuroL from "../../assets/partners/neuroL.png";
+import veritasL from "../../assets/partners/veritasL.png";
+import vmL from "../../assets/partners/vmL.png";
+import ciscoL from "../../assets/partners/ciscoL.png";
+import hpL from "../../assets/partners/hpL.png";
+import huaweiL from "../../assets/partners/huaweiL.png";
+
+import sterlingL from "../../assets/partners/sterlingL.png";
+import n_logo from "../../assets/partners/n_logo.png";
+import telpoL from "../../assets/partners/telpoL.png";
+import veeamL from "../../assets/partners/veeamL.png";
 import lasrraL from "../../assets/partners/lasrraL.jpg";
-import aratekL from "../../assets/partners/aratekL.svg";
-import checkPointL from "../../assets/partners/checkPointL.svg";
+import aratekL from "../../assets/partners/aratekL.png";
+import checkPointL from "../../assets/partners/checkPointL.png";
+
+import idemiaL from "../../assets/partners/idemiaL.png";
+import lenovoL from "../../assets/partners/lenovoL.png";
+import awsL from "../../assets/partners/awsL.png";
+import ibmL from "../../assets/partners/ibmL.png";
+import msAzureL from "../../assets/partners/msAzureL.png";
+// import aratekL from "../../assets/partners/aratekL.png";
+// import checkPointL from "../../assets/partners/checkPointL.png";
 
 const partners1 = [
   { logo: microsoftL, alt: "msImg" },
@@ -16,6 +31,8 @@ const partners1 = [
   { logo: ciscoL, alt: "msImg" },
   { logo: vmL, alt: "msImg" },
   { logo: checkPointL, alt: "checkPointLogo" },
+  { logo: awsL, alt: "awsLogo" },
+  { logo: msAzureL, alt: "msAzureLogo" },
 ];
 
 const partners2 = [
@@ -27,6 +44,7 @@ const partners2 = [
   { logo: lenovoL, alt: "msImg" },
   { logo: lasrraL, alt: "lassraLogo" },
   { logo: aratekL, alt: "aratekLogo" },
+  { logo: ibmL, alt: "ibmLogo" },
 ];
 
 const Partners = () => {

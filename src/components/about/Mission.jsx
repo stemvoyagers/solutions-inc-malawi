@@ -7,7 +7,7 @@ const services = [
     },
     {
         title: "Respect",
-        description: "We treat everyone with respect and honor, regardless of position or background, and are committed to social responsibility",
+        description: "We treat everyone with respect and honour, regardless of position or background, and are committed to social responsibility",
     },
     {
         title: "Innovation",

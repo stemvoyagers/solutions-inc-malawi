@@ -9,8 +9,8 @@ const services = [
   {
     id: "div2",
     image: no2,
-    img: software_application,
-    title: "Software & IT Solution",
+    // img: software_application,
+    title: "Software & IT Solutions",
     description:
       "Innovative software and IT services streamline operations and enhance efficiency. From development to integration, we deliver robust solutions tailored to your business needs, ensuring security and scalability.",
     bgImg: card4,
@@ -28,7 +28,7 @@ const services = [
     id: "div3",
     image: no3,
     img: tech_solution,
-    title: "Urban Innovation & Surveillance Solution",
+    title: "Urban Innovation & Surveillance Solutions",
     description:
       "Tailored managed services and smart solutions optimize business processes and customer experiences. We offer specialized support to enhance operational efficiency and meet unique organizational needs.",
     bgImg: card3,

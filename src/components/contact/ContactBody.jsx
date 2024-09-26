@@ -94,7 +94,7 @@ const ContactBody = () => {
             <div className="mb-4 w-full text-lg font-normal text-black">
               <p className="py-2">
               If you have any questions, please feel free to <br />
-                <a href={`mailto:info@identikosolutions.com`} className="cursor-pointer text-blue-800 underline"> Get In Touch</a> with us Our team is here and ready to assist you.
+                <a href={`mailto:info@identikosolutions.com`} className="cursor-pointer text-blue-800 underline"> Get In Touch</a> with us. Our team is here and ready to assist you.
                 </p>
                  {/* ( <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@identikosolutions.com" target="_blank" className="cursor-pointer text-blue-800">Gmail</a>,   <a href="https://outlook.live.com/owa/?path=/mail/action/compose&to=info@identikosolutions.com" target="_blank" className="cursor-pointer text-blue-800">Outlook.com</a>, <a href="https://compose.mail.yahoo.com/?to=info@identikosolutions.com" target="_blank" className="cursor-pointer text-blue-800">Yahoo Mail</a>
                 ).  */}
@@ -114,8 +114,8 @@ const ContactBody = () => {
                   <FaLocationDot className="text-xl text-blue-800" />
                   <span className="py-2 text-black text-lg font-semibold">Address</span>
                 </span>
-                <p className="text-black text-lg py-1 mb-2 md:mb-0">2nd Floor, CITN House, Plot 16, Jobi Fele Way, Ikeja, Lagos.</p>
-                <p className="text-black text-lg py-1">2nd Floor, Oakland Centre, Plot 2940 Aguiyi Ironsi Street, Maitama, Abuja.</p>
+                <p className="text-black text-lg py-1 mb-2 md:mb-0">2nd Floor, CITN House, Plot 16, Jobi Fele Way, Ikeja, Lagos, Nigeria.</p>
+                <p className="text-black text-lg py-1">2nd Floor, Oakland Centre, Plot 2940 Aguiyi Ironsi Street, Maitama, Abuja, Nigeria.</p>
               </div>
             </div>
             <div className="flex flex-col md:flex-row md:justify-around text-center justify-center items-center md:items-start">
