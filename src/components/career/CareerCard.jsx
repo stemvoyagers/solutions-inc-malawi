@@ -1,7 +1,7 @@
 import React from 'react';
 import sub01 from "../../assets/sub01.jpg";
 import sub02 from "../../assets/sub02.jpg";
-import sub03 from "../../assets/sub03.jpg";
+import sub03 from "../../assets/sub03.png";
 import sub04 from "../../assets/sub04.jpg";
 
 const Card = ({ image, title, description }) => {

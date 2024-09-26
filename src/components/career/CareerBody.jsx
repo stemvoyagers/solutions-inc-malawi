@@ -158,7 +158,7 @@ const CareerBody = () => {
 
             <div className="w-[100%] md:w-[70%] text-base md:text-xl text-center">
               Identiko is a leading ICT player with deep expertise in identity management systems. We partner with
-              top companies like Cisco, Lenovo, Neuro Technology, and Idemia to deliver world-class solutions, helping clients
+              top companies like Idemia, Lenovo, Microsoft, Neuro Technology, and Cisco to deliver world-class solutions, helping clients
               excel in today’s and tomorrow’s knowledge-driven society.
             </div>
           </div>
@@ -192,7 +192,7 @@ const CareerBody = () => {
                     <option value="Mobile Development">Mobile Development</option>
                     <option value="Project Management">Project Management</option>
                     <option value="UI/UX Designer">UI/UX Designer</option> */}
-                    <option value="No Vacant roles">No Vacant roles</option>
+                    {/* <option value="No Vacant roles">No Vacant roles</option> */}
                     <option value="Other">Other</option>
                   </select>
                   {errors.service && <p className="text-red-500 text-sm mt-1">{errors.service}</p>}
