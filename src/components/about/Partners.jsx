@@ -63,7 +63,7 @@ const Partners = () => {
           <img
             src={partner.logo}
             alt={partner.alt}
-            className="h-14"
+            className="h-14 object-contain"
             // Ensures uniform height and proper aspect ratio
           />
         </div>
@@ -72,7 +72,7 @@ const Partners = () => {
   </div>
 </div>
 
-<div className="w-full -mt-5 md:mt-7 text-center overflow-hidden relative">
+<div className="w-full -mt-1 md:mt-7 text-center overflow-hidden relative">
   <div className="marquee">
     <div className="marquee-content">
       {partners2.concat(partners2).map((partner, index) => (

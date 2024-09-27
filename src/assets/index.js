@@ -1,13 +1,13 @@
 import msPix from "../assets/msPix.png";
 import nigPix from "../assets/nigPix.png";
-import cisco from "../assets/cisco.png";
-import hp from "../assets/hp.png";
-import idemia from "../assets/idemia.png";
-import lenovo from "../assets/lenovo.png";
-import microsoft from "../assets/microsoft.png";
+// import cisco from "../assets/cisco.png";
+// import hp from "../assets/hp.png";
+// import idemia from "../assets/idemia.png";
+// import lenovo from "../assets/lenovo.png";
+// import microsoft from "../assets/microsoft.png";
 // import neuro from "../assets/neuro.png";
-import veritas from "../assets/veritas.png";
-import vmware from "../assets/vmware.png";
+// import veritas from "../assets/veritas.png";
+// import vmware from "../assets/vmware.png";
 import identikoWeb from "../assets/identikoWeb.png";
 import home from "../assets/home.png";
 import home2 from "../assets/home2.jpg";
@@ -51,22 +51,22 @@ import identiko from "../../public/identiko.svg"
 import vision from "../assets/vision.png"
 import anocar from "../assets/anocar.jpg"
 import recognition from "../assets/recogniton.jpg"
-import ciscoL from "../assets/partners/ciscoL.svg"
-import hpL from "../assets/partners/hpL.svg"
-import huaweiL from "../assets/partners/huaweiL.svg"
-import idemiaL from "../assets/partners/idemiaL.svg"
-import interswitchL from "../assets/partners/interswitchL.svg"
-import lagosL from "../assets/partners/lagosL.svg"
-import lassraL from "../assets/partners/lassraL.svg"
-import lenovoL from "../assets/partners/lenovoL.svg"
-import manageL from "../assets/partners/manageL.svg"
-import microsoftL from "../assets/partners/microsoftL.svg"
-import neuroL from "../assets/partners/neuroL.svg"
-import nimcL from "../assets/partners/nimcL.svg"
-import sterlingL from "../assets/partners/sterlingL.svg"
-import veritasL from "../assets/partners/veritasL.svg"
-import verveL from "../assets/partners/verveL.svg"
-import vmL from "../assets/partners/vmL.svg"
+// import ciscoL from "../assets/partners/ciscoL.svg"
+// import hpL from "../assets/partners/hpL.svg"
+// import huaweiL from "../assets/partners/huaweiL.svg"
+// import idemiaL from "../assets/partners/idemiaL.svg"
+// import interswitchL from "../assets/partners/interswitchL.svg"
+// import lagosL from "../assets/partners/lagosL.svg"
+// import lassraL from "../assets/partners/lassraL.svg"
+// import lenovoL from "../assets/partners/lenovoL.svg"
+// import manageL from "../assets/partners/manageL.svg"
+// import microsoftL from "../assets/partners/microsoftL.svg"
+// import neuroL from "../assets/partners/neuroL.svg"
+// import nimcL from "../assets/partners/nimcL.svg"
+// import sterlingL from "../assets/partners/sterlingL.svg"
+// import veritasL from "../assets/partners/veritasL.svg"
+// import verveL from "../assets/partners/verveL.svg"
+// import vmL from "../assets/partners/vmL.svg"
 import lagg from "../assets/carouselPictures/lagg.png"
 import las from "../assets/carouselPictures/las.png"
 import nimc from "../assets/carouselPictures/nimc.png"
@@ -101,15 +101,14 @@ import no27 from "../assets/services_icon/no27.jpg"
 
 
 export {
-    microsoftL, neuroL, nimcL, sterlingL, veritasL, verveL, vmL, lagg, las, nimc,
-    ciscoL, hpL, huaweiL, idemiaL, interswitchL, lagosL, lassraL, lenovoL, manageL,
+    lagg, las, nimc,
     vision, anocar, identiko_logo, software_application, enrollment_services,
     identity_solution, tech_solution, AboutVid, editedContact, LandingVid, contactIde2,
     aCareer, officeSpace, contactIde, logoPicu, aboutUs, careerPic, aboutUsPic,
     off1, off2, off3, off4, off5, off6, off7, off8, Sunset, jideAgbaje, circular,
     bg, robot, zeroreg, face, finger, home, card1, card2, card3, card4,
-    home2, identikoWeb, vmware, veritas, microsoft, lenovo, idemia, hp,
-    cisco, msPix, nigPix, recognition, identiko, no1, no2, no3, no4, no5, no6,
+    home2, identikoWeb,
+     msPix, nigPix, recognition, identiko, no1, no2, no3, no4, no5, no6,
     no7, no8, no9, no10, no11, no12, no13, no14, no15, no17, no18, no19, no20,
     no21, no23, no25, no27, officeSpace2, homela, serviceso, careero,
 };

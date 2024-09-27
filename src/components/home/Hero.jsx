@@ -9,7 +9,7 @@ const services = [
   {
     id: "div2",
     image: no2,
-    // img: software_application,
+    img: software_application,
     title: "Software & IT Solutions",
     description:
       "Innovative software and IT services streamline operations and enhance efficiency. From development to integration, we deliver robust solutions tailored to your business needs, ensuring security and scalability.",
