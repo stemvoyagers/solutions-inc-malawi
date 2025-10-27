@@ -1,6 +1,6 @@
 const services = [
   {
-    title: "Public Environmental Health and ICT",
+    title: "Public & Environmental Health and ICT",
     description:
       "At Solutions Inc., we recognize the trans-formative power of information and communication technologies (ICT) in enhancing public health. Our initiatives in this area are designed to leverage the latest technological advancements to improve health outcomes and promote environmental sustainability.",
   },

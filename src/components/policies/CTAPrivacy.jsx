@@ -5,7 +5,7 @@ const CTAPrivacy = () => {
 
       <div className="max-w-screen-xl mx-auto flex items-center justify-center py-4">
         <div className="font-semibold text-[120%] md:text-[200%] md:text-md mb-2 text-white z-10 text-center">
-          Privacy Policy for Solutions Inc
+          Privacy Policy for Solutions Inc 
         </div>
       </div>
     </div>
