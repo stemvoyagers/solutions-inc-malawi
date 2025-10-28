@@ -1,17 +1,17 @@
-import { sala2 } from '../../assets';
+import { sala8 } from "../../assets";
 
 const CTAHome = () => {
-  const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFBE0B', '#FB5607'];
+  const colors = ["#FF6B6B", "#4ECDC4", "#45B7D1", "#FFBE0B", "#FB5607"];
 
   return (
-    <div className="relative h-[40vh] lg:h-[70vh] w-full bg-no-repeat bg-cover bg-center overflow-hidden"
+    <div
+      className="relative h-[40vh] lg:h-[70vh] w-full bg-no-repeat bg-cover bg-center overflow-hidden"
       style={{
-        backgroundImage: `url(${sala2})`,
+        backgroundImage: `url(${sala8})`,
       }}
     >
       <div className="absolute top-0 left-0 w-full h-full bg-[#096E6A]/70"></div>
 
-     
       <div
         className="absolute top-0 left-0 w-full h-2 z-20"
         style={{
@@ -57,33 +57,3 @@ const CTAHome = () => {
 };
 
 export default CTAHome;
-
-
-
-
-// const CTAHome = () => {
-//   return (
-//     <div
-//       className="bg-no-repeat bg-cover relative h-[40vh] lg:h-[70vh] w-full"
-//       style={{
-//         backgroundPosition: "center",
-//         position: "relative",
-//       }}
-//     >
-//       <div className="absolute top-0 left-0 w-full h-full bg-[#096E6A]"></div>
-//       <div className=" absolute text-3xl lg:text-5xl text-left text-white w-full h-full lg:top-8 flex items-end justify-start">
-//         <div className="block ml-2 lg:ml-9 text-left font-extrabold text-shadow-xl mb-[22%] lg:mb-[15%] transform animate-slide-up pl-4 w-[60%] lg:w-fit">
-//           <p> Solution Inc: Where Innovation meets Impact</p>
-//         </div>
-//       </div>
-
-//       <style>
-//         {`@keyframes slide-up{ from{ transform: translateY(100%); opacity: 0 } to{ transform: translateY(0%); opacity: 1 }} .animate-slide-up {animation: slide-up 2s ease-out;`}{" "}
-//       </style>
-//     </div>
-//   );
-// };
-
-// export default CTAHome;
-
-

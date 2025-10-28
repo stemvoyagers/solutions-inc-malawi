@@ -8,7 +8,10 @@ const MainHero = () => {
   const [loading, setLoading] = useState(true);
   const slides = [
     { image: sala1, text: "Ensuring Reliable and Secure Identity Management" },
-    { image: sala2, text: "Empowering Businesses with Cutting-Edge Technology" },
+    {
+      image: sala2,
+      text: "Empowering Businesses with Cutting-Edge Technology",
+    },
     { image: sala3, text: "Optimizing Operations for a Smarter Future" },
   ];
 
@@ -33,7 +36,7 @@ const MainHero = () => {
 
   useEffect(() => {
     const loadImages = () => {
-      const promises = slides.map(slide => {
+      const promises = slides.map((slide) => {
         return new Promise((resolve) => {
           const img = new Image();
           img.src = slide.image;
@@ -63,7 +66,8 @@ const MainHero = () => {
         <div
           style={{
             transform: `translateX(-${(currentSlide % slides.length) * 100}vw)`,
-            transition: currentSlide === slides.length ? "none" : "transform 1s ease",
+            transition:
+              currentSlide === slides.length ? "none" : "transform 1s ease",
           }}
           className="w-fit h-full flex transition-transform duration-1000 ease-out"
         >
@@ -75,7 +79,11 @@ const MainHero = () => {
               {loading ? (
                 <div className="w-full h-64 md:h-96 lg:h-[600px] bg-gray-300 animate-pulse"></div>
               ) : (
-                <img className="w-full h-64 md:h-96 lg:h-[70vh] object-cover" src={slide.image} alt={`img-${index}`} />
+                <img
+                  className="w-full h-64 md:h-96 lg:h-[70vh] object-cover"
+                  src={slide.image}
+                  alt={`img-${index}`}
+                />
               )}
               <div className="absolute z-30 flex flex-col items-center justify-center text-center w-full h-full bg-black bg-opacity-50">
                 <p
@@ -108,7 +116,9 @@ const MainHero = () => {
           {slides.map((_, index) => (
             <button
               key={index}
-              className={`w-3 h-3 rounded-full ${currentSlide === index ? 'bg-white' : 'bg-gray-500'}`}
+              className={`w-3 h-3 rounded-full ${
+                currentSlide === index ? "bg-white" : "bg-gray-500"
+              }`}
               onClick={() => goToSlide(index)}
             ></button>
           ))}

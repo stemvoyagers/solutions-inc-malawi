@@ -21,7 +21,6 @@ const Header = () => {
 
   return (
     <div className="overflow-hidden top-0 flex items-center text-black shadow-sm justify-between px-8 py-2 bg-white relative z-50">
-      {/* Logo & Mobile Menu Toggle */}
       <div className="flex items-center gap-4">
         <div className="md:hidden cursor-pointer">
           {isMenuOpen ? (
@@ -46,13 +45,11 @@ const Header = () => {
         </Link>
       </div>
 
-      {/* Desktop Navigation */}
       <div className="hidden md:flex items-center justify-center">
         <div className="flex justify-center items-center gap-12">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about-us">About Us</NavLink>
 
-          {/* Solutions Dropdown */}
           <div
             className="relative"
             onMouseEnter={() => setIsSolutionsOpen(true)}
@@ -73,7 +70,6 @@ const Header = () => {
               />
             </div>
 
-            {/* Dropdown Menu */}
             <div
               className={`absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 py-2 z-[9999] transition-all duration-200 ease-out ${
                 isSolutionsOpen
@@ -97,7 +93,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation Overlay */}
       {isMenuOpen && (
         <>
           <div

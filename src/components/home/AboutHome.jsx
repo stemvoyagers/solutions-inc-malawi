@@ -10,14 +10,9 @@ const SkeletonLoader = () => {
 
 const AboutHome = () => {
   return (
-    <div
-      className="relative w-full mx-auto h-fit pt-[6%] pb-[6%] flex flex-col md:flex-row justify-center items-center mt-20 md:mb-2 mb-0 bg-cover bg-center gap-4 md:gap-0"
-       >
+    <div className="relative w-full mx-auto h-fit pt-[6%] pb-[6%] flex flex-col md:flex-row justify-center items-center mt-20 md:mb-2 mb-0 bg-cover bg-center gap-4 md:gap-0">
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-95"></div>
-      <div className="relative md:w-1/2 md:ml-[4%]">
-        {<SkeletonLoader />}
-      
-      </div>
+      <div className="relative md:w-1/2 md:ml-[4%]">{<SkeletonLoader />}</div>
       <div className="md:w-1/2 bg-white text-black lg:gap-3 ml-6 mr-[4%] p-6 z-10 lg:h-[385px] flex flex-col items-start justify-center">
         <h2 className="font-semibold text-xl md:text-3xl lg:text-4xl mb-2">
           About Us

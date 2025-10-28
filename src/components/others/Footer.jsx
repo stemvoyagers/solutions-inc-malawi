@@ -60,7 +60,7 @@ const Footer = () => {
           </span>
         </div>
       </div>
-      ©Copyright 2025 - All rights reserved  |  Solution Inc
+      ©Copyright 2025 - All rights reserved | Solution Inc
     </div>
   );
 };
