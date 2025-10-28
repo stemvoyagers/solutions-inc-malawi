@@ -1,6 +1,6 @@
 const PrivacyBody = () => {
   return (
-    <div className="bg-[#ffffff] pt-[4%] pb-[4%] w-full">
+    <div className="bg-[#092b28] text-white pt-[4%] pb-[4%] w-full">
       <p className="max-w-screen-xl mx-auto text-md md:text-lg mt-4 md:mt-0 mb-4 md:mb-0  text-justify px-4 md:px-8 lg:px-12 xl:px-16">
         Last Updated: 2025 <br />
         <br />
