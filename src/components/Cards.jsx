@@ -49,7 +49,7 @@ const Cards = () => {
 
       <Card
         title="Our Mission"
-        description="To provide high-quality products and innovative services that not only meet market needs but also drive social progress. By empowering individuals with skills, resources, and opportunities, we aim to build resilient communities capable of sustaining their growth and development."
+        description="To strengthen community resilience by delivering innovative, locally driven solutions and high-quality services that improve livelihoods and address climate challenges. By empowering women, youth, and vulnerable groups with the skills, tools, and opportunities they need, we build inclusive and sustainable individuals and communities capable of driving their own growth and development."
         bgColor="bg-[#47BDD9]"
         borderColor="bg-[#47BDD9]"
       />
