@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  Navigate,
 } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -35,6 +36,7 @@ const App = () => {
             <Route path="/about-us" element={<About />} />
             <Route path="/privacy-policy" element={<Privacy />} />
             <Route path="/hero" element={<Hero />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Routes>
 
