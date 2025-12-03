@@ -1,5 +1,3 @@
-// import { robot } from "../assets";
-
 import ReactPlayer from "react-player";
 
 const VdHome = () => {
