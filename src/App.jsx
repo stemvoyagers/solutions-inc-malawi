@@ -13,6 +13,7 @@ import ScrollButton from "./components/others/ScrollButton";
 import Privacy from "./pages/Privacy";
 import Hero from "./components/home/Hero";
 import ScrollToTop from "./components/others/ScrollToTop";
+import Vacancies from "./pages/Vacancies";
 
 const Layout = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
             <Route path="/about-us" element={<About />} />
             <Route path="/privacy-policy" element={<Privacy />} />
             <Route path="/hero" element={<Hero />} />
+            <Route path="/vacancies" element={<Vacancies />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Routes>
