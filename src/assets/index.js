@@ -23,8 +23,9 @@ import B1 from "../assets/B1.jpg"
 import B2 from "../assets/B2.jpg"
 import B3 from "../assets/B3.png"
 import B4 from "../assets/B4.jpg"
+import B5 from "../assets/B5.jpg"
 
 export {
      sala1, salalogo, sala5, sala10, sala7, sala9, salavid, salai, icon1, icon3,
-    sala11, B1, B2, B3, B4, sala12, sala13, no14, sala2, sala3, sala6, sala8, sala14, sala15, salaii
+    sala11, B1, B2, B3, B4, B5,sala12, sala13, no14, sala2, sala3, sala6, sala8, sala14, sala15, salaii
 };

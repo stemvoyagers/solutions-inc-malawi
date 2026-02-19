@@ -1,5 +1,5 @@
 
-import { B1, B2, B3, B4, icon1, icon3 } from "../../assets";
+import { B1, B2, B3, B4, B5, icon1, icon3 } from "../../assets";
 
 const necTeam = [
 
@@ -15,7 +15,7 @@ const operationsTeam = [
 
   { name: "Philip Banda", role: "", photo: B4 },
   { name: "Tiwonge Longwe", role: "", photo: icon3 },
-  { name: "Thokozire Kasuzumira", role: "", photo: icon3 },
+  { name: "Thokozire Kasuzumira", role: "", photo: B5 },
   { name: "Sellah Mandala", role: "", photo: icon3 },
 ];
 
