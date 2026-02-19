@@ -3,7 +3,7 @@ const roles = [
   {
     id: 1,
     title: "Financial Record-Keeping Assistant",
-    description: "Maintain accurate and up-to-date financial records for all RoG transactions, including donations, expenses, and grants.",
+    description: "Maintain accurate and up-to-date financial records for all Solution inc transactions, including donations, expenses, and grants.",
   },
   {
     id: 2,
