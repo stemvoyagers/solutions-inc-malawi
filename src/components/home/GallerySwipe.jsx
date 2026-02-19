@@ -1,11 +1,11 @@
 
-import { icon1, icon3 } from "../../assets";
+import { B1, B2, B3, B4, icon1, icon3 } from "../../assets";
 
 const necTeam = [
 
-  { name: "Prof. Dr. Save Kumwenda", role: " ", photo: icon1 },
-  { name: "Maxwell Zude Kalipentala", role: "  ", photo: icon1 },
-  { name: "Limbani Kalumbi", role: " ", photo: icon3 },
+  { name: "Prof. Dr. Save Kumwenda", role: " ", photo: B3 },
+  { name: "Maxwell Zude Kalipentala", role: "  ", photo: B2 },
+  { name: "Limbani Kalumbi", role: " ", photo: B1 },
   { name: "Florence Kamwana Ngwira", role: " ", photo: icon3 },
   { name: "Apostle Peter Ngwira", role: " ", photo: icon1 },
   { name: "Ms Bridget Chinguo", role: " ", photo: icon3 },
@@ -13,7 +13,7 @@ const necTeam = [
 
 const operationsTeam = [
 
-  { name: "Philip Banda", role: "", photo: icon1 },
+  { name: "Philip Banda", role: "", photo: B4 },
   { name: "Tiwonge Longwe", role: "", photo: icon3 },
   { name: "Thokozire Kasuzumira", role: "", photo: icon3 },
   { name: "Sellah Mandala", role: "", photo: icon3 },
@@ -46,7 +46,7 @@ const GallerySwipe = () => {
                     color: "#E8B504",
                   }}
                 >
-                  Solutions Inc. Mw Board members
+                 Board members
                 </h2>
                 <div className="w-20 h-1 bg-[#65a7b2] mx-auto rounded-full mb-12"></div>
               </h3>
@@ -80,7 +80,7 @@ const GallerySwipe = () => {
                     color: "#E8B504",
                   }}
                 >
-                  Solutions Inc Team
+                 Staff
                 </h2>
                 <div className="w-20 h-1 bg-[#65a7b2] mx-auto rounded-full mb-12"></div>
               </h3>

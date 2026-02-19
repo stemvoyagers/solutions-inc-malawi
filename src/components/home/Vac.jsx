@@ -10,7 +10,7 @@ const Vac = () => {
             </h1>
            
             <p className="text-black mb-4 md:mb-0 text-base md:text-lg">
-              Help empower girls in Malawi! We`re looking for a Finance & Admin Assistant <br/>(remote, voluntary).
+            No vacancy yet, check back later (remote, voluntary).
             </p>
           </div>
           <a
