@@ -49,6 +49,11 @@ const Header = () => {
         <div className="flex justify-center items-center gap-12">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about-us">About Us</NavLink>
+          <NavLink to="/about-us">Blog</NavLink>
+          <NavLink to="/about-us">Projects</NavLink>
+
+
+
 
           <div
             className="relative"
@@ -114,14 +119,24 @@ const Header = () => {
             </div>
 
             <div className="py-4">
-              <MobileNavLink to="/" onClick={() => setIsMenuOpen(false)}>
-                Home
-              </MobileNavLink>
-              <MobileNavLink
-                to="/about-us"
+              <MobileNavLink to="/" onClick={() => setIsMenuOpen(false)}>Home</MobileNavLink>
+              <MobileNavLink to="/about-us"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About Us
+              </MobileNavLink>
+
+               <MobileNavLink
+                to="/"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blog
+              </MobileNavLink>
+               <MobileNavLink
+                to="/"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Projects
               </MobileNavLink>
 
               <div className="border-t border-white/20">

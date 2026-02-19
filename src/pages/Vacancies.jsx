@@ -1,6 +1,4 @@
 // src/pages/Vacancies.jsx
-import { Link } from "react-router-dom";
-
 const roles = [
   {
     id: 1,
@@ -27,9 +25,7 @@ const Vacancies = () => {
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             Volunteer Opportunities
           </h1>
-          {/* <p className="text-gray-600 text-lg">
-            Join Reach Out to Girls and make a real difference in the lives of girls in Malawi.
-          </p> */}
+         
         </div>
 
         {/* Three Role Cards */}
@@ -60,22 +56,14 @@ const Vacancies = () => {
                   rel="noopener noreferrer"
                   className="inline-block bg-black hover:bg-gray-800 text-white px-6 py-3 rounded-xl font-semibold transition shadow-md"
                 >
-                  Apply Now →
+                  Apply Now 
                 </a>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-12 text-center text-gray-700">
-          <p>
-            Not the right fit?{" "}
-            <Link to="/contact" className="text-purple-600 hover:underline font-medium">
-              Let us know
-            </Link>{" "}
-            — we’d love to hear from you!
-          </p>
-        </div>
+        
       </div>
     </div>
   );

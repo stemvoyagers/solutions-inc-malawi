@@ -17,9 +17,11 @@ import sala14 from "../assets/sala14.jpg"
 import sala15 from "../assets/sala15.jpg"
 import salai from "../assets/salai.jpg"
 import salaii from "../assets/salaii.jpg"
+import icon1 from "../assets/icon1.png"
+import icon3 from "../assets/icon3.png"
 
 
 export {
-     sala1, salalogo, sala5, sala10, sala7, sala9, salavid, salai,
+     sala1, salalogo, sala5, sala10, sala7, sala9, salavid, salai, icon1, icon3,
     sala11, sala12, sala13, no14, sala2, sala3, sala6, sala8, sala14, sala15, salaii
 };
