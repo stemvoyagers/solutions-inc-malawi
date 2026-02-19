@@ -14,6 +14,8 @@ import Privacy from "./pages/Privacy";
 import Hero from "./components/home/Hero";
 import ScrollToTop from "./components/others/ScrollToTop";
 import Vacancies from "./pages/Vacancies";
+import Blog from "./pages/Blog";
+import Projects from "./pages/Projects";
 
 const Layout = () => {
   return (
@@ -38,6 +40,8 @@ const App = () => {
             <Route path="/privacy-policy" element={<Privacy />} />
             <Route path="/hero" element={<Hero />} />
             <Route path="/vacancies" element={<Vacancies />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Routes>

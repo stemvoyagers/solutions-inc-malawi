@@ -49,8 +49,8 @@ const Header = () => {
         <div className="flex justify-center items-center gap-12">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about-us">About Us</NavLink>
-          <NavLink to="/about-us">Blog</NavLink>
-          <NavLink to="/about-us">Projects</NavLink>
+          <NavLink to="/blog">Blog</NavLink>
+          <NavLink to="/projects">Projects</NavLink>
 
 
 
@@ -127,13 +127,13 @@ const Header = () => {
               </MobileNavLink>
 
                <MobileNavLink
-                to="/"
+                to="/blog"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Blog
               </MobileNavLink>
                <MobileNavLink
-                to="/"
+                to="/projects"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Projects
