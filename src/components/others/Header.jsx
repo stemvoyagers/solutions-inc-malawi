@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+// src/components/Header.jsx
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { salalogo } from "../../assets";
@@ -19,160 +21,152 @@ const Header = () => {
     { name: "SoilSmart", url: "https://www.solutionsincmwsoilsmart.online/" },
   ];
 
-  return (
-    <div className="overflow-hidden top-0 flex items-center text-black shadow-sm justify-between px-8 py-2 bg-white relative z-50">
-      <div className="flex items-center gap-4">
-        <div className="md:hidden cursor-pointer">
-          {isMenuOpen ? (
-            <MdClose
-              onClick={() => setIsMenuOpen(false)}
-              className="text-black text-2xl"
-            />
-          ) : (
-            <MdMenu
-              onClick={() => setIsMenuOpen(true)}
-              className="text-black text-2xl"
-            />
-          )}
-        </div>
-        <Link to="/" className="flex items-center">
-          <img
-            src={salalogo}
-            alt="Solutions Inc Logo"
-            className="w-[65%] max-w-[200px] cursor-pointer rounded-lg ml-4"
-            onClick={handleClick}
-          />
-        </Link>
-      </div>
+  // Close mobile menu on route change
+  useEffect(() => {
+    setIsMenuOpen(false);
+    setIsMobileSolutionsOpen(false);
+  }, [window.location.pathname]);
 
-      <div className="hidden md:flex items-center justify-center">
-        <div className="flex justify-center items-center gap-12">
+  return (
+    <header className="sticky top-0 z-50 bg-white shadow-sm">
+      <div className="px-4 sm:px-6 md:px-8 py-3 flex items-center justify-between">
+        {/* Logo */}
+        <div className="flex items-center">
+          <Link to="/" onClick={handleClick} className="focus:outline-none">
+            <img
+              src={salalogo}
+              alt="Solutions Inc Logo"
+              className="h-14 w-auto max-w-[160px] rounded-md"
+            />
+          </Link>
+        </div>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center space-x-8 gap-20">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about-us">About Us</NavLink>
           <NavLink to="/blog">Blog</NavLink>
           <NavLink to="/projects">Projects</NavLink>
 
-
-
-
+          {/* Solutions Dropdown */}
           <div
-            className="relative"
+            className="relative group"
             onMouseEnter={() => setIsSolutionsOpen(true)}
             onMouseLeave={() => setIsSolutionsOpen(false)}
           >
-            <div className="flex items-center gap-1 cursor-pointer">
-              <span>Solutions</span>
+            <button
+              className="flex items-center gap-1 font-medium text-gray-700 hover:text-[#096E6A] transition-colors focus:outline-none"
+              aria-expanded={isSolutionsOpen}
+              aria-haspopup="true"
+            >
+              Solutions
               <MdArrowDropDown
-                className={`transition-transform duration-300 ${
+                className={`text-lg transition-transform duration-200 ${
                   isSolutionsOpen ? "rotate-180" : ""
                 }`}
               />
-              <span
-                style={{
-                  transform: isSolutionsOpen ? "scaleX(1)" : "scaleX(0)",
-                }}
-                className="absolute -bottom-1 left-0 h-1 w-full bg-[#096E6A] rounded-full transition-transform duration-300 origin-left"
-              />
-            </div>
+            </button>
 
+            {/* Dropdown Menu */}
             <div
-              className={`absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 py-2 z-[9999] transition-all duration-200 ease-out ${
+              className={`absolute top-full left-0 mt-2 w-48 bg-white shadow-xl rounded-lg border border-gray-100 py-2 z-50 transition-all duration-200 ease-out origin-top ${
                 isSolutionsOpen
-                  ? "opacity-100 visible translate-y-0"
-                  : "opacity-0 invisible -translate-y-2"
+                  ? "opacity-100 scale-y-100 visible"
+                  : "opacity-0 scale-y-95 invisible"
               }`}
             >
               {solutionsItems.map((item, index) => (
                 <a
                   key={index}
                   href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#096E6A] hover:text-white transition-colors duration-200"
-                  target={item.url.startsWith("http") ? "_blank" : "_self"}
-                  rel={item.url.startsWith("http") ? "noopener noreferrer" : ""}
                 >
                   {item.name}
                 </a>
               ))}
             </div>
           </div>
-        </div>
+        </nav>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden text-gray-700 focus:outline-none"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        >
+          {isMenuOpen ? (
+            <MdClose className="text-2xl" />
+          ) : (
+            <MdMenu className="text-2xl" />
+          )}
+        </button>
       </div>
 
+      {/* Mobile Drawer */}
       {isMenuOpen && (
         <>
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 z-40 backdrop-blur-sm"
+            className="fixed inset-0 bg-gray-200 bg-opacity-40 z-40 backdrop-blur-sm md:hidden"
             onClick={() => setIsMenuOpen(false)}
-          ></div>
-          <div
-            className="md:hidden fixed top-0 left-0 h-screen w-[70vw] bg-[#096E6A] text-white z-50 transform transition-transform duration-300 ease-in-out"
-            style={{
-              transform: isMenuOpen ? "translateX(0)" : "translateX(-100%)",
-            }}
-          >
-            <div className="flex justify-between items-center p-4 border-b border-white">
-              <span className="text-lg font-bold">Menu</span>
-              <MdClose
-                className="text-2xl cursor-pointer"
+          />
+          <div className="fixed top-0 left-0 h-screen w-[80%] max-w-[300px] bg-white text-gray-800 z-50 transform transition-transform duration-300 ease-in-out md:hidden">
+            <div className="flex justify-between items-center p-5 border-b">
+              <span className="text-lg font-bold text-gray-800 -ml-8"><img src={salalogo} alt="Logo" className="h-12 w-auto" /></span>
+              <button
                 onClick={() => setIsMenuOpen(false)}
-              />
+                className="text-gray-600 hover:text-gray-900 focus:outline-none"
+                aria-label="Close menu"
+              >
+                <MdClose className="text-2xl" />
+              </button>
             </div>
 
             <div className="py-4">
-              <MobileNavLink to="/" onClick={() => setIsMenuOpen(false)}>Home</MobileNavLink>
-              <MobileNavLink to="/about-us"
-                onClick={() => setIsMenuOpen(false)}
-              >
+              <MobileNavLink to="/" onClick={() => setIsMenuOpen(false)}>
+                Home
+              </MobileNavLink>
+              <MobileNavLink to="/about-us" onClick={() => setIsMenuOpen(false)}>
                 About Us
               </MobileNavLink>
-
-               <MobileNavLink
-                to="/blog"
-                onClick={() => setIsMenuOpen(false)}
-              >
+              <MobileNavLink to="/blog" onClick={() => setIsMenuOpen(false)}>
                 Blog
               </MobileNavLink>
-               <MobileNavLink
-                to="/projects"
-                onClick={() => setIsMenuOpen(false)}
-              >
+              <MobileNavLink to="/projects" onClick={() => setIsMenuOpen(false)}>
                 Projects
               </MobileNavLink>
 
-              <div className="border-t border-white/20">
-                <div
-                  className="py-4 px-6 font-semibold flex items-center justify-between cursor-pointer"
-                  onClick={() =>
-                    setIsMobileSolutionsOpen(!isMobileSolutionsOpen)
-                  }
+              {/* Mobile Solutions Accordion */}
+              <div className="border-t border-gray-200 mt-2">
+                <button
+                  className="w-full flex justify-between items-center py-4 px-6 font-medium text-left"
+                  onClick={() => setIsMobileSolutionsOpen(!isMobileSolutionsOpen)}
+                  aria-expanded={isMobileSolutionsOpen}
                 >
                   <span>Solutions</span>
                   <MdArrowDropDown
-                    className={`transition-transform duration-300 ${
+                    className={`text-lg transition-transform duration-200 ${
                       isMobileSolutionsOpen ? "rotate-180" : ""
                     }`}
                   />
-                </div>
+                </button>
                 <div
                   className={`transition-all duration-300 overflow-hidden ${
-                    isMobileSolutionsOpen
-                      ? "max-h-48 opacity-100"
-                      : "max-h-0 opacity-0"
+                    isMobileSolutionsOpen ? "max-h-48 opacity-100" : "max-h-0 opacity-0"
                   }`}
                 >
                   {solutionsItems.map((item, index) => (
                     <a
                       key={index}
                       href={item.url}
-                      className="block py-3 px-8 text-sm hover:bg-white hover:text-black transition-colors duration-200 border-b border-white/10"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block py-3 px-8 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
                       onClick={() => {
                         setIsMenuOpen(false);
                         setIsMobileSolutionsOpen(false);
                       }}
-                      target={item.url.startsWith("http") ? "_blank" : "_self"}
-                      rel={
-                        item.url.startsWith("http") ? "noopener noreferrer" : ""
-                      }
                     >
                       {item.name}
                     </a>
@@ -183,49 +177,43 @@ const Header = () => {
           </div>
         </>
       )}
-    </div>
+    </header>
   );
 };
 
-// eslint-disable-next-line react/prop-types
+// Desktop NavLink
 const NavLink = ({ to, children }) => {
-  const [active, setActive] = useState(false);
-  const currentUrl = window.location.pathname;
-
-  useEffect(() => {
-    setActive(currentUrl === to);
-  }, [currentUrl, to]);
-
+  const isActive = window.location.pathname === to;
   return (
-    <div className="relative cursor-pointer">
-      <Link to={to} className={`${active ? "font-bold" : ""} relative`}>
-        {children}
-        <span
-          style={{
-            transform: active ? "scaleX(1)" : "scaleX(0)",
-          }}
-          className="absolute -bottom-1 left-0 h-1 w-full bg-[#096E6A] rounded-full transition-transform duration-300 origin-left"
-        />
-      </Link>
-    </div>
+    <Link
+      to={to}
+      className={`relative font-medium text-gray-700 hover:text-[#096E6A] transition-colors ${
+        isActive ? "text-[#096E6A]" : ""
+      }`}
+    >
+      {children}
+      {isActive && (
+        <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#096E6A] rounded-full" />
+      )}
+    </Link>
   );
 };
 
-// eslint-disable-next-line react/prop-types
+// Mobile NavLink
 const MobileNavLink = ({ to, children, onClick }) => {
-  const currentUrl = window.location.pathname;
-
+  const isActive = window.location.pathname === to;
   return (
-    <div
-      className={`py-4 px-6 cursor-pointer hover:bg-white hover:text-black duration-300 border-b border-white/20 ${
-        currentUrl === to ? "font-extrabold bg-white text-black" : "font-light"
+    <Link
+      to={to}
+      className={`block py-4 px-6 font-medium ${
+        isActive
+          ? "bg-[#096E6A] text-white"
+          : "text-gray-700 hover:bg-gray-100"
       }`}
       onClick={onClick}
     >
-      <Link to={to} className="block">
-        {children}
-      </Link>
-    </div>
+      {children}
+    </Link>
   );
 };
 
