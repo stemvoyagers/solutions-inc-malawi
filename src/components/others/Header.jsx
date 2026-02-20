@@ -28,7 +28,7 @@ const Header = () => {
   }, [window.location.pathname]);
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-sm">
+    <header className="sticky top-0 z-50 bg-white shadow-sm overflow-hidden">
       <div className="px-4 sm:px-6 md:px-8 py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
