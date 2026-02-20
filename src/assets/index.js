@@ -7,7 +7,6 @@ import sala6 from "../assets/sala6.jpg"
 import sala7 from "../assets/sala7.jpg"
 import sala8 from "../assets/sala8.jpg"
 import sala9 from "../assets/sala9.jpg"
-import salavid from "../assets/salavid.mp4"
 import sala10 from "../assets/sala10.jpg"
 import salalogo from "../assets/salalogo.jpg"
 import sala11 from "../assets/sala11.jpg"
@@ -21,11 +20,14 @@ import icon1 from "../assets/icon1.png"
 import icon3 from "../assets/icon3.png"
 import B1 from "../assets/B1.jpg"
 import B2 from "../assets/B2.jpg"
-import B3 from "../assets/B3.png"
 import B4 from "../assets/B4.jpg"
 import B5 from "../assets/B5.jpg"
+import B6 from "../assets/B6.jpg"
+import B7 from "../assets/B7.jpg"
+import B8 from "../assets/B8.jpg"
+import B9 from "../assets/B9.jpg"
 
 export {
-     sala1, salalogo, sala5, sala10, sala7, sala9, salavid, salai, icon1, icon3,
-    sala11, B1, B2, B3, B4, B5,sala12, sala13, no14, sala2, sala3, sala6, sala8, sala14, sala15, salaii
+     sala1, salalogo, sala5, sala10, sala7, sala9, salai, icon1, icon3,
+    sala11, B1, B2, B4, B5,B6, B7, B8, B9,sala12, sala13, no14, sala2, sala3, sala6, sala8, sala14, sala15, salaii
 };
