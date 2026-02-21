@@ -1,25 +1,21 @@
 
-import { B1, B2, B4, B5, B6, B7, B8, B9, icon1, icon3 } from "../../assets";
+import { B1, B10, B2, B4, B6, B7, B8, B9, icon1,  team9 } from "../../assets";
 
 const necTeam = [
 
-  { name: "Prof. Dr. Save Kumwenda", role: " ", photo: B8 },
-  { name: "Maxwell Zude Kalipentala", role: "  ", photo: B2 },
-  { name: "Limbani Kalumbi", role: " ", photo: B1 },
-  { name: "Florence Kamwana Ngwira", role: " ", photo: B9 },
-  { name: "Apostle Peter Ngwira", role: " ", photo: icon1 },
-  { name: "Ms Bridget Chinguwo", role: " ", photo: B7 },
-  { name: "Mercy Kulanga", role: " ", photo: B6 },
-  { name: "Philip Banda", role: "", photo: B4 },
-  { name: "Tiwonge Longwe", role: "", photo: icon3 },
-  { name: "Thokozire Kasuzumira", role: "", photo: B5 },
-  { name: "Sellah Mandala", role: "", photo: icon3 },
+  { name: "Prof. Dr. Save Kumwenda", role: "Board Chairperson", photo: B8 },
+  { name: "Maxwell Zude Kalipentala", role: "Board Member", photo: B2 },
+  { name: "Limbani Kalumbi", role: "Board Member", photo: B1 },
+  { name: "Florence Kamwana Ngwira", role: "Board Member", photo: B9 },
+  { name: "Apostle Peter Ngwira", role: "Board Member", photo: icon1 },
+  { name: "Ms Bridget Chinguwo", role: "Board Member", photo: B7 },
+  { name: "Mercy Kulanga", role: "Board Member", photo: B6 },
+  { name: "Philip Banda", role: "Director", photo: B4 },
+  { name: "Tiwonge Longwe", role: "Programs and Administration Lead", photo: B10},
+  { name: "Harry Banda", role: "MEARL Officer", photo: team9 },
+  
 ];
 
-// const operationsTeam = [
-
-  
-// ];
 
 
 const GallerySwipe = () => {
